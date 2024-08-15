@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Netzero - Powerwall Capacity Estimate
 
 ## Introduction

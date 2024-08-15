@@ -1,5 +1,8 @@
-# Netzero - Enphase Battery Automation
+---
+layout: default
+---
 
+# Netzero - Enphase Battery Automation
 
 ## Introduction
 [Netzero](https://www.netzeroapp.io) allows you to schedule battery

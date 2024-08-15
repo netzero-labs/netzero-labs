@@ -1,5 +1,8 @@
-# Netzero - Powerwall Automation
+---
+layout: default
+---
 
+# Netzero - Powerwall Automation
 
 ## Introduction
 [Netzero](https://www.netzeroapp.io) allows you to schedule Powerwall

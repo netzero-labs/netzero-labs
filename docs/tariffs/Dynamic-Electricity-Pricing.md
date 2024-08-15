@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Netzero - Dynamic Electricity Pricing
 
 ## Introduction
