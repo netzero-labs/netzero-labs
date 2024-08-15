@@ -5,7 +5,7 @@ layout: default
 # Netzero - Dynamic Electricity Pricing
 
 ## Introduction
-[Netzero](https://www.netzeroapp.io) is adding support for dynamic
+[Netzero](https://www.netzero.energy) is adding support for dynamic
 electricity pricing (also known as dynamic tariffs, day-ahead pricing, or wholesale pricing).
 These utility plans have pricing that reflects the variation in wholesale electricity costs
 due to changes in supply and demand.  The prices change frequently (as frequently as every
@@ -30,7 +30,7 @@ If you are in a region with a supported provider, you will see a "Utility Rate P
 main menu.
 
 We will add support for additional plans and utilities in the future, [let
-us know](mailto:feedback@netzeroapp.io) if you're currently on a dynamic plan and
+us know](mailto:feedback@netzero.energy) if you're currently on a dynamic plan and
 would like to participate.
 
 ## Agile Octopus Configuration
@@ -71,4 +71,4 @@ Tesla app, using the Start Over button.
 
 ## Feedback
 
-Send any questions, comments, or issues to [feedback@netzeroapp.io](mailto:feedback@netzeroapp.io).
+Send any questions, comments, or issues to [feedback@netzero.energy](mailto:feedback@netzero.energy).

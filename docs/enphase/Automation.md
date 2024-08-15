@@ -5,14 +5,14 @@ layout: default
 # Netzero - Enphase Battery Automation
 
 ## Introduction
-[Netzero](https://www.netzeroapp.io) allows you to schedule battery
+[Netzero](https://www.netzero.energy) allows you to schedule battery
 configuration changes using the app (battery reserve, system profile, and grid charging).
 
 For more advanced use, the app also offers an API that allows to manage these configuration changes.
 
 
 ## API Token
-Begin by logging into your Tesla account using the [Netzero app](https://www.netzeroapp.io). Access your
+Begin by logging into your Tesla account using the [Netzero app](https://www.netzero.energy). Access your
 API token and system ID by navigating to the mode menu (first menu in the top-right) and selecting
 **Developer Access**. It's important to keep your API token secure, as while it provides access only
 to the data displayed here, it does grant the ability to manage battery configuration.
@@ -47,7 +47,7 @@ To retrieve the current configuration of the system, insert `$API_TOKEN` and `$S
 export API_TOKEN="..."
 export SYSTEM_ID="..."
 
-curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzeroapp.io/api/v1/$SYSTEM_ID/config
+curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzero.energy/api/v1/$SYSTEM_ID/config
 
 {
   "system_id": 1234566,
@@ -74,7 +74,7 @@ You can modify one or more of these values in the same request.
 ```bash
 curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" \
     --data '{"reserve_soc": 30, "battery_mode": "Self - Consumption"}' \
-    https://api.netzeroapp.io/api/v1/$SYSTEM_ID/config
+    https://api.netzero.energy/api/v1/$SYSTEM_ID/config
 
 {
   "system_id": 1234566,
@@ -100,7 +100,7 @@ api_token = os.environ['API_TOKEN']
 config = {'reserve_soc': 30, 'battery_mode': 'Self - Consumption'}
 
 response = requests.post(
-    url=f'https://api.netzeroapp.io/api/v1/{SYSTEM_ID}/config',
+    url=f'https://api.netzero.energy/api/v1/{SYSTEM_ID}/config',
     headers={'Authorization': f'Bearer {api_token}'},
     json=config,
 )

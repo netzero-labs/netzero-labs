@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Netzero - Powerwall Capacity Estimate
+# Netzero - Alerting
 
 ## Introduction
 
