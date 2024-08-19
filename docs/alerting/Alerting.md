@@ -8,7 +8,7 @@ layout: default
 
 [Netzero](https://www.netzero.energy) provides notifications to keep you informed about issues with your solar production, Powerwall operation, or Powerwall health. The currently available alerts include:
 1. **Very low or no solar production** in the last 24 hours.
-2. **Very low or no solar production** for an individual solar string.
+2. **Very low or no solar production** for an individual solar string of panels (group of panels connected in series).
 3. **Powerwall capacity degradation** exceeding 30%.
 4. **One or more Powerwalls not charging or discharging** within a set.
 
