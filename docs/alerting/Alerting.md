@@ -22,16 +22,23 @@ For improved monitoring, it is recommended to:
 1. **Configure Gateway/Powerwall+ access** in Diagnostics. This is necessary to activate solar string and Powerwall-specific alerts.
 2. **Set your city-level location** in the Settings. This allows the app to use weather information to fine-tune solar production alerts.
 
+## Powerwall 3
+
+Due to changes Tesla made with Powerwall 3, you cannot access the Gateway the way Powerwall 2 allows. We are adding support for Powerwall 3 diagnostics, but it will require periodically scanning the QR code behind the glass cover. Unfortunately, the cover can only be removed by technicians during service appointments.
+
+You can still enable notifications for the "Very low or no solar production" alert.
+
+
 ## Troubleshooting
 
 If you get an alert notification, first confirm that solar production or Powerwall operation are affected. You can use Netzero or the Tesla app and look at the Solar and Powerwall charts. Compare the last few days of operation.
 
 Once you confirm the issue, the first step for solar production issues is to turn the system off and on again.  For details, see Tesla's documentation: [Troubleshooting Your System](https://www.tesla.com/support/energy/solar-panels/after-installation/troubleshooting-your-system).
 
-For Powerwall issues, make sure the side switches are on, and breakers are not open. Then follow the troubleshooting guide above.
+For Powerwall issues, make sure the side switches are on, and breakers are not open. Then follow the troubleshooting guide above. If power-cycling the system does not resolve the issue, contact your installer or Tesla support.
 
-If power-cycling the system does not resolve the issue, contact your installer or Tesla support.
 
+## Powerwall 3
 
 ## Questions or Issues
 
