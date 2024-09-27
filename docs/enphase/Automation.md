@@ -13,8 +13,8 @@ For more advanced use, the app also offers an API that allows to manage these co
 
 ## API Token
 Begin by logging into your Tesla account using the [Netzero app](https://www.netzero.energy). Access your
-API token and system ID by navigating to the mode menu (first menu in the top-right) and selecting
-**Developer Access**. It's important to keep your API token secure, as while it provides access only
+API token and system ID by navigating to the Account menu (last menu) and selecting
+**Settings / Developer Access**. It's important to keep your API token secure, as while it provides access only
 to the data displayed here, it does grant the ability to manage battery configuration.
 
 
