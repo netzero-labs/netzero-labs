@@ -7,7 +7,7 @@ layout: default
 ## Introduction
 
 [Netzero](https://www.netzero.energy) automations enable configuration changes for Powerwall systems based
-on time schedule or events (e.g. Powerwall state of charge, EV charging, or home usage).
+on time schedule (time of day, day of week) or events (e.g. Powerwall state of charge, EV charging, or home usage).
 
 
 ## Common Automations
@@ -54,7 +54,7 @@ Rule: Every day at 12:00 AM: Set backup reserve to: 100%.
 Rule: Every day at 6:00 AM: Set backup reserve to: 20%.
 ```
 
-Note: because of Tesla limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall.
+Note: Replace 20% with your desired backup reserve. Because of Tesla limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall.
 
 ### Notifications
 
