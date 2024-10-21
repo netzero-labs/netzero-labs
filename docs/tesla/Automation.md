@@ -5,130 +5,82 @@ layout: default
 # Netzero - Powerwall Automation
 
 ## Introduction
-[Netzero](https://www.netzero.energy) allows you to schedule Powerwall
-configuration changes using the app (backup reserve, operational mode, energy exports, and grid
-charging).
 
-For more advanced use, the app also offers an API that allows to manage these configuration changes.
+[Netzero](https://www.netzero.energy) automations enable configuration changes for Powerwall systems based
+on time schedule or events (e.g. Powerwall state of charge, EV charging, or home usage).
 
 
-## API Token
-Begin by logging into your Tesla account using the [Netzero app](https://www.netzero.energy). Access your
-API token and energy site ID by navigating to the Account menu (last menu) and selecting
-**Settings / Developer Access**. It's important to keep your API token secure, as while it provides access only
-to the data displayed here, it does grant the ability to manage Powerwall configuration.
+## Common Automations
 
+Here are some commonly configured automations, and the goals they accomplish.
 
-## Automation with IFTTT
-You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
-For instance, to establish a specific backup reserve percentage daily at a designated time:
+### EV charging without discharging the Powerwall
 
-1. Visit https://ifttt.com/create or use the IFTTT app.
-2. **If This**: "Choose Date & Time", then select "Every day at", specify the desired time, and create the trigger.
-3. **Then That**: Search for the "Webhooks" service, and select "Make a web request". Configure the web request as illustrated below.
-Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
-backup reserve percentage.
+When in Self-Powered mode, charging an EV might result in depleting the Powerwall. Usually that's not what users want, because the EV battery is much larger than the Powerwall. Netzero automations can prevent that, using an integration with the Tesla Wall Connector. For other EV chargers, there are also automations based on home usage (home usage is usually noticeably higher when charging an EV).
 
-<img src="ifttt.png" width="300" alt="IFTTT" />
-
-Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
-schedule configuration instead. IFTTT is useful for more complex rules (e.g. incorporating weather or other conditions).
-
-You can modify other parameters in addition to backup reserve percentage, see next section for details.
-
-
-## Automation with API requests
-If you're familiar with running web requests using `curl` or similar tools, you can also manage the
-configuration with scripts.
-
-To retrieve the current configuration and live status of the system, insert `$API_TOKEN` and `$SITE_ID` values obtained above and run:
-
-```bash
-export API_TOKEN="..."
-export SITE_ID="..."
-
-curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzero.energy/api/v1/$SITE_ID/config
-
-{
-  "backup_reserve_percent": 80,
-  "operational_mode": "autonomous",
-  "energy_exports": "pv_only",
-  "grid_charging": true,
-  "percentage_charged": 70,
-  "grid_status": "Active (on_grid)",
-
-  "live_status": {
-    "solar_power": 4140,
-    "energy_left": 19538.05263157895,
-    "total_pack_energy": 28097,
-    "battery_power": -2520,
-    "load_power": 1620,
-    "grid_power": 0,
-    [...],
-    "wall_connectors": [
-      {
-        "din": "1457768-02-G--B7S12345J12345",
-        "wall_connector_state": 2,
-        "wall_connector_fault_state": 2,
-        "wall_connector_power": 0
-      }
-    ]
-  }
-}
+Example with Tesla Wall Connector:
+```
+Rule: When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).
+Rule: When vehicle charging stops: Set backup reserve to: 20%.
 ```
 
-This response includes both configuration values and the current power draw.  If you have a Wall Connector connected to your account, you'll also
-see car charging status.
-
-To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
-
-- `backup_reserve_percent`: Integer values ranging from `0` to `100`.
-- `operational_mode`: Select one of:
-  - `autonomous` (Time-Based Control, using stored energy to maximize savings based on your utility rate plan),
-  - `self_consumption` (Self-Powered, using stored energy to power your home after the sun goes down).
-- `energy_exports`: Select one of:
-  - `pv_only` (export solar energy only),
-  - `battery_ok` (export both solar energy and stored Powerwall energy),
-  - `never` (no export).
-- `grid_charging`: Select either `true` or `false`.
-
-You can modify one or more of these values in the same request.
-
-```bash
-curl -s -H "Authorization: Bearer $API_TOKEN" -H "Content-Type: application/json" \
-    --data '{"backup_reserve_percent": 50, "operational_mode": "self_consumption"}' \
-    https://api.netzero.energy/api/v1/$SITE_ID/config
-
-{
-  "backup_reserve_percent": 50,
-  "operational_mode": "self_consumption",
-  "energy_exports": "pv_only",
-  "grid_charging": true,
-  "percentage_charged": 98,
-  "grid_status": "Active (on_grid)",
-  "live_status": {...}
-}
+Example with a different EV charger:
+```
+Rule: When home usage rises above 8 kW: Set backup reserve to the current state of charge (preserve Powerwall charge).
+Rule: When home usage drops below 8 kW: Set backup reserve to: 20%.
 ```
 
-The response mirrors that of the GET request, providing the updated configuration (inclusive of any changes made) along with the live status.
+By setting the Powerwall state of charge to its current state of charge, we prevent the battery from discharging. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
 
-Here's an example with Python code instead of curl:
+### Combining Time-Based Control with Self-Powered mode
 
-```python
-import os
-import requests
+Tesla offers two different modes of operation: Self-Powered (using stored energy to power your home after the sun goes down) and Time-Based Control (using stored energy to maximize savings based on time-of-use utility plans). Sometimes users want the best of both worlds, e.g. the ability to export the battery to the grid during peak time (which Time-Based Control offers), while still avoiding grid imports in off-peak time (which Self-Powered mode offers). Automations allow switching between the two modes on a schedule.
 
-site_id = os.environ['SITE_ID']
-api_token = os.environ['API_TOKEN']
-config = {'backup_reserve_percent': 30, 'operational_mode': 'autonomous'}
-
-response = requests.post(
-    url=f'https://api.netzero.energy/api/v1/{site_id}/config',
-    headers={'Authorization': f'Bearer {api_token}'},
-    json=config,
-)
-print(response.json())
+Example:
 ```
+Rule: Every day at 4:00 PM: Set operational mode to: Time-Based Control.
+Rule: Every day at 9:00 PM: Set operational mode to: Self-Powered.
+```
+
+You can include additional configuration changes here if needed, e.g. Grid Charging and Energy Exports.
+
+### Topping off the Powerwall
+
+Tesla doesn't allow much control over charging the Powerwall from the grid. You have to be in Time-Based Control, have Grid Charging enabled, and even then it's up to the Time-Based Control algorithm to decide whether grid charging is needed. Some Netzero users prefer full control over when the battery is charged from the grid. Automations accomplish that by setting the backup reserve to 100% (which will top off the battery) and resetting it after the battery is charged.
+
+Example:
+```
+Rule: Every day at 12:00 AM: Set backup reserve to: 100%.
+Rule: Every day at 6:00 AM: Set backup reserve to: 20%.
+```
+
+Note: because of Tesla limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall.
+
+### Notifications
+
+These automations are simple, the only action is a push notification or email, with no change to the system. Sometimes it's useful to get notified about the Powerwall state of charge and act on it (especially if the action cannot currently be automated). For example, plug the car in when the Powerwall is full (to make sure Charge on Solar prioritizes the Powerwall over the EV), or reduce house loads when the Powerwall is down to the backup reserve.
+
+Examples:
+```
+Rule: When Powerwall is charged up to 100%: Send notification.
+Rule: When Powerwall is discharged down to backup reserve: Send notification.
+```
+
+
+## Frequently Asked Questions
+
+1. **Does the Netzero app have to be running for automations to run?**
+
+   No, the automations run on the Netzero cloud and do not require the app to run. You can enable notifications (app notifications or email) to keep track of automation runs or failures.
+
+2. **Why did my scheduled automation not run?**
+
+   Check the "Past Runs" Automation tab for any failures. In rare cases, a command that Netzero successfully sends to Tesla might get lost on the way from Tesla to your Powerwall (e.g. if the gateway is
+   in a bad state or updating firmware at the time). If this happens repeatedly, try resetting your gateway and contact us if the issue persists.
+
+3. **Can I combine more complicated rules, e.g. time AND Powerwall state of charge?**
+
+   Not currently, although that's on the roadmap.
 
 ## Questions or Issues
 You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

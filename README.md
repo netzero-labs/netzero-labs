@@ -5,3 +5,4 @@
 - [Dynamic Electricity Pricing](https://www.netzero.energy/tariffs)
 - [Health Monitoring](https://www.netzero.energy/alerting)
 - [Powerwall Capacity Estimate](https://www.netzero.energy/capacity_estimate)
+- [Netzero API](https://www.netzero.energy/api)
