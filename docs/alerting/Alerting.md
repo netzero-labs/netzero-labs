@@ -38,8 +38,6 @@ Once you confirm the issue, the first step for solar production issues is to tur
 For Powerwall issues, make sure the side switches are on, and breakers are not open. Then follow the troubleshooting guide above. If power-cycling the system does not resolve the issue, contact your installer or Tesla support.
 
 
-## Powerwall 3
-
 ## Questions or Issues
 
 If you have any questions or encounter any issues, please submit them via [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
