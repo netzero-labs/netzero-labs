@@ -6,7 +6,7 @@ layout: default
 
 ## Introduction
 
-[Netzero](https://www.netzero.energy) provides access to diagnostic data for your Powerwall 3 system.  This data is not available in the Tesla app. The diagnostic data includes battery capacity and degradation, and string diagnostics (solar production broken down by strings of panel arrays).
+[Netzero](https://www.netzero.energy) provides access to diagnostic data for your Powerwall 3 system. This data is not available in the Tesla app. The diagnostic data includes battery capacity and degradation, and solar string production (solar production broken down by strings of solar panels).
 
 ## Credentials
 
