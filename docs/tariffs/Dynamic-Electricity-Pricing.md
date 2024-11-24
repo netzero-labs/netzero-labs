@@ -69,6 +69,15 @@ ComEd Hourly Pricing does not require any configuration, just turning on automat
 the forecast, and the [ComEd Current Hour Average](https://hourlypricing.comed.com/hp-api/#section-Current-Hour-Average-API)
 will be used to update the real-time price for the current hour.
 
+## Notes
+
+- Tesla allows a limited number of slots for configuring tariffs, which can only be set for a
+  24-hour period. As a result, slots corresponding to times that have already passed today are
+  filled with tomorrow’s prices, while future slots for today will contain the correct prices.
+  For example, if checking pricing at noon, prices from noon to midnight will reflect today’s prices,
+  while prices from midnight to 11:59 AM will reflect tomorrow’s prices. This approach gives the
+  Powerwall a broader view of future pricing, enabling better decisions for charging and discharging.
+
 ## Disabling Automatic Updates
 
 If you wish to stop updating your dynamic tariffs, uncheck the "Automatically update rate plan"
