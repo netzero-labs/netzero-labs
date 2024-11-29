@@ -80,7 +80,7 @@ No password is required.
 
 ### Notes
 
-- The Wallbox integration has been tested. If you experience issues with a different
+- The Wallbox and Zappi integrations have been tested. If you experience issues with a different
   brand of OCPP-compatible EV charger, please contact us at feedback@netzero.energy.
 
 - This integration will allow Netzero to start or stop EV charging in the future.
