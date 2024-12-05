@@ -12,8 +12,7 @@ starts and avoid discharging the Powerwall into the (much larger) EV battery.
 
 Depending on your EV charging setup, there are different ways for Netzero to determine charging status. There
 are integrations for **Tesla Wall Connectors**, **Tesla vehicles**, and **OCPP-compatible EV chargers**
-(e.g. Wallbox or Zappi). If your charging setup is not currently supported, send us an email to
-feedback@netzero.energy and we'll look at adding support.
+(e.g. Wallbox or Zappi).
 
 To configure your EV charger, navigate to `Settings / Vehicle Charging`. Once the charger is configured,
 a new tab labeled `EV Charging` show up on top of the `New Automation` screen. This tab can be used to
@@ -42,14 +41,26 @@ on the `Settings / Vehicle Charging` screen.
 
 ## Tesla Vehicle
 
-If you have Tesla vehicles, you can configure access so Netzero can track charging status. Note: Netzero will
+If you have a Tesla vehicle, you can configure access so Netzero can track its charging status. Note: Netzero will
 only access charging information; it will not access location or any other vehicle data that's not related to
-charging.
+charging. It does not have access to unlock or start your vehicle, or camera access.
 
-If necessary, add permissions so Netzero can access the data. Navigate to the `Settings / Vehicle Charging`
+Charging status is tracked using [Tesla Fleet Telemetry](https://developer.tesla.com/docs/fleet-api/fleet-telemetry),
+a secure way for Tesla vehicles to report specific data to third-party services such as Netzero. The
+initial setup requires a few more steps:
+
+1. If necessary, add permissions so Netzero can access vehicle data. Navigate to the `Settings / Vehicle Charging`
 screen and follow the app instructions to enable the **Vehicle Information** and
-**Vehicle Charging Management** permissions. Once the permissions are added and refreshed in the app,
-vehicle status will appear in the settings.
+**Vehicle Charging Management** permissions. Once permissions are added, return to the app and refresh
+the state.
+
+2. Set up a [Virtual Key](https://www.tesla.com/_ak/api.netzeroapp.io) for Netzero, for a secure connection
+to your vehicle. The key can be revoked if required. Netzero does not have permission to unlock or
+start your vehicle.
+
+3. Once the key is set up, Fleet Telemetry will be automatically configured and the vehicle will
+start reporting its charging status.
+
 
 ### Notes
 
@@ -57,7 +68,7 @@ vehicle status will appear in the settings.
   limitations in reliably determining home charging (as opposed to charging on the go). Fast charging
   can be determined and will be excluded from automations. However, when charging at a public Level 2
   charger, your automations may still trigger. We are working to improve the reliability of
-  home charging detection in the future.
+  home charging detection.
 
 - This integration will allow Netzero to start or stop EV charging in the future.
 
