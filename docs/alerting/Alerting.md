@@ -19,12 +19,12 @@ layout: default
 To enable health monitoring, ensure that push notifications are activated in the Settings. Push notifications are necessary not only for alert notifications but also to allow the app to periodically collect the diagnostic data required for monitoring. You can also enable email notifications in the Settings.
 
 For improved monitoring, it is recommended to:
-1. **Configure Gateway/Powerwall+ access** in Diagnostics. This is necessary to activate solar string and Powerwall-specific alerts.
+1. **Configure Gateway/Powerwall+ access** in Diagnostics. This is necessary to activate solar string and Powerwall-specific alerts. [Learn more](https://www.netzero.energy/docs/diagnostics/powerwall2).
 2. **Set your city-level location** in the Settings. This allows the app to use weather information to fine-tune solar production alerts.
 
 ## Powerwall 3
 
-Due to changes Tesla made with Powerwall 3, you cannot access the Gateway the way Powerwall 2 allows. We are adding support for Powerwall 3 diagnostics, but it will require periodically scanning the QR code behind the glass cover. Unfortunately, the cover can only be removed by technicians during service appointments.
+Due to changes Tesla made with Powerwall 3, diagnostics access is not as easy as for Powerwall 2. Netzero can retrieve Powerwall 3 diagnostics, but it needs to be done manually and requires access to the QR code behind the cover. [Learn more](https://www.netzero.energy/docs/diagnostics/powerwall3).
 
 You can still enable notifications for the "Very low or no solar production" alert.
 
