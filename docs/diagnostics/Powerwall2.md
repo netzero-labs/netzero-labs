@@ -19,7 +19,7 @@ The default password consists of the last five characters of the Gateway passwor
 
 ## Access
 
-Once you have the IP address and password, enter them in Netzero (Monitoring / Connect). Netzero will connect to the Gateway, collect diagnostic data, and display it in the Powerwall and Strings tabs.
+Once you have the IP address and password, enter them in Netzero (Monitoring > Connect). Netzero will connect to the Gateway, collect diagnostic data, and display it in the Powerwall and Strings tabs.
 
 ## Diagnostic Data
 

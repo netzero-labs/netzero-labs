@@ -12,11 +12,11 @@ starts and avoid discharging the Powerwall into the (much larger) EV battery.
 
 Depending on your EV charging setup, there are different ways for Netzero to determine charging status. There
 are integrations for **Tesla Wall Connectors**, **Tesla vehicles**, and **OCPP-compatible EV chargers**
-(e.g. Wallbox or Zappi).
+(e.g. **Wallbox** or **myenergi zappi**).
 
-To configure your EV charger, navigate to `Settings / Vehicle Charging`. Once the charger is configured,
-a new tab labeled `EV Charging` show up on top of the `New Automation` screen. This tab can be used to
-configure automations based on the start or stop of EV charging.
+To configure your EV charger, navigate to `Settings > Vehicle Charging`. Once the charger is configured,
+you use the `EV Charging` tab on top of the `New Automation` screen to configure automations based
+on the start or stop of EV charging.
 
 Note: in the future, we're also planning on enabling automations that automatically start or stop
 EV charging, for example based on electricity pricing or solar production.
@@ -31,7 +31,7 @@ drop-down in the top left and selecting `Add Product`. Once the Wall Connector i
 to your energy system, you should see a car garage on the main energy screen in the Tesla app.
 
 No further setup is required in Netzero to access the Wall Connector data. You can confirm the status
-on the `Settings / Vehicle Charging` screen.
+on the `Settings > Vehicle Charging` screen.
 
 ### Notes
 
@@ -43,20 +43,23 @@ on the `Settings / Vehicle Charging` screen.
 
 If you have a Tesla vehicle, you can configure access so Netzero can track its charging status. Note: Netzero will
 only access charging information; it will not access location or any other vehicle data that's not related to
-charging. It does not have access to unlock or start your vehicle, or camera access.
+charging. It does not have access to unlock or start your vehicle, or camera access. It will also not wake
+up your vehicle to get the charging status.
 
 Charging status is tracked using [Tesla Fleet Telemetry](https://developer.tesla.com/docs/fleet-api/fleet-telemetry),
 a secure way for Tesla vehicles to report specific data to third-party services such as Netzero. The
 initial setup requires a few more steps:
 
-1. If necessary, add permissions so Netzero can access vehicle data. Navigate to the `Settings / Vehicle Charging`
+1. If necessary, add permissions so Netzero can access vehicle data. Navigate to the `Settings > Vehicle Charging`
 screen and follow the app instructions to enable the **Vehicle Information** and
 **Vehicle Charging Management** permissions. Once permissions are added, return to the app and refresh
-the state.
+the state. If you had already added permissions when first logging in with Netzero, you will skip this step.
 
-2. Set up a [Virtual Key](https://www.tesla.com/_ak/api.netzeroapp.io) for Netzero, for a secure connection
+2. Set up a [Virtual Key](https://www.tesla.com/_ak/api.netzeroapp.io) for Netzero, a secure connection
 to your vehicle. The key can be revoked if required. Netzero does not have permission to unlock or
-start your vehicle.
+start your vehicle. Note: if you are not the owner of the vehicle, you will to be in the vehicle with
+a Tesla key card when completing this process. Older Tesla Model S and X vehicle do not support
+Fleet Telemetry.
 
 3. Once the key is set up, Fleet Telemetry will be automatically configured and the vehicle will
 start reporting its charging status.
@@ -64,13 +67,14 @@ start reporting its charging status.
 
 ### Notes
 
-- Because Netzero does not access location information, the Tesla vehicle integration may have
+- Because Netzero does not access location information, the Tesla vehicle integration has some
   limitations in reliably determining home charging (as opposed to charging on the go). Fast charging
   can be determined and will be excluded from automations. However, when charging at a public Level 2
   charger, your automations may still trigger. We are working to improve the reliability of
   home charging detection.
 
 - This integration will allow Netzero to start or stop EV charging in the future.
+
 
 ## OCPP-compatible EV charger
 
@@ -79,19 +83,25 @@ between EV chargers and central management systems (providers).  If your EV char
 you can configure Netzero as the provider. This integration will share the EV charger’s status and
 allow remote control.
 
-Examples of compatible chargers include Wallbox and Zappi. If your charger is compatible, you will
-see an OCPP configuration option in its app. Configure it using the following settings:
+Examples of compatible chargers include **Wallbox** and **myenergi zappi**. If your charger is compatible,
+you will see an OCPP configuration option in its app. Configure it using the following settings:
 
 ```
-Provider: wss://ocpp.netzero.energy
+Provider: wss://ocpp.netzero.energy/
 Charge point ID: ABCD-1234 (replace with the value shown in the Netzero app)
+No password is required.
 ```
 
-No password is required.
+Here are example configuration screens for **Wallbox** and **myenergi zappi** (replace the ABCD-1234 part):
+
+<img src="ocpp-wallbox.png" width="300" alt="Wallbox OCPP Configuration" />
+
+<img src="ocpp-zappi.png" width="300" alt="zappi OCPP Configuration" />
+
 
 ### Notes
 
-- The Wallbox and Zappi integrations have been tested. If you experience issues with a different
+- The **Wallbox** and **myenergi zappi** integrations have been tested. If you experience issues with a different
   brand of OCPP-compatible EV charger, please contact us at feedback@netzero.energy.
 
 - This integration will allow Netzero to start or stop EV charging in the future.

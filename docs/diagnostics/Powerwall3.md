@@ -16,7 +16,7 @@ The Wi-Fi name will start with TeslaPW and can also be retrieved by standing nex
 
 ## Access
 
-Once you have the TeslaPW Wi-Fi network name and password, enter them in Netzero (Monitoring / Connect). Alternatively, you can scan the QR code if you have access to it. Netzero will connect to the built-in Wi-Fi network, collect diagnostic data, and reconnect to your home Wi-Fi network. The diagnostic data will be displayed in the Powerwall and Strings tabs.
+Once you have the TeslaPW Wi-Fi network name and password, enter them in Netzero (Monitoring > Connect). Alternatively, you can scan the QR code if you have access to it. Netzero will connect to the built-in Wi-Fi network, collect diagnostic data, and reconnect to your home Wi-Fi network. The diagnostic data will be displayed in the Powerwall and Strings tabs.
 
 ## Diagnostic Data
 
