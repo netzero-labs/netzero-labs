@@ -94,9 +94,12 @@ No password is required.
 
 Here are example configuration screens for **Wallbox** and **myenergi zappi** (replace the ABCD-1234 part):
 
-<img src="ocpp-wallbox.png" width="300" alt="Wallbox OCPP Configuration" />
-
-<img src="ocpp-zappi.png" width="300" alt="zappi OCPP Configuration" />
+<table>
+  <tr>
+    <td><img src="ocpp-wallbox.png" width="250" alt="Wallbox OCPP Configuration" /></td>
+    <td><img src="ocpp-zappi.png" width="250" alt="zappi OCPP Configuration" /></td>
+  </tr>
+</table>
 
 
 ### Notes
