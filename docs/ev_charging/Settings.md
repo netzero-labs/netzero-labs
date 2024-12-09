@@ -96,8 +96,8 @@ Here are example configuration screens for **Wallbox** and **myenergi zappi** (r
 
 <table>
   <tr>
-    <td><img src="ocpp-wallbox.png" width="250" alt="Wallbox OCPP Configuration" /></td>
-    <td><img src="ocpp-zappi.png" width="250" alt="zappi OCPP Configuration" /></td>
+    <td><img src="ocpp-wallbox.png" width="300" alt="Wallbox OCPP Configuration" /></td>
+    <td><img src="ocpp-zappi.png" width="300" alt="zappi OCPP Configuration" /></td>
   </tr>
 </table>
 
