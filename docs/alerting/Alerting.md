@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Netzero - Health Monitoring

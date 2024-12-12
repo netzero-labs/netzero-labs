@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Netzero - Powerwall 3 Diagnostics
