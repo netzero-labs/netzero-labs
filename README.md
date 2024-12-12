@@ -1,3 +1,7 @@
+---
+layout: no_footer
+---
+
 # Netzero Documentation
 
 - [About Netzero](https://www.netzero.energy)

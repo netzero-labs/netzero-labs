@@ -26,7 +26,3 @@ Once you have the IP address and password, enter them in Netzero (Monitoring > C
 ### Powerwall Capacity
 
 Like every lithium-ion battery, Powerwall will degrade over time and lose capacity. Netzero allows you to track the degradation over time. Refer to the [Tesla documentation](https://www.tesla.com/support/energy/powerwall/documents/documents) for warranty details on Powerwall 2.
-
-## Questions or Issues
-
-If you have any questions or issues, please submit them via [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

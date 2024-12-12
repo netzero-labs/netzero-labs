@@ -83,8 +83,3 @@ will be used to update the real-time price for the current hour.
 If you wish to stop updating your dynamic tariffs, uncheck the "Automatically update rate plan"
 checkbox under "Utility Rate Plan". Make sure to also configure a new fixed rate plan with the
 Tesla app, using the Start Over button.
-
-
-## Feedback
-
-Send any questions, comments, or issues to [feedback@netzero.energy](mailto:feedback@netzero.energy).

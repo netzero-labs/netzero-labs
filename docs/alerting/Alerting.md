@@ -36,8 +36,3 @@ If you get an alert notification, first confirm that solar production or Powerwa
 Once you confirm the issue, the first step for solar production issues is to turn the system off and on again.  For details, see Tesla's documentation: [Troubleshooting Your System](https://www.tesla.com/support/energy/solar-panels/after-installation/troubleshooting-your-system).
 
 For Powerwall issues, make sure the side switches are on, and breakers are not open. Then follow the troubleshooting guide above. If power-cycling the system does not resolve the issue, contact your installer or Tesla support.
-
-
-## Questions or Issues
-
-If you have any questions or encounter any issues, please submit them via [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

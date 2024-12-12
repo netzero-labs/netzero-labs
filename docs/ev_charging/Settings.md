@@ -88,16 +88,18 @@ you will see an OCPP configuration option in its app. Configure it using the fol
 
 ```
 Provider: wss://ocpp.netzero.energy/
-Charge point ID: ABCD-1234 (replace with the value shown in the Netzero app)
+Charge point ID: ABCD-1234 (replace with the "Charge point ID" shown in Netzero)
 No password is required.
 ```
 
-Here are example configuration screens for **Wallbox** and **myenergi zappi** (replace the ABCD-1234 part):
+Here are example configuration screens for **Wallbox** and **myenergi zappi** (replace the ABCD-1234 part with the "Charge point ID" shown in Netzero):
 
 <table>
   <tr>
-    <td><img src="ocpp-wallbox.png" width="300" alt="Wallbox OCPP Configuration" /></td>
-    <td><img src="ocpp-zappi.png" width="300" alt="zappi OCPP Configuration" /></td>
+    <td><img src="ocpp-wallbox.png" width="400" alt="Wallbox OCPP Configuration" /></td>
+  </tr>
+  <tr>
+    <td><img src="ocpp-zappi.png" width="400" alt="zappi OCPP Configuration" /></td>
   </tr>
 </table>
 
@@ -108,7 +110,3 @@ Here are example configuration screens for **Wallbox** and **myenergi zappi** (r
   brand of OCPP-compatible EV charger, please contact us at feedback@netzero.energy.
 
 - This integration will allow Netzero to start or stop EV charging in the future.
-
-## Questions or Issues
-
-If you have any questions or issues, please submit them via [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

@@ -33,7 +33,3 @@ If your estimated capacity is missing, it could be due to several reasons:
 - **Backup reserve set to 100%**: This setting prevents Powerwalls from charging or discharging, so capacity estimation is not possible.
 - **Recent installation**: Newly installed Powerwalls may not have sufficient data for capacity estimation. Please check again after a week of consistent charging days.
 - **Change in the number of Powerwalls**: If you have recently added or removed a Powerwall, capacity estimation needs some time to recalibrate.
-
-## Questions or Issues
-
-For any questions or issues, please submit them here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

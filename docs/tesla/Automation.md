@@ -81,6 +81,3 @@ Rule: When Powerwall is discharged down to backup reserve: Send notification.
 3. **Can I combine more complicated rules, e.g. time AND Powerwall state of charge?**
 
    Not currently, although that's on the roadmap.
-
-## Questions or Issues
-You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).

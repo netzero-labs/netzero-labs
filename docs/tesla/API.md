@@ -129,6 +129,3 @@ response = requests.post(
 )
 print(response.json())
 ```
-
-## Questions or Issues
-You can submit issues or post questions here: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
