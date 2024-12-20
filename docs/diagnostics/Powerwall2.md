@@ -43,7 +43,7 @@ To be able to connect to the Gateway, you have to:
 
 - Have the correct IP address of the Gateway. Netzero will generally prefill the IP address with the correct value. You can confirm the IP address using your home network router: look for a device named `Tesla Powerwall`, `LG Innotek`, or a serial number such as `1232100-10-E--CN32132...`.
 
-- One way to confirm connectivity independent of Netzero is to open the Gateway web address in a web browser. Using the same device and Wi-Fi network used for Netzero, open a web browser and navigate to https://192.168.1.10 (replace this IP address with your Gateway's IP address). If the page loads, you will see a security error, which you can dismiss. If the page doesn't load or keeps spinning, there's a connectivity issue and you should try the solutions below.
+- One way to confirm connectivity independent of Netzero is to open the Gateway web address in a web browser. Using the same device and Wi-Fi network used for Netzero, open a web browser and navigate to `https://192.168.1.10` (replace this IP address with your Gateway's IP address). If the page loads, you will see a security error, which you can dismiss. If the page doesn't load or keeps spinning, there's a connectivity issue and you should try the solutions below.
 
 If you've confirmed all the steps above and are still having connection issues, try the following steps:
 
@@ -63,7 +63,7 @@ Authentication issues mean the Gateway is accessible, but the password is incorr
 Starting with firmware version 24.36.2, Tesla requires stronger passwords for Gateway 1 access (note: this does not affect Gateway 2). To access Gateway 1, you need to first reset the password, using the following procedure:
 
 1. Using your phone, scan the QR code behind the Gateway 1 door. This will connect to the Gateway 1 TEG Wi-Fi network, using the **full serial number** as the password. Note: in some cases, the letter `S` has to be prepended to the full serial number as the Wi-Fi password.
-2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to https://192.168.91.1
+2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to `https://192.168.91.1`
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
 5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol.
