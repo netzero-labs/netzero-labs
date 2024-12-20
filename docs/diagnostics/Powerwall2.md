@@ -19,7 +19,7 @@ The default password consists of the last five characters of the Gateway passwor
 
 ## Access
 
-Once you have the IP address and password, enter them in Netzero (Monitoring > Connect). Netzero will connect to the Gateway, collect diagnostic data, and display it in the Powerwall and Strings tabs.
+Once you have the IP address and password, enter them in Netzero (`Monitoring > Connect`). Netzero will connect to the Gateway, collect diagnostic data, and display it in the Powerwall and Strings tabs.
 
 ## Diagnostic Data
 
@@ -62,10 +62,10 @@ Authentication issues mean the Gateway is accessible, but the password is incorr
 
 Starting with firmware version 24.36.2, Tesla requires stronger passwords for Gateway 1 access (note: this does not affect Gateway 2). To access Gateway 1, you need to first reset the password, using the following procedure:
 
-1. Using your phone, scan the QR code behind the Gateway 1 door. This will connect to the Gateway 1 TEG Wi-Fi network, using the *full serial number* as the password. Note: in some cases, 'S' has to be prepended to the full serial number as the Wi-Fi password.
+1. Using your phone, scan the QR code behind the Gateway 1 door. This will connect to the Gateway 1 TEG Wi-Fi network, using the **full serial number** as the password. Note: in some cases, the letter `S` has to be prepended to the full serial number as the Wi-Fi password.
 2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to https://192.168.91.1
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
 5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol.
-6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that *all* Powerwalls had to be toggled (so try that if the first approach doesn't work).
+6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be toggled (so try that if the first approach doesn't work).
 7. Submit the new password.
