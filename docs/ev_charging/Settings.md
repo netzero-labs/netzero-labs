@@ -109,4 +109,8 @@ Here are example configuration screens for **Wallbox** and **myenergi zappi** (r
 - The **Wallbox** and **myenergi zappi** integrations have been tested. If you experience issues with a different
   brand of OCPP-compatible EV charger, please contact us at feedback@netzero.energy.
 
+- If your EV charger only has a provider address field and no Change Point ID field (e.g. Fronius Wattpilot),
+  append the ID to the end of the provider address, for example:
+  wss://ocpp.netzero.energy/ABCD-1234 (replace with the "Charge point ID" shown in Netzero).
+
 - This integration will allow Netzero to start or stop EV charging in the future.
