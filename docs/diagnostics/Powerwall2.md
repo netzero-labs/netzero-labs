@@ -27,6 +27,10 @@ Once you have the IP address and password, enter them in Netzero (`Monitoring > 
 
 Like every lithium-ion battery, Powerwall will degrade over time and lose capacity. Netzero allows you to track the degradation over time. Refer to the [Tesla documentation](https://www.tesla.com/support/energy/powerwall/documents/documents) for warranty details on Powerwall 2.
 
+### String-level Data
+
+If you have a Tesla inverter or Powerwall+, you will also get string-level data: current, voltage, and power for each string of arrays connected to your inverter. This can be useful for investigating production issues and finding issues with individual strings of solar panels.
+
 ## Troubleshooting
 
 Accessing devices directly through your home network is not common and can run into issues. Additionally, Gateway firmware updates sometimes cause access issues.
