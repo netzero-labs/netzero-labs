@@ -26,4 +26,4 @@ Like every lithium-ion battery, Powerwall will degrade over time and lose capaci
 
 ### String-level Data
 
-String-level data shows current, voltage, and power for each string of arrays connected to your inverter. This can be useful for investigating production issues and finding issues with individual strings of solar panels.
+String-level data shows current, voltage, and power for each string of arrays connected to your inverters. This can be useful for investigating production issues and finding issues with individual strings of solar panels.
