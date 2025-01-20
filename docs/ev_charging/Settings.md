@@ -28,7 +28,8 @@ reliable way for Netzero to determine charging status.
 
 If necessary, add the Wall Connector to your energy system in the Tesla app by selecting the product
 drop-down in the top left and selecting `Add Product`. Once the Wall Connector is successfully added
-to your energy system, you should see a car garage on the main energy screen in the Tesla app.
+to your energy system, the Tesla app should show a car garage with the Wall Connector next to the
+Powerwall.
 
 No further setup is required in Netzero to access the Wall Connector data. You can confirm the status
 on the `Settings > Vehicle Charging` screen.
@@ -39,12 +40,17 @@ on the `Settings > Vehicle Charging` screen.
   EV charging based on this integration (once this feature is available). Look at the Tesla vehicle
   or OCPP-compatible charger integration for that.
 
+- If your Wall Connector is not added to your energy system, but listed as a separate product the
+  in the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
+  combine the two systems into one.
+
 ## Tesla Vehicle
 
 If you have a Tesla vehicle, you can configure access so Netzero can track its charging status. Note: Netzero will
-only access charging information; it will not access location or any other vehicle data that's not related to
-charging. It does not have access to unlock or start your vehicle, or camera access. It will also not wake
-up your vehicle to get the charging status.
+only access charging information. It will not access location or any other vehicle data that's not related to
+charging. The only location-related data it receives is whether the vehicle is at home, without the specifics
+of where home is (this is so automations can only trigger for home charging). Netzero does not have access to
+unlock or start your vehicle, or camera access. It will also not wake up your vehicle to get the charging status.
 
 Charging status is tracked using [Tesla Fleet Telemetry](https://developer.tesla.com/docs/fleet-api/fleet-telemetry),
 a secure way for Tesla vehicles to report specific data to third-party services such as Netzero. The
@@ -67,11 +73,8 @@ start reporting its charging status.
 
 ### Notes
 
-- Because Netzero does not access location information, the Tesla vehicle integration has some
-  limitations in reliably determining home charging (as opposed to charging on the go). Fast charging
-  can be determined and will be excluded from automations. However, when charging at a public Level 2
-  charger, your automations may still trigger. We are working to improve the reliability of
-  home charging detection.
+- If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is not supported. Netzero will use a
+  different process for determining charging status, so adding the Virtual Key is not needed.
 
 - This integration will allow Netzero to start or stop EV charging in the future.
 
@@ -81,15 +84,15 @@ start reporting its charging status.
 Some EV chargers support OCPP (Open Charge Point Protocol), an application protocol for communication
 between EV chargers and central management systems (providers).  If your EV charger is compatible,
 you can configure Netzero as the provider. This integration will share the EV charger’s status and
-allow remote control.
+allow remote control in the future.
 
-Examples of compatible chargers include **Wallbox** and **myenergi zappi**. If your charger is compatible,
-you will see an OCPP configuration option in its app. Configure it using the following settings:
+Examples of compatible chargers include **Wallbox** and **myenergi zappi**. If your EV charger is compatible,
+you will see an OCPP configuration option the EV charger's app. Configure it using the following settings:
 
 ```
 Provider: wss://ocpp.netzero.energy/
 Charge point ID: ABCD-1234 (replace with the "Charge point ID" shown in Netzero)
-No password is required.
+No password or username are required, so leave them blank.
 ```
 
 Here are example configuration screens for **Wallbox** and **myenergi zappi** (replace the ABCD-1234 part with the "Charge point ID" shown in Netzero):
