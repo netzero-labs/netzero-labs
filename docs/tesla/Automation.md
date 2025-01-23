@@ -20,14 +20,14 @@ When in Self-Powered mode, charging an EV might result in depleting the Powerwal
 
 Example with Tesla Wall Connector:
 ```
-Rule: When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).
-Rule: When vehicle charging stops: Set backup reserve to: 20%.
+When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).
+When vehicle charging stops: Set backup reserve to: 20%.
 ```
 
 Example with a different EV charger:
 ```
-Rule: When home usage rises above 8 kW: Set backup reserve to the current state of charge (preserve Powerwall charge).
-Rule: When home usage drops below 8 kW: Set backup reserve to: 20%.
+When home usage rises above 8 kW: Set backup reserve to the current state of charge (preserve Powerwall charge).
+When home usage drops below 8 kW: Set backup reserve to: 20%.
 ```
 
 By setting the Powerwall state of charge to its current state of charge, we prevent the battery from discharging. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
@@ -38,8 +38,8 @@ Tesla offers two different modes of operation: Self-Powered (using stored energy
 
 Example:
 ```
-Rule: Every day at 4:00 PM: Set operational mode to: Time-Based Control.
-Rule: Every day at 9:00 PM: Set operational mode to: Self-Powered.
+Every day at 4:00 PM: Set operational mode to: Time-Based Control.
+Every day at 9:00 PM: Set operational mode to: Self-Powered.
 ```
 
 You can include additional configuration changes here if needed, e.g. Grid Charging and Energy Exports.
@@ -50,8 +50,8 @@ Tesla doesn't allow much control over charging the Powerwall from the grid. You 
 
 Example:
 ```
-Rule: Every day at 12:00 AM: Set backup reserve to: 100%.
-Rule: Every day at 6:00 AM: Set backup reserve to: 20%.
+Every day at 12:00 AM: Set backup reserve to: 100%.
+Every day at 6:00 AM: Set backup reserve to: 20%.
 ```
 
 Note: Replace 20% with your desired backup reserve. Because of Tesla limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall.
@@ -62,8 +62,8 @@ These automations are simple, the only action is a push notification or email, w
 
 Examples:
 ```
-Rule: When Powerwall is charged up to 100%: Send notification.
-Rule: When Powerwall is discharged down to backup reserve: Send notification.
+When Powerwall is charged up to 100%: Send notification.
+When Powerwall is discharged down to backup reserve: Send notification.
 ```
 
 
