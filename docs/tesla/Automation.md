@@ -7,7 +7,7 @@ layout: with_footer
 ## Introduction
 
 [Netzero](https://www.netzero.energy) automations enable configuration changes for Powerwall systems based
-on time schedule (time of day, day of week) or events (e.g. Powerwall state of charge, EV charging, or home usage).
+on time schedule (time of day, day of week) or events (e.g. Powerwall state of charge, EV charging status, electricity price, home usage, etc.).
 
 
 ## Common Automations
@@ -16,21 +16,41 @@ Here are some commonly configured automations, and the goals they accomplish.
 
 ### EV charging without discharging the Powerwall
 
-When in Self-Powered mode, charging an EV might result in depleting the Powerwall. Usually that's not what users want, because the EV battery is much larger than the Powerwall. Netzero automations can prevent that, using an integration with the Tesla Wall Connector. For other EV chargers, there are also automations based on home usage (home usage is usually noticeably higher when charging an EV).
+When in Self-Powered mode, charging an EV might result in depleting the Powerwall. Usually that's not what users want, because the EV battery is much larger than the Powerwall. Netzero automations can prevent that, using integrations with the Tesla Wall Connector, Tesla vehicles, or OCPP-compatible EV chargers ([learn more](https://www.netzero.energy/docs/ev_charger_settings)). For other EV chargers, there are also automations based on home usage (home usage is usually measurably higher when charging an EV).
 
-Example with Tesla Wall Connector:
+Example with Tesla Wall Connector, Tesla vehicle, or OCCP-compatible EV charger:
 ```
 When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).
 When vehicle charging stops: Set backup reserve to: 20%.
 ```
 
-Example with a different EV charger:
+Example with a different EV or EV charger:
 ```
 When home usage rises above 8 kW: Set backup reserve to the current state of charge (preserve Powerwall charge).
 When home usage drops below 8 kW: Set backup reserve to: 20%.
 ```
 
-By setting the Powerwall state of charge to its current state of charge, we prevent the battery from discharging. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
+By setting the Powerwall backup reserve to its current state of charge, we prevent the battery from discharging. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
+
+
+### Charging the Powerwall while EV charging (Intelligent Octopus Go)
+
+Octopus Energy consumers on the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) tariff plan get special EV charging slots with lower rates, not otherwise reflected in the daily rates. It may make sense to charge the Powerwall in addition to the EV, to benefit from the lower rates.
+
+Example with Tesla Wall Connector, Tesla vehicle, or OCCP-compatible EV charger:
+```
+When vehicle charging starts: Set backup reserve to 100%.
+When vehicle charging stops: Set backup reserve to: 20%.
+```
+
+Example with a different EV charger:
+```
+When home usage rises above 8 kW: Set backup reserve to 100%.
+When home usage drops below 8 kW: Set backup reserve to: 20%.
+```
+
+When EV charging starts, the Powerwall backup reserve will be set to 100% and the Powerwall will start charging from the grid. The charging rate will be around 1.8kW per Powerwall. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
+
 
 ### Combining Time-Based Control with Self-Powered mode
 
@@ -56,9 +76,29 @@ Every day at 6:00 AM: Set backup reserve to: 20%.
 
 Note: Replace 20% with your desired backup reserve. Because of Tesla limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall.
 
+
+### Taking advantage of low electricity rates
+
+User on a [dynamic utility rate plan](https://www.netzero.energy/docs/tariffs) may want to act on periods of low eletricity prices, e.g. charge an EV or charge the Powerwall when electricity price drops below a threshold.
+
+Examples:
+
+```
+When electricity price is below $0.30: Start vehicle charging.
+When electricity price is at or above $0.30: Stop vehicle charging.
+```
+
+```
+When electricity price is below $0.30: Set backup reserve to 100%.
+When electricity price is at or above $0.30: Set backup reserve to 20%.
+```
+
+Note: Replace 20% with your desired backup reserve.
+
+
 ### Notifications
 
-These automations are simple, the only action is a push notification or email, with no change to the system. Sometimes it's useful to get notified about the Powerwall state of charge and act on it (especially if the action cannot currently be automated). For example, plug the car in when the Powerwall is full (to make sure Charge on Solar prioritizes the Powerwall over the EV), or reduce house loads when the Powerwall is down to the backup reserve.
+The only action for these automations is a push notification or email, with no change to the system. Sometimes it's useful to get notified about the Powerwall state of charge and act on it (especially if the action cannot currently be automated). For example, plug the EV in when the Powerwall is full (to make sure Charge on Solar prioritizes the Powerwall over the EV), or reduce home electricity usage when the Powerwall is down to the backup reserve.
 
 Examples:
 ```
