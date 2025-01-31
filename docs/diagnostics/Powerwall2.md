@@ -21,6 +21,8 @@ The default password consists of the last five characters of the Gateway passwor
 
 Once you have the IP address and password, enter them in Netzero (`Monitoring > Connect`). Netzero will connect to the Gateway, collect diagnostic data, and display it in the Powerwall and Strings tabs.
 
+Note: on iOS, Netzero will ask for permission to connect to the Local Network. The permission needs to be granted for the connection to succeed. If you ever rejected the permission, you can re-enable it from your device's Settings menu: **Settings > Apps > Netzero > Local Network**.
+
 ## Diagnostic Data
 
 ### Powerwall Capacity
@@ -46,6 +48,8 @@ Two of the most common types of issues when connecting to the Gateway are connec
 To be able to connect to the Gateway, you have to:
 
 - Be on the same home network as the Gateway. This generally means being on the same Wi-Fi network as the Gateway. You can confirm the name of the Gateway Wi-Fi network on the `Monitoring > Powerwall` screen (scroll down to the Network section). For your phone or tablet, confirm the Wi-Fi network in `Settings > Wi-Fi.` Note: if your Gateway is hardwired with Ethernet, it will need to be accessible from your Wi-Fi network.
+
+- Enable the **Local Network** permission (**device Settings > Apps > Netzero > Local Network**).
 
 - Have the correct IP address of the Gateway. Netzero will generally prefill the IP address with the correct value. You can confirm the IP address using your home network router: look for a device named `Tesla Powerwall`, `LG Innotek`, or a serial number such as `1232100-10-E--CN32132...`.
 
