@@ -10,7 +10,9 @@ layout: with_footer
 1. **Very low or no solar production** in the last 24 hours.
 2. **Very low or no solar production** for an individual solar string of panels (group of panels connected in series).
 3. **Powerwall capacity degradation** exceeding 30%.
-4. **One or more Powerwalls not charging or discharging** within a set.
+4. **One or more Powerwalls not charging or discharging**.
+5. **Grid outage or system off-grid**.
+6. **Powerwall firmware version updated**.
 
 **Note:** Alerts 2, 3, and 4 require Gateway/Powerwall+ access enabled in the Diagnostics section.
 
@@ -24,10 +26,7 @@ For improved monitoring, it is recommended to:
 
 ## Powerwall 3
 
-Due to changes Tesla made with Powerwall 3, diagnostics access is not as easy as for Powerwall 2. Netzero can retrieve Powerwall 3 diagnostics, but it needs to be done manually and requires access to the QR code behind the cover. [Learn more](https://www.netzero.energy/docs/diagnostics/powerwall3).
-
-You can still enable notifications for the "Very low or no solar production" alert.
-
+Due to changes Tesla made with Powerwall 3, diagnostics access is not as easy as for Powerwall 2. Netzero can retrieve Powerwall 3 diagnostics, but it needs to be done manually. [Learn more](https://www.netzero.energy/docs/diagnostics/powerwall3).
 
 ## Troubleshooting
 
