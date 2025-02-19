@@ -66,7 +66,7 @@ Authentication issues mean the Gateway is accessible, but the password is incorr
 - For Gateway 2, the default password is **the last 5 characters** of the **password** shown on the label behind the Gateway door. The label will show a QR code, part number, serial number, and a password.
 - For Gateway 1, the default password is the **last 5 characters** of the **serial number** shown on the label behind the Gateway door. NOTE: Tesla recently changed requirements for this password, so if you have a Gateway 1 and cannot log in, see the section below.
 - If you ever changed the password in the past, you will need to use it instead of the default password.
-- If all else fails, try resetting the password. See the section above for opening the Gateway web address and follow the Forgot Password link.
+- If all else fails, try resetting the password. See the sections below.
 
 #### Gateway 1 Password Reset Requirement
 
@@ -76,6 +76,18 @@ Starting with firmware version 24.36.2, Tesla requires stronger passwords for Ga
 2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to `https://192.168.91.1`
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
-5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol.
+5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
+6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be toggled (so try that if the first approach doesn't work).
+7. Submit the new password.
+
+#### Gateway 2 Password Reset
+
+If you keep getting authentication failures despite using the correct password, you might need to reset the password:
+
+1. Using your phone, scan the QR code behind the Gateway 2 door. This will connect to the Gateway 2 TEG Wi-Fi network.
+2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to `https://192.168.91.1`
+3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
+4. You will see a login screen. Tap Change or Forgot Password.
+5. Select Forgot Password. For the current password, type the **last 5 letters of the password on the gateway label**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
 6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be toggled (so try that if the first approach doesn't work).
 7. Submit the new password.
