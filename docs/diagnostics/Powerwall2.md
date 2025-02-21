@@ -14,7 +14,7 @@ Powerwall 2 diagnostics access requires the IP address and password for the Tesl
 
 The IP address is usually pre-populated in Netzero, but if not, it should be listed with your other home network devices at your Wi-Fi access point or home router.
 
-The default password consists of the last five characters of the Gateway password, which is printed on a label behind the Gateway or Powerwall+ cover. If you ever changed the default password, use that instead. For Tesla Gateway 1 systems, the password will be the last 5 characters of the serial number (note: see the Gateway 1 Password Reset Requirement section for recent changes). For details, see Tesla's documentation on [Connecting to Tesla Gateway and Powerwall+
+The default password consists of the **last five letters** of the Gateway password, which is printed on a label behind the Gateway door or Powerwall+ cover. For Tesla Gateway 2 systems, the label will say "Password" and the full password will consist of ten letters, of which you will only use the last five (note: this label is different from the label that contains the part number and serial number). For Tesla Gateway 1 systems, the password will be the last five letters or numbers of the serial number (note: see the Gateway 1 Password Reset Requirement section below for recent changes). For details, see Tesla's documentation on [Connecting to Tesla Gateway and Powerwall+
 ](https://www.tesla.com/support/energy/powerwall/own/connecting-network).
 
 ## Access
