@@ -29,6 +29,10 @@ the previously configured backup reserve, and restore the backup reserve once th
 
 ## Notes
 
+- If you have previously configured automations for smart charging slots
+  (e.g. "When vehicle charging starts: Set backup reserve to 100%"), pause or remove those automations
+  so they don't interfere with this integration. The integration based on Octopus API Keys will be
+  more reliable.
 - If the 100% backup reserve is overridden with a different value while the EV is charging
-(either manually or with another automation), Netzero will **not** restore the backup reserve to
-the previously configured value. This is to avoid overriding any manual changes.
+  (either manually or with another automation), Netzero will **not** restore the backup reserve to
+  the previously configured value. This is to avoid overriding any manual changes.
