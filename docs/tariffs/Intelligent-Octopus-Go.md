@@ -14,10 +14,10 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 
 ## Setup
 
-- Make sure you are on an Intelligent Octopus Go tariff, and have a compatible EV or charger linked with the account.
+- Make sure you are on an Intelligent Octopus Go tariff, and have a compatible EV or charger linked with the account. Note that Ohme is not currently supported (see note below).
 - In Netzero, go to **Settings > Utility Rate Plan**.
 - Enter your Octopus API Key. You can copy the API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access). The key will start with **sk_live**.
-- Enter your Octopus Energy Account Number. This will be shown on your bills, emails, or app. It will look like: **A-12A34A99**.
+- Enter your Octopus Energy Account Number. This will be shown on your bills, emails, and Octopus app. It will look like: **A-12A34A99**.
 - Switch on **Automate Intelligent Octopus Go**.
 
 ## How it works
