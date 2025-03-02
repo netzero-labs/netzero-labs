@@ -18,7 +18,7 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 - In Netzero, go to **Settings > Utility Rate Plan**.
 - Enter your Octopus API Key. You can copy the API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access). The key will start with **sk_live**.
 - Enter your Octopus Energy Account Number. This will be shown on your bills, emails, or app. It will look like: **A-12A34A99**.
-- Switch on **Enable Intelligent Octopus Go automation**.
+- Switch on **Automate Intelligent Octopus Go**.
 
 ## How it works
 
@@ -36,3 +36,5 @@ the previously configured backup reserve, and restore the backup reserve once th
 - If the 100% backup reserve is overridden with a different value while the EV is charging
   (either manually or with another automation), Netzero will **not** restore the backup reserve to
   the previously configured value. This is to avoid overriding any manual changes.
+- Ohme chargers are not currently supported, since the smart charge schedule is not accurately represented
+  in the Octopus API.
