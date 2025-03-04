@@ -24,8 +24,9 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 
 Netzero will periodically check for scheduled charging slots. Whenever a slot is scheduled outside
 of the off-peak window (23:30 - 5:30), Powerwall will be configured with a 100% backup reserve. This
-will result in charging the Powerwall at a rate of approximately 1.8 kW per unit. Netzero will store
-the previously configured backup reserve, and restore the backup reserve once the scheduled slot is complete.
+will result in charging the Powerwall at a rate of approximately 1.8 kW per unit (this is controlled
+by Tesla and cannot be changed). Netzero will store the previously configured backup reserve, and
+restore the backup reserve once the scheduled slot is complete.
 
 ## Notes
 
