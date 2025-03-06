@@ -10,4 +10,5 @@
 - [Powerwall Capacity Estimate](https://www.netzero.energy/docs/capacity_estimate)
 - [Powerwall 2 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall2)
 - [Powerwall 3 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall3)
+- [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnostics/solar_production)
 - [Netzero API](https://www.netzero.energy/docs/api)

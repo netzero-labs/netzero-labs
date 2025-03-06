@@ -35,6 +35,8 @@ If you have a Powerwall+, you will also get string-level data: current, voltage,
 
 Note: due to a Tesla limitation, only data for the first Powerwall+ inverter is available.
 
+See [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnostics/solar_production) for help with interpreting string-level data.
+
 ## Troubleshooting
 
 Accessing devices directly through your home network is not common and can run into issues. Additionally, Gateway firmware updates sometimes cause access issues.
