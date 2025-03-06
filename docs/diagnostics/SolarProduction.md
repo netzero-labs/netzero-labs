@@ -50,11 +50,11 @@ of solar radiation); this value will depend on the position of the sun and will 
 in the summer.
 
 2. Look up the specifications for your solar panels, specifically the **Maximum Power Voltage** (`Vmp at NMOT`).
-For example, [Tesla's 400H](https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/Tesla_T400H.pdf) panels have a `Vmp` of `35.25V`.
+For example, [Tesla's T400H](https://es-media-prod.s3.amazonaws.com/media/components/panels/spec-sheets/Tesla_T400H.pdf) panels have a `Vmp` of `35.25V`.
 
 3. Estimate the Number of Panels per String:
    - Divide the string voltage by the `Vmp` of your panel type.
-   - Example: A string voltage of `220V` would suggest approximately 6 Tesla 400H panels.
+   - Example: A string voltage of `220V` would suggest approximately 6 Tesla T400H panels.
 
 4. Verify Total System Size:
    - Sum up the panel counts across all strings.
