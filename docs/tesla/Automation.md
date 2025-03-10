@@ -117,7 +117,3 @@ When Powerwall is discharged down to backup reserve: Send notification.
 
    Check the "Past Runs" Automation tab for any failures. In rare cases, a command that Netzero successfully sends to Tesla might get lost on the way from Tesla to your Powerwall (e.g. if the gateway is
    in a bad state or updating firmware at the time). If this happens repeatedly, try resetting your gateway and contact us if the issue persists.
-
-3. **Can I combine more complicated rules, e.g. time AND Powerwall state of charge?**
-
-   Not currently, although that's on the roadmap.
