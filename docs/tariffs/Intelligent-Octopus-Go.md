@@ -34,6 +34,9 @@ restore the backup reserve once the scheduled slot is complete.
   (e.g. "When vehicle charging starts: Set backup reserve to 100%"), pause or remove those automations
   so they don't interfere with this integration. The integration based on Octopus API Keys will be
   more reliable.
+- If a scheduled charging slots ends during the off-peak window (23:30 - 5:30), the Powerwall backup
+  reserve will remain at 100% (since the lower prices persist throughout this period). The backup
+  reserve will reset at 5:30, assuming there are no additional charging slots during that time.
 - If the 100% backup reserve is overridden with a different value while the EV is charging
   (either manually or with another automation), Netzero will **not** restore the backup reserve to
   the previously configured value. This is to avoid overriding any manual changes.
