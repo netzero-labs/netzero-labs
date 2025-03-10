@@ -23,9 +23,8 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 ## How it works
 
 Netzero will periodically check for scheduled charging slots. Whenever a slot is scheduled outside
-of the off-peak window (23:30 - 5:30), Powerwall will be configured with a 100% backup reserve. This
-will result in charging the Powerwall at a rate of approximately 1.8 kW per unit (this is controlled
-by Tesla and cannot be changed). Netzero will store the previously configured backup reserve, and
+of the off-peak window (23:30 - 5:30), Powerwall will be configured with a 100% backup reserve, causing
+it to charge. Netzero will store the previously configured backup reserve, and
 restore the backup reserve once the scheduled slot is complete.
 
 ## Notes
@@ -42,3 +41,6 @@ restore the backup reserve once the scheduled slot is complete.
   the previously configured value. This is to avoid overriding any manual changes.
 - Ohme chargers are not currently supported, since the smart charge schedule is not accurately represented
   in the Octopus API.
+- The charging rate of the Powerwall may vary: in Time-Based Control it will commonly be around
+  5kW per Powerwall, and in Self-Powered mode it will be around 1.8kW per Powerwall. Utility limits
+  will also affect the charge rate.
