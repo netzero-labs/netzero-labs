@@ -1,6 +1,5 @@
 # Netzero Documentation
 
-- [About Netzero](https://www.netzero.energy)
 - [Powerwall Automation](https://www.netzero.energy/docs/automation)
 - [EV Charger Settings](https://www.netzero.energy/docs/ev_charger_settings)
 - [EV Charging Automation](https://www.netzero.energy/docs/ev_charger_start_stop)
@@ -12,3 +11,8 @@
 - [Powerwall 3 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall3)
 - [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnostics/solar_production)
 - [Netzero API](https://www.netzero.energy/docs/api)
+
+---
+
+- [About Netzero](https://www.netzero.energy)
+- [Powerwall Firmware Versions](https://www.netzero.energy/firmware_versions)
