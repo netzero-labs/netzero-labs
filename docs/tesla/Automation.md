@@ -35,7 +35,9 @@ By setting the Powerwall backup reserve to its current state of charge, we preve
 
 ### Charging the Powerwall while EV charging (Intelligent Octopus Go)
 
-Octopus Energy consumers on the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) tariff plan get special EV charging slots with lower rates, not otherwise reflected in the daily rates. It may make sense to charge the Powerwall in addition to the EV, to benefit from the lower rates.
+NOTE: Netzero now has a direct [Intelligent Octopus Go integration](https://www.netzero.energy/docs/intelligent_octopus_go). This section is only useful if you have an Ohme EV charger, where that integration cannot be used.
+
+Octopus Energy consumers on the Intelligent Octopus Go tariff plan get special EV charging slots with lower rates, not otherwise reflected in the daily rates. It may make sense to charge the Powerwall in addition to the EV, to benefit from the lower rates.
 
 Example with Tesla Wall Connector, Tesla vehicle, or OCCP-compatible EV charger:
 ```
