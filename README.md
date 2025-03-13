@@ -15,4 +15,5 @@
 ---
 
 - [About Netzero](https://www.netzero.energy)
+- [Analysis of Powerwall Battery Retention](https://www.netzero.energy/content/2025-02/powerwall-analysis)
 - [Powerwall Firmware Versions](https://www.netzero.energy/firmware_versions)
