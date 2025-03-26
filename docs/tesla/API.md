@@ -59,8 +59,6 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzero.energy/api/v1/
 
   "live_status": {
     "solar_power": 4140,
-    "energy_left": 19538.05263157895,
-    "total_pack_energy": 28097,
     "battery_power": -2520,
     "load_power": 1620,
     "grid_power": 0,
