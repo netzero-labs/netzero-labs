@@ -23,6 +23,9 @@ Once you have the IP address and password, enter them in Netzero (`Monitoring > 
 
 Note: on iOS, Netzero will ask for permission to connect to the Local Network. The permission needs to be granted for the connection to succeed. If you ever rejected the permission, you can re-enable it from your device's Settings menu: **Settings > Apps > Netzero > Local Network**.
 
+Optionally, you may also scan the QR code behind the Gateway door. This will automatically retrieve the correct IP address and password, and can additionally get string diagnostics for all Powerwall+ inverters. However, it requires connecting to the built-in WiFi network,
+which requires standing next to the gateway and is less reliable.
+
 ## Diagnostic Data
 
 ### Powerwall Capacity
