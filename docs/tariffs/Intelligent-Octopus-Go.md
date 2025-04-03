@@ -14,7 +14,7 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 
 ## Setup
 
-- Make sure you are on an Intelligent Octopus Go tariff, and have a compatible EV or charger linked with the account. Note that Ohme is not currently supported (see note below).
+- Make sure you are on an Intelligent Octopus Go tariff, and have a compatible EV or charger linked with the account. Note that **Ohme chargers** are not currently supported (see note below).
 - In Netzero, go to **Settings > Utility Rate Plan**.
 - Enter your Octopus API Key. You can copy the API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access). The key will start with **sk_live**.
 - Enter your Octopus Energy Account Number. This will be shown on your bills, emails, and Octopus app. It will look like: **A-12A34A99**.
@@ -39,8 +39,10 @@ restore the backup reserve once the scheduled slot is complete.
 - If the 100% backup reserve is overridden with a different value while the EV is charging
   (either manually or with another automation), Netzero will **not** restore the backup reserve to
   the previously configured value. This is to avoid overriding any manual changes.
-- Ohme chargers are not currently supported, since the smart charge schedule is not accurately represented
-  in the Octopus API.
+- **Ohme chargers** are not currently supported, since the smart charging schedule is not available in the
+  Octopus API. This is unfortunately out of our control and will need to be resolved by Octopus
+  Energy or Ohme. Consider using
+  [home usage automations](https://docs.netzero.energy/docs/tesla/Automation#charging-the-powerwall-while-ev-charging-intelligent-octopus-go) instead.
 - The charging rate of the Powerwall may vary: in Time-Based Control it will commonly be around
   5kW per Powerwall, and in Self-Powered mode it will be around 1.8kW per Powerwall. Utility limits
   will also affect the charge rate.
