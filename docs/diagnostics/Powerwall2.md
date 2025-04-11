@@ -82,8 +82,9 @@ Starting with firmware version 24.36.2, Tesla requires stronger passwords for Ga
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
 5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
-6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be toggled (so try that if the first approach doesn't work).
+6. Turn off the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be turned off (so try that if the first approach doesn't work).
 7. Submit the new password.
+8. Turn on the switch on the side of the Powerwall (for all the Powerwalls that were turned off).
 
 #### Gateway 2 Password Reset
 
