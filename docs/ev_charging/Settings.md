@@ -109,3 +109,6 @@ Here are example configuration screens for **Wallbox** and **myenergi zappi** (r
 - If your EV charger only has a provider address field and no Change Point ID field (e.g. Fronius Wattpilot),
   append the ID to the end of the provider address, for example:
   `wss://ocpp.netzero.energy/ABCD-1234` (replace with the "Charge point ID" shown in Netzero).
+
+- Some EV chargers (e.g. Project EV, Autel) might not support the secure `wss:` connection. If your EV charger
+  is not connecting, try the alternate provider: `ws://ocpp.netzero.energy/` (note the `ws:` instead of `wss:`).
