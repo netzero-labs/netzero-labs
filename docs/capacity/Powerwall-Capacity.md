@@ -6,7 +6,7 @@ layout: with_footer
 
 ## Introduction
 
-[Netzero](https://www.netzero.energy) tracks the capacity of your Powerwall batteries and their degradation over time. By connecting directly to your Tesla Gateway or Powerwall+ using the Netzero app, you can obtain diagnostic information, including battery capacity. However, connecting to the Gateway requires you to be on your home network and have access to the Gateway password. Additionally, Tesla has removed Gateway access for Powerwall 3. To address these limitations, Netzero also calculates estimated battery capacity and degradation, providing an alternative way to access this data.
+[Netzero](https://www.netzero.energy) tracks the capacity of your Powerwall batteries and their degradation over time. By connecting directly to your Tesla Gateway or Powerwall 3 using the Netzero app, you can obtain diagnostic information, including battery capacity. However, connecting to the Gateway requires you to be on your home network and have access to the Gateway password ([see details](https://docs.netzero.energy/docs/diagnostics/Powerwall2)). Additionally, Tesla made diagnostics access harder for Powerwall 3 ([see details](https://docs.netzero.energy/docs/diagnostics/Powerwall3)). To address these limitations, Netzero also calculates estimated battery capacity and degradation, providing an alternative way to access this data.
 
 <img src="estimated-capacity.png" width="300" alt="Estimated Powerwall Capacity" />
 
