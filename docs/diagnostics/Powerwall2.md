@@ -8,6 +8,8 @@ layout: with_footer
 
 [Netzero](https://www.netzero.energy) provides access to diagnostic data for your Powerwall 2 system. This data is not available in the Tesla app. The diagnostic data includes battery capacity and degradation, and solar string production (solar production broken down by strings of solar panels).
 
+**Note**: Tesla unfortunately removed the ability to access diagnostics for [Tesla Gateway 1](https://service.tesla.com/docs/Public/Energy/Powerwall/Powerwall-2-Owners-Manual-NA-EN/GUID-9ACA2015-05B4-41A0-B8BC-1D9AD658B307.html) owners. This change was made in Powerwall firmware versions 25.10.1 and above.
+
 ## Credentials
 
 Powerwall 2 diagnostics access requires the IP address and password for the Tesla Gateway or Powerwall+.
