@@ -2,7 +2,7 @@
 layout: with_footer
 ---
 
-# Netzero - Charge on Solar with Powerwall Priority
+# Netzero - Tesla Charge on Solar with Powerwall Priority
 
 ## Introduction
 

@@ -2,7 +2,7 @@
 layout: with_footer
 ---
 
-# Netzero - Charge on Solar
+# Netzero - Charge on Solar with OCPP EV Charger
 
 ## Introduction
 
