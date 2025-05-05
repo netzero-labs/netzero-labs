@@ -29,6 +29,8 @@ Charge on Solar afterward.
 3. Enable the **Prioritize Powerwall charging** option and set the minimum Powerwall state of
    charge that must be reached before vehicle charging begins.
 
+4. Charge on Solar in the Tesla app must be enabled for this automation to run.
+
 ## Notes
 
 - If the Powerwall is already at or above the configured state of charge when Charge on Solar

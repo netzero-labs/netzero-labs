@@ -6,8 +6,49 @@ layout: with_footer
 
 ## Introduction
 
-[Netzero](https://www.netzero.energy) automations enable configuration changes for Powerwall systems based
-on time schedule (time of day, day of week) or events (e.g. Powerwall state of charge, EV charging status, electricity price, home usage, etc.).
+[Netzero](https://www.netzero.energy) automations enable Powerwall configuration changes and EV
+charging actions based on a time schedule or event triggers (e.g. Powerwall state of charge, EV
+charging status, energy flow, electricity price, etc.).
+
+## Automation Triggers
+
+Automations can trigger based on time or events. The following triggers are available:
+
+1. Time of day (optionally restricted to specific days of the week).
+2. Powerwall state of charge: charged up to, or discharged down to a user-defined threshold.
+3. Vehicle charging starts or stops.
+4. Energy flow-based automations: when home usage, solar generation, grid import, or grid export rise above or drop below a threshold.
+5. Electricity price-based automations: when import price is above or below a threshold.
+
+Event triggers can optionally include a time restriction, to only run during specific time windows.
+
+Notes:
+- Event automations use so-called "edge triggers" (also known as "threshold crossing triggers"). They run when
+  something changes -- not just when a condition is true, but when it becomes true. For example,
+  "When Powerwall is charged up to 70%" will only trigger at the moment the Powerwall exceeds
+  that state of charge. This has two important implications:
+     - If the Powerwall is always above that threshold (e.g. due to a higher backup reserve setting),
+       the automation will never run.
+     - If the event has a time restriction (e.g. between 1-2pm), and Powerwall is charged up to 70%
+       outside of that time frame, the automation will not run.
+
+- The vehicle charging automations are only available if you have a [supported EV charger or EV](https://docs.netzero.energy/docs/ev_charging/Settings).
+
+## Automation Actions
+
+The following actions are available:
+
+- Set Powerwall backup reserve to a user-defined state of charge.
+- Set Powerwall backup reserve to the current state of charge. This will preserve the Powerwall's charge
+  (prevent it from discharging), for example when charging an EV.
+- Set operational mode to **Self-Powered** or **Time-Based Control**.
+- Set energy exports to **Solar only**, **Everything (solar and battery)** or **No exports**.
+  Note: the **No exports** mode requires inverter support, and may not be available or functional
+  with non-Tesla inverters.
+- Set grid charging to On or Off.
+- Start or stop vehicle charging (requires a Tesla vehicle or OCPP-compatible EV charger).
+- Send a notification only, with no other actions. Note: this action is only shown if no other actions
+  are selected, since all actions notify by default.
 
 
 ## Common Automations
