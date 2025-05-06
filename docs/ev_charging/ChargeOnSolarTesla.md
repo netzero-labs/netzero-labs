@@ -33,12 +33,9 @@ Charge on Solar afterward.
 
 ## Notes
 
-- If the Powerwall is already at or above the configured state of charge when Charge on Solar
-  activates, the automation will not run.
-
 - If the Powerwall never reaches the configured state of charge, Charge on Solar will not be
   resumed. If your vehicle remains plugged in, it may resume charging the following day after the
   Powerwall is sufficiently charged.
 
 - If the vehicle is below the “any source” charging threshold and not charging from excess solar,
-  this automation will have no effect.
+  this automation will have no effect -- charging will continue uninterrupted.
