@@ -28,6 +28,8 @@ Note: on iOS, Netzero will ask for permission to connect to the Local Network. T
 Optionally, you may also scan the QR code behind the Gateway door. This will automatically retrieve the correct IP address and password, and can additionally get string diagnostics for all Powerwall+ inverters. However, it requires connecting to the built-in WiFi network,
 which requires standing next to the gateway and is less reliable.
 
+Note: Diagnostics access is only available from a mobile device (iPhone or Android). Due to web browser security restrictions, it is not available from the web app.
+
 ## Diagnostic Data
 
 ### Powerwall Capacity

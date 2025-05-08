@@ -18,6 +18,10 @@ The Wi-Fi name will start with TeslaPW and can also be retrieved by standing nex
 
 Once you have the TeslaPW Wi-Fi network name and password, enter them in Netzero (Monitoring > Connect). Alternatively, you can scan the QR code if you have access to it. Netzero will connect to the built-in Wi-Fi network, collect diagnostic data, and reconnect to your home Wi-Fi network. The diagnostic data will be displayed in the Powerwall and Strings tabs.
 
+Note: on iOS, Netzero will ask for permission to connect to the Local Network. The permission needs to be granted for the connection to succeed. If you ever rejected the permission, you can re-enable it from your device's Settings menu: **Settings > Apps > Netzero > Local Network**.
+
+Note: Diagnostics access is only available from a mobile device (iPhone or Android). Due to web browser security restrictions, it is not available from the web app.
+
 ## Diagnostic Data
 
 ### Powerwall Capacity
