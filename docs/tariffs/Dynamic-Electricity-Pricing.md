@@ -29,10 +29,6 @@ Netzero currently supports the following plans:
 If you are in a region with a supported provider, you will see a "Utility Rate Plan" option in the
 main menu.
 
-We will add support for additional plans and utilities in the future, [let
-us know](mailto:feedback@netzero.energy) if you're currently on a dynamic plan and
-would like to participate.
-
 ## Agile Octopus Configuration
 
 If you're currently on an Agile Octopus plan, configure your region, import and export

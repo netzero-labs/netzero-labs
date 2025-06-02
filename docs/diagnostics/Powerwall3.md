@@ -37,3 +37,5 @@ See [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnos
 #### Notes
 
 - The UK and Australian versions of the Powerwall 3 have 3 ports for connecting solar strings (also known as Maximum Power Point Tracking or MPPT ports), while the US version has 6 ports. Despite the 3 MPPT ports, you will see values for 6 strings in string diagnostics. We believe this is because the 3-MPPT port versions actually have 6 ports under the hood, where each of the 3 ports is paralleled into two ports. This implementation would also explain why the 3-MPPT version has a higher maximum current per MPPT (26A vs 13A for the 6-MPPT US version). The Tesla One app shows incorrect data in this case, while the power values in Netzero add up to the correct total solar production.
+
+  To get the output of each of the 3 strings, add up the power values from the corresponding port pairs: 1+2, 3+4, and 5+6.
