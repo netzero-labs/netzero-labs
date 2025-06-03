@@ -13,6 +13,7 @@ such as automations, dynamic tariffs, utility integrations, and diagnostics. USD
 Read on to learn why we are introducing subscriptions, how Netzero can save you more than the cost
 of a subscription, and the future improvements this change will support.
 
+
 ## Netzero's Journey So Far
 
 Netzero has been free to use for its first two years. It began as a better Powerwall dashboard with
@@ -25,9 +26,9 @@ solar estimates and diagnostic insights. Since then, it has grown to include:
 - Health monitoring
 - Improved solar forecasting
 
-The app has over 100,000 downloads and has executed more than 3 million automations. This growth has
-come with increased infrastructure and development costs. All automations run in the cloud, and
-Tesla now charges for vehicle API access, further increasing operating expenses.
+This growth has come with increased infrastructure and development costs. All automations run in
+the cloud, and Tesla now charges for vehicle API access, further increasing operating expenses.
+
 
 ## How Netzero Helps You Save
 
