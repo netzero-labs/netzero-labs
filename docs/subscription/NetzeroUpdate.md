@@ -1,5 +1,5 @@
 ---
-layout: with_footer
+layout: default
 ---
 
 # Update: Funding Netzero with Subscriptions
@@ -147,3 +147,8 @@ pause, but they won’t be deleted.
 
 If you decide to subscribe later, everything will pick up right where you left off -- your
 automations will resume automatically and your settings will remain intact.
+
+
+## Questions or Issues
+
+If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
