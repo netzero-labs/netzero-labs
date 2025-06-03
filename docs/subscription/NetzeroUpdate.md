@@ -80,8 +80,9 @@ is the first of many planned reports.
 
 Starting **August 1, 2025**, subscriptions will be required for advanced features. You will receive
 an email reminder. To avoid interruption of automations, subscribe before that date. You can subscribe
-now to support Netzero early (you may need to update the app manually from the app store,
-subscriptions are available in version 2.1.0).
+now to support Netzero early. You may need to update the app manually from the app store,
+subscriptions are available in versions 2.1.0 and above. To subscribe, go to
+**Settings > Subscription**.
 
 New users get a **30-day free trial** and will need to subscribe afterward to maintain access to
 advanced features.
@@ -119,7 +120,8 @@ Features will remain active until the end of the billing period.
 **Is there a free version of the app?**
 
 Yes. Dashboards, historical charts, solar forecasting, and data export remain free. Only advanced
-features (automations, diagnostics, utility integrations) require a subscription.
+features (automations, dynamic tariffs, utility integrations, and diagnostics) require a
+subscription.
 
 ---
 
@@ -142,8 +144,8 @@ To reduce payment frequency, consider the annual plan (16% cheaper).
 **What if I choose not to subscribe?**
 
 You’ll still have access to the core features of Netzero, including dashboards, solar forecasts,
-and data exports. Advanced features like automations, utility integrations, and diagnostics will
-pause, but they won’t be deleted.
+and data exports. Advanced features like automations, dynamic tariffs, utility integrations, and
+diagnostics will pause, but they won’t be deleted.
 
 If you decide to subscribe later, everything will pick up right where you left off -- your
 automations will resume automatically and your settings will remain intact.
