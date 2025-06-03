@@ -142,6 +142,14 @@ To reduce payment frequency, consider the annual plan (16% cheaper).
 
 ---
 
+**Why would I pay for Netzero when I can use Home Assistant for free?**
+
+We’re big supporters of open-source development, and have contributed to the community by helping
+unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
+free -- it requires a computer to run on, and time to set up and configure.
+
+---
+
 **What if I choose not to subscribe?**
 
 You’ll still have access to the core features of Netzero, including dashboards, solar forecasts,
