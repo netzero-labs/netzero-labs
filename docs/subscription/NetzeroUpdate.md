@@ -146,7 +146,8 @@ To reduce payment frequency, consider the annual plan (16% cheaper).
 
 We’re big supporters of open-source development, and have contributed to the community by helping
 unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
-free -- it requires a computer to run on, and time to set up and configure.
+free -- it requires a computer to run on, time to set up and configure, and some services for
+accessing Tesla Fleet API are paid as well.
 
 ---
 
