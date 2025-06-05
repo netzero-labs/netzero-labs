@@ -135,8 +135,8 @@ users will receive an email and in-app notification well before August 1, 2025.
 
 **Why not offer a one-time purchase instead of a subscription?**
 
-Netzero incurs ongoing costs: cloud infrastructure, APIs, and development. A subscription model
-better reflects these continuing expenses.
+Netzero incurs ongoing costs: cloud infrastructure costs, Tesla API charges, and development and
+support cost. A subscription model better reflects these continuing expenses.
 
 To reduce payment frequency, consider the annual plan (16% cheaper).
 
@@ -146,8 +146,8 @@ To reduce payment frequency, consider the annual plan (16% cheaper).
 
 We’re big supporters of open-source development, and have contributed to the community by helping
 unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
-free -- it requires a computer to run on, time to set up and configure, and some services for
-accessing Tesla Fleet API are paid as well.
+free -- it requires time to set up and configure, some services for accessing the Tesla Fleet API
+are paid as well, and it runs on a computer that needs to be powered 24/7 for automations to run.
 
 ---
 
