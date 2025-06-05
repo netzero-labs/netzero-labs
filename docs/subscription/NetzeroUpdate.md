@@ -16,7 +16,7 @@ of a subscription, and the future improvements this change will support.
 
 ## Netzero's Journey So Far
 
-Netzero has been free to use for its first two years. It began as a better Powerwall dashboard with
+[Netzero](https://www.netzero.energy) has been free to use for its first two years. It began as a better Powerwall dashboard with
 solar estimates and diagnostic insights. Since then, it has grown to include:
 
 - Automations
