@@ -6,9 +6,10 @@ layout: default
 
 ## Quick Summary
 
-Starting **August 1, 2025**, a subscription will be required to access advanced Netzero features
-such as automations, dynamic tariffs, utility integrations, and diagnostics. USD pricing is
-**$6.99/month** or **$69.99/year** (a 16% discount). Local pricing will vary by currency and VAT.
+Starting **August 1, 2025**, a subscription will be required to access advanced
+[Netzero](https://www.netzero.energy) features such as automations, dynamic tariffs, utility
+integrations, and diagnostics. USD pricing is **$6.99/month** or **$69.99/year** (a 16% discount).
+Local pricing will vary by currency and VAT.
 
 Read on to learn why we are introducing subscriptions, how Netzero can save you more than the cost
 of a subscription, and the future improvements this change will support.
@@ -16,7 +17,7 @@ of a subscription, and the future improvements this change will support.
 
 ## Netzero's Journey So Far
 
-[Netzero](https://www.netzero.energy) has been free to use for its first two years. It began as a
+Netzero has been free to use for its first two years. It began as a
 better Powerwall dashboard with solar estimates and diagnostic insights. Since then, it has grown
 to include:
 
@@ -33,7 +34,8 @@ the cloud, and Tesla now charges for vehicle API access, further increasing oper
 
 ## How Netzero Helps You Save
 
-Netzero was designed not just to complement the Tesla app, but to solve problems Tesla left unaddressed:
+Netzero was designed not just to complement the Tesla app, but to solve problems Tesla left
+unaddressed:
 
 - **Greater control over Powerwall behavior:**
   Tesla's Self-Powered and Time-Based Control modes offer limited flexibility. Netzero lets you
