@@ -16,8 +16,9 @@ of a subscription, and the future improvements this change will support.
 
 ## Netzero's Journey So Far
 
-[Netzero](https://www.netzero.energy) has been free to use for its first two years. It began as a better Powerwall dashboard with
-solar estimates and diagnostic insights. Since then, it has grown to include:
+[Netzero](https://www.netzero.energy) has been free to use for its first two years. It began as a
+better Powerwall dashboard with solar estimates and diagnostic insights. Since then, it has grown
+to include:
 
 - Automations
 - Dynamic tariffs and utility integrations
@@ -80,10 +81,15 @@ is the first of many planned reports.
 **When do I need to subscribe?**
 
 Starting **August 1, 2025**, subscriptions will be required for advanced features. You will receive
-an email reminder. To avoid interruption of automations, subscribe before that date. You can subscribe
-now to support Netzero early. You may need to update the app manually from the app store,
-subscriptions are available in versions 2.1.0 and above. To subscribe, go to
-**Settings > Subscription**.
+an email reminder. To avoid interruption of automations, subscribe before that date. You can
+subscribe now to support Netzero early.
+
+Note: if you subscribe early, your subscription will be extended (renewal date delayed) to account
+for the initial trial period until August 1, 2025; this extension of up to two months will
+happen within 48 hours of subscribing, and you will get an email confirmation.
+
+You may need to update the app manually from the app store to subscribe, subscriptions are available
+in versions 2.1.0 and above. To subscribe, go to **Settings > Subscription**.
 
 New users get a **30-day free trial** and will need to subscribe afterward to maintain access to
 advanced features.
@@ -92,8 +98,8 @@ advanced features.
 
 **What if I use multiple mobile devices or have several Tesla systems?**
 
-Subscriptions are tied to Tesla accounts. One subscription covers all your devices (mobile and web)
-linked to the same Tesla account.
+Subscriptions are tied to Tesla accounts. One subscription covers all your devices (Android/iOS/web)
+and up to three energy systems linked to the same Tesla account.
 
 Note: subscriptions can only be activated through the mobile app (iOS or Android). If you primarily
 use the web app, you will need to log in on a mobile device once to activate the subscription.
