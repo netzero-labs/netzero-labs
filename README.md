@@ -1,5 +1,7 @@
 # Netzero Documentation
 
+**Important Update: [Funding Netzero with Subscriptions](https://www.netzero.energy/docs/subscription)**
+
 ### Automation
 
 - [Powerwall Automation](https://www.netzero.energy/docs/automation)
