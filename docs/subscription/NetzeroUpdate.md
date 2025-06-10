@@ -141,12 +141,20 @@ users will receive an email and in-app notification well before August 1, 2025.
 
 ---
 
+**Why is the price in my currency higher than the USD price after exchange rate?**
+
+The pricing is suggested by the App Store and accounts for the exchange rate and VAT. In most
+cases, the difference is due to VAT, e.g. in the UK the prices include a 20% VAT.
+
+---
+
 **Why not offer a one-time purchase instead of a subscription?**
 
 Netzero incurs ongoing costs: cloud infrastructure costs, Tesla API charges, and development and
-support cost. A subscription model better reflects these continuing expenses.
+support cost. For now, a subscription model better reflects these continuing expenses.
 
-To reduce payment frequency, consider the annual plan (16% cheaper).
+To reduce payment frequency, consider the annual plan (16% cheaper). We may consider one-time
+purchases in the future when we get more data on subscription use.
 
 ---
 
