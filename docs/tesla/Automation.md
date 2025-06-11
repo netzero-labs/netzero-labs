@@ -59,7 +59,7 @@ Here are some commonly configured automations, and the goals they accomplish.
 
 When in Self-Powered mode, charging an EV might result in depleting the Powerwall. Usually that's not what users want, because the EV battery is much larger than the Powerwall. Netzero automations can prevent that, using integrations with the Tesla Wall Connector, Tesla vehicles, or OCPP-compatible EV chargers ([learn more](https://www.netzero.energy/docs/ev_charger_settings)). For other EV chargers, there are also automations based on home usage (home usage is usually measurably higher when charging an EV).
 
-Example with Tesla Wall Connector, Tesla vehicle, or OCCP-compatible EV charger:
+Example with Tesla Wall Connector, Tesla vehicle, or OCPP-compatible EV charger:
 ```
 When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).
 When vehicle charging stops: Set backup reserve to: 20%.
@@ -80,7 +80,7 @@ NOTE: Netzero now has a direct [Intelligent Octopus Go integration](https://www.
 
 Octopus Energy consumers on the Intelligent Octopus Go tariff plan get special EV charging slots with lower rates, not otherwise reflected in the daily rates. It may make sense to charge the Powerwall in addition to the EV, to benefit from the lower rates.
 
-Example with Tesla Wall Connector, Tesla vehicle, or OCCP-compatible EV charger:
+Example with Tesla Wall Connector, Tesla vehicle, or OCPP-compatible EV charger:
 ```
 When vehicle charging starts: Set backup reserve to 100%.
 When vehicle charging stops: Set backup reserve to: 20%.
@@ -122,7 +122,7 @@ Note: Replace 20% with your desired backup reserve. Because of Tesla limitations
 
 ### Taking advantage of low electricity rates
 
-User on a [dynamic utility rate plan](https://www.netzero.energy/docs/tariffs) may want to act on periods of low eletricity prices, e.g. charge an EV or charge the Powerwall when electricity price drops below a threshold.
+Users on a [dynamic utility rate plan](https://www.netzero.energy/docs/tariffs) may want to act on periods of low electricity prices, e.g. charge an EV or charge the Powerwall when electricity price drops below a threshold.
 
 Examples:
 
