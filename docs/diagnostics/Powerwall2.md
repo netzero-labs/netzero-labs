@@ -16,7 +16,7 @@ Powerwall 2 diagnostics access requires the IP address and password for the Tesl
 
 The IP address is usually pre-populated in Netzero, but if not, it should be listed with your other home network devices at your Wi-Fi access point or home router.
 
-The default password consists of the **last five letters** of the Gateway password, which is printed on a label behind the Gateway door or Powerwall+ cover. For Tesla Gateway 2 systems, the label will say "Password" and the full password will consist of ten letters, of which you will only use the last five (note: this label is different from the label that contains the part number and serial number). For Tesla Gateway 1 systems, the password will be the last five letters or numbers of the serial number (note: see the Gateway 1 Password Reset Requirement section below for recent changes). For details, see Tesla's documentation on [Connecting to Tesla Gateway and Powerwall+
+The default password consists of the **last five characters** (letters or numbers) of the Gateway password, which is printed on a label behind the Gateway door or Powerwall+ cover. For Tesla Gateway 2 systems, the label will say "Password" and the full password will consist of ten characters, of which you will only use the last five (note: this label is different from the label that contains the part number and serial number). For Tesla Gateway 1 systems, the password will be the last five characters of the serial number (note: see the Gateway 1 Password Reset Requirement section below for recent changes). For details, see Tesla's documentation on [Connecting to Tesla Gateway and Powerwall+
 ](https://www.tesla.com/support/energy/powerwall/own/connecting-network).
 
 ## Access
@@ -85,7 +85,7 @@ Starting with firmware version 24.36.2, Tesla requires stronger passwords for Ga
 2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to `https://192.168.91.1`
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
-5. Select Forgot Password. For the current password, type the **last 5 letters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
+5. Select Forgot Password. For the current password, type the **last 5 characters of the serial number**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
 6. Turn off the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be turned off (so try that if the first approach doesn't work).
 7. Submit the new password.
 8. Turn on the switch on the side of the Powerwall (for all the Powerwalls that were turned off).
@@ -98,6 +98,6 @@ If you keep getting authentication failures despite using the correct password, 
 2. Once connected to the TEG Wi-Fi network, open a web browser and navigate to `https://192.168.91.1`
 3. Dismiss the security warnings, tap Continue at the bottom, scroll down and tap Upgrade Later at the bottom.
 4. You will see a login screen. Tap Change or Forgot Password.
-5. Select Forgot Password. For the current password, type the **last 5 letters of the password on the gateway label**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
+5. Select Forgot Password. For the current password, type the **last 5 characters of the password on the gateway label**. For the new password, choose a stronger password consisting of at least 8 characters, with a number and symbol. Don't submit the new password yet.
 6. Toggle the switch on the side of your Powerwall. Tesla's documentation claims only one Powerwall needs to be toggled, however some users noted that **all** Powerwalls had to be toggled (so try that if the first approach doesn't work).
 7. Submit the new password.
