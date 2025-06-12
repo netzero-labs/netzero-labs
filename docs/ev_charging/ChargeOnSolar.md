@@ -9,7 +9,7 @@ layout: with_footer
 [Netzero](https://www.netzero.energy) can control your OCPP-compatible EV charger to charge your
 vehicle on excess solar energy. This is similar to Tesla's [Charge on Solar](https://www.tesla.com/support/tesla-app/charge-on-solar)
 feature, but with support for any OCPP-compatible EV charger and any vehicle (Tesla's feature only works
-for Tesla vehicles).
+with Tesla vehicles).
 
 
 ## Configuration
@@ -34,9 +34,9 @@ for Tesla vehicles).
   avoid interfering with Time-Based Control mode, where Powerwall might prioritize exporting solar
   energy.
 
-- There needs to be at least 1200W of excess solar power available for charging to start. If there
-  isn't sufficient solar power available, charging will pause and resume once there is more power
-  available.
+- There needs to be at least 1440W (6A at 240V) of excess solar power available for charging to start.
+  If there isn't sufficient solar power available, charging will pause and resume once there is
+  more power available.
 
 - **Charge on solar** will only activate during daylight hours. If you plug in your vehicle outside
   of daylight hours, it will proceed to charge at your configured rate. If you prefer to
