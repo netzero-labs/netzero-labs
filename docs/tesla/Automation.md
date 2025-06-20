@@ -31,6 +31,7 @@ Notes:
        the automation will never run.
      - If the event has a time restriction (e.g. between 1-2pm), and Powerwall is charged up to 70%
        outside of that time frame, the automation will not run.
+  
   The advantage of edge triggers is that it is easy to understand exactly when an automation will run, and how many times it will run. It is also
   less likely for one automation to conflict with another (since there is no state associated with automations).
 
