@@ -143,8 +143,11 @@ users will receive an email and in-app notification well before August 1, 2025.
 
 **Why is the price in my currency higher than the USD price after exchange rate?**
 
-The pricing is suggested by the App Store and accounts for the exchange rate and VAT. In most
-cases, the difference is due to VAT, e.g. in the UK the prices include a 20% VAT.
+App Store prices are set using Apple's predefined pricing tiers, which are based on historical
+exchange rates and include local taxes such as VAT. These tiers are not updated in real time
+with currency fluctuations. For example, in the UK, a 20% VAT is included in the listed price.
+As a result, even if the USD and local prices seem unequal after conversion, the difference is
+typically due to VAT and Apple's use of fixed pricing tiers rather than current exchange rates.
 
 ---
 
@@ -160,7 +163,7 @@ purchases in the future when we get more data on subscription use.
 
 **Why would I pay for Netzero when I can use Home Assistant for free?**
 
-We’re big supporters of open-source development, and have contributed to the community by helping
+We're big supporters of open-source development, and have contributed to the community by helping
 unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
 free -- it requires time to set up and configure, some services for accessing the Tesla Fleet API
 are paid as well, and it runs on a computer that needs to be powered 24/7 for automations to run.
@@ -169,9 +172,9 @@ are paid as well, and it runs on a computer that needs to be powered 24/7 for au
 
 **What if I choose not to subscribe?**
 
-You’ll still have access to the core features of Netzero, including dashboards, solar forecasts,
+You'll still have access to the core features of Netzero, including dashboards, solar forecasts,
 and data exports. Advanced features like automations, dynamic tariffs, utility integrations, and
-diagnostics will pause, but they won’t be deleted.
+diagnostics will pause, but they won't be deleted.
 
 If you decide to subscribe later, everything will pick up right where you left off -- your
 automations will resume automatically and your settings will remain intact.
