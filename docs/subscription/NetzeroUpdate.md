@@ -83,7 +83,7 @@ is the first of many planned reports.
 **When do I need to subscribe?**
 
 Starting **August 1, 2025**, subscriptions will be required for advanced features. You will receive
-an email reminder. To avoid interruption of automations, subscribe before that date. You can
+an in-app reminder. To avoid interruption of automations, subscribe before that date. You can
 subscribe now to support Netzero early.
 
 Note: if you subscribe before July 1, 2025, your subscription will be extended (renewal date
@@ -131,13 +131,6 @@ Features will remain active until the end of the billing period.
 Yes. Dashboards, historical charts, solar forecasting, and data export remain free. Only advanced
 features (automations, dynamic tariffs, utility integrations, and diagnostics) require a
 subscription.
-
----
-
-**Why haven't I received any communication about this yet?**
-
-We are rolling out this announcement gradually to test messaging and address common questions. All
-users will receive an email and in-app notification well before August 1, 2025.
 
 ---
 
