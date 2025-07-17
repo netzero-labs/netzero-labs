@@ -159,7 +159,8 @@ purchases in the future when we get more data on subscription use.
 We're big supporters of open-source development, and have contributed to the community by helping
 unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
 free -- it requires time to set up and configure, some services for accessing the Tesla Fleet API
-are paid as well, and it runs on a computer that needs to be powered 24/7 for automations to run.
+are paid as well, it runs on a computer that needs to be powered 24/7 for automations to run, and
+cloud access to Home Assistant in an additional charge.
 
 ---
 
