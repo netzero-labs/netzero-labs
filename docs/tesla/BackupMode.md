@@ -6,8 +6,8 @@ layout: with_footer
 
 ## Backup Mode Operation
 
-[Netzero](https://www.netzero.energy) supports **Backup Mode**, an experimental Powerwall mode that
-charges the battery from the grid at a faster rate—around **3.3 kW per battery** (see below for
+[Netzero](https://www.netzero.energy) supports **Backup Mode**, an experimental Powerwall operational
+mode that charges the battery from the grid at a faster rate—around **3.3 kW per battery** (see below for
 details on charging rates).
 
 **Important notes:**
@@ -24,6 +24,9 @@ this mode, the Powerwall will not discharge and will reserve 100% of its capacit
 
 * **Backup Mode is intended for charging only.** If your goal is simply to reserve 100% of battery
 capacity for outages, set the backup reserve to 100% in another mode instead.
+
+* The mode can be selected as an automations action (under **Set operational mode**) or from the
+  **Automation > Configuration** screen (for testing).
 
 ## How to Use Backup Mode
 
