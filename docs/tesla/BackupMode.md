@@ -78,3 +78,6 @@ Charging rates scale with the number of Powerwalls (e.g. 6.6 kW for two batterie
 * Utility import limits may reduce the rate.
 * Powerwall 3 expansion packs charge slower than full Powerwall 3 systems. Refer to the
   [Powerwall 3 Datasheet](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf) for details.
+
+There are other ways of charging Powerwall from the grid, such as manual Storm Watch events or
+VPP events. Since those cannot be automated, they are not relevant here.
