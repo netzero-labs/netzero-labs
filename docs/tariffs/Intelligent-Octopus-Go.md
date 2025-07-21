@@ -19,6 +19,8 @@ electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
 - Enter your Octopus API Key. You can copy the API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access). The key will start with **sk_live**.
 - Enter your Octopus Energy Account Number. This will be shown on your bills, emails, and Octopus app. It will look like: **A-12A34A99**.
 - Switch on **Automate Intelligent Octopus Go**.
+- You can optionally enable the **Preserve charge instead of charging up** option. This will preserve Powerwall charge whenever a charging slot is
+  scheduled, but it will not charge it up.
 
 ## How it works
 
