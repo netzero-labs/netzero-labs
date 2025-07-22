@@ -38,7 +38,7 @@ on the `Settings > Vehicle Charging` screen.
   in the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
   combine the two systems into one.
 
-## Tesla Vehicle
+## Tesla Vehicles
 
 If you have a Tesla vehicle, you can configure access so Netzero can track its charging status and
 manage charging. Note: Netzero will only access charging information. It will not access location or
@@ -65,15 +65,19 @@ Fleet Telemetry.
 3. Once the key is set up, Fleet Telemetry will be automatically configured and the vehicle will
 start reporting its charging status.
 
+## Pre-2021 Model S/X Tesla Vehicles
 
-### Notes
+If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is supported if:
 
-- If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is not supported. Netzero will use a
-  different process for determining charging status and managing charging, so adding the Virtual
-  Key is not needed.
+- Your vehicle has an Intel Atom computer. Older models may require an
+  [Infotainment Upgrade](https://www.tesla.com/support/infotainment).
+- Your vehicle firmware is version 2025.20 or later.
+- **Allow Third-Party App Data Streaming** is enabled in the **Safety** screen of your vehicle.
 
+Once these conditions are met, a **Pair Vehicle** button will appear in **Settings > Vehicle Charging**.
+No Virtual Key is required; the button will directly enable Fleet Telemetry.
 
-## OCPP-compatible EV charger
+## OCPP-compatible EV Chargers
 
 Some EV chargers support OCPP (Open Charge Point Protocol), an application protocol for communication
 between EV chargers and central management systems (providers).  If your EV charger is compatible,
