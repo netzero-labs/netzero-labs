@@ -6,8 +6,9 @@ layout: default
 
 ## Backup Reserve Changes
 
-On July 19 2025, Tesla changed the Powerwall backup reserve settings. Values between 81% and 99% are
-no longer supported. Only reserves set at 80% or below, or exactly 100%, remain valid.
+On July 19, Tesla changed the [Powerwall backup reserve](https://www.tesla.com/support/energy/powerwall/mobile-app/backup-reserve)
+settings. Values between 81% and 99% are no longer supported. Only reserves set at 80% or below,
+or exactly 100%, remain valid.
 
 This change impacts both the Tesla and Netzero apps. Any configuration set between 81% and 99% will
 now automatically reset to 80%. This adjustment also affects certain Netzero automations.
@@ -33,10 +34,15 @@ Automations triggered at or below 80%, or at 100%, continue to function normally
 **Note:**
 
 * You may want to update your existing automations to reflect the new allowed backup reserve range.
+  Future Netzero updates will include adjustments to the backup reserve slider options; we may also
+  modify existing automations to make them compliant.
+
+* For "preserve Powerwall charge" automations, we're exploring alternative ways to make sure
+  Powerwall doesn't discharge down to 80%.
 
 * From July 19-22, automations set between 81-99% were marked as failed. Understanding this
-change, we no longer flag these automations as failed, although their behavior has changed. Future
-updates may include adjustments to Netzero slider options and existing automations for clarity.
+change, we no longer flag these automations as failed, although their behavior has changed.
+
 
 ## Questions or Issues
 
