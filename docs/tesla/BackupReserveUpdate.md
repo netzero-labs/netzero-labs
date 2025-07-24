@@ -15,7 +15,7 @@ now automatically reset to 80%. This adjustment also affects certain Netzero aut
 
 ## Tesla App Update
 
-Tesla's backend change took effect on July 19, but it became evident starting with app version
+Tesla's change took effect on July 19, but it became evident starting with Tesla app version
 4.47.0. As this update is rolling out gradually, you may need to manually update your Tesla app
 from your device’s app store.
 
