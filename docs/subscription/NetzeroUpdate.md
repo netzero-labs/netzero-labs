@@ -83,18 +83,15 @@ is the first of many planned reports.
 **When do I need to subscribe?**
 
 Starting **August 1, 2025**, subscriptions will be required for advanced features. You will receive
-an in-app reminder. To avoid interruption of automations, subscribe before that date. You can
-subscribe now to support Netzero early.
+an in-app reminder. To avoid interruption of automations, subscribe before that date. New users get
+a **30-day free trial** and will need to subscribe afterward to maintain access to advanced
+features.
 
-Note: if you subscribe before July 1, 2025, your subscription will be extended (renewal date
-delayed) to account for the initial trial period until August 1, 2025; this extension of up to two
-months will happen within 48 hours of subscribing, and you will get an email confirmation.
+Note: the subscription is activated the moment your purchase it, and will renew after a month (or a
+year later for annual subscriptions).
 
-You may need to update the app manually from the app store to subscribe, subscriptions are available
-in versions 2.1.0 and above. To subscribe, go to **Settings > Subscription**.
-
-New users get a **30-day free trial** and will need to subscribe afterward to maintain access to
-advanced features.
+Subscriptions are available in Netzero app version 2.1.0 and above. To subscribe, go to
+**Settings > Subscription**.
 
 ---
 

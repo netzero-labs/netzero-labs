@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Netzero - Tesla Backup Reserve Update
+# Tesla Powerwall Backup Reserve Update
 
 ## Backup Reserve Changes
 
