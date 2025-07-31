@@ -34,7 +34,7 @@ Automations triggered at or below 80%, or at 100%, continue to function normally
 **Note:**
 
 * You may want to update your existing automations to reflect the new allowed backup reserve range.
-  Future Netzero updates will include adjustments to the backup reserve slider options; we may also
+  Future Netzero updates will include adjustments to the backup reserve slider options; we will also
   modify existing automations to make them compliant.
 
 * For "preserve Powerwall charge" automations, we're exploring alternative ways to make sure
