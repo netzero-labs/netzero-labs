@@ -31,14 +31,7 @@ capacity for outages, set the backup reserve to 100% in another mode instead.
 ## How to Use Backup Mode
 
 Previously, charging the Powerwall from the grid involved setting the backup reserve to 100% and
-resetting it later using automations, for example:
-
-```
-Every day at 12:00 AM: Set backup reserve to 100%.
-Every day at 6:00 AM: Set backup reserve to 20%.
-```
-
-This method charged the Powerwall at about **1.8 kW per battery**.
+resetting it later using automations. This method charged the Powerwall at about **1.8 kW per battery**.
 
 To charge faster—around **3.3 kW per battery**—use Backup Mode:
 
