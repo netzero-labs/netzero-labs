@@ -9,7 +9,7 @@ layout: default
 Starting **August 1, 2025**, a subscription will be required to access advanced
 [Netzero](https://www.netzero.energy) features such as automations, dynamic tariffs, utility
 integrations, and diagnostics. USD pricing is **$6.99/month** or **$69.99/year** (a 16% discount).
-Local pricing will vary by currency and VAT.
+Local pricing will vary by currency and VAT: [Pricing details](https://www.netzero.energy/pricing).
 
 Read on to learn why we are introducing subscriptions, how Netzero can save you more than the cost
 of a subscription, and the future improvements this change will support.
@@ -125,9 +125,9 @@ Features will remain active until the end of the billing period.
 
 **Is there a free version of the app?**
 
-Yes. Dashboards, historical charts, solar forecasting, and data export remain free. Only advanced
-features (automations, dynamic tariffs, utility integrations, and diagnostics) require a
-subscription.
+Yes. Dashboards, historical charts, solar estimates, Developer API and enhanced data downloads
+remain free. Only advanced features (automations, dynamic tariffs, utility integrations, and
+diagnostics) require a subscription.
 
 ---
 

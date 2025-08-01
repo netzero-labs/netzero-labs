@@ -29,7 +29,7 @@
 
 ### API
 
-- [Netzero API](https://www.netzero.energy/docs/api)
+- [Developer API](https://www.netzero.energy/docs/api)
 
 ---
 
