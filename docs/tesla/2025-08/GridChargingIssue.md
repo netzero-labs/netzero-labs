@@ -6,7 +6,7 @@ layout: default
 
 As of August 6, 2025, there is an ongoing issue on Tesla's side with **Grid Charging** configuration.
 
-Any attempt to change the Grid Charging setting to On or Off will fail. This affects Netzero automations
+Any attempt to change the Grid Charging setting from Off to On will fail. This affects Netzero automations
 as well as manual configuration changes in both the Tesla and Netzero apps.
 Note: You may need to stop and restart the Tesla app to see the Grid Charging value reset.
 
