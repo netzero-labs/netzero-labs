@@ -4,9 +4,9 @@ layout: default
 
 # Updates
 
-- **Update 2025-08-07T20:35:00Z**: Issues appears to be resolved, we are monitoring it and waiting for confirmation from Tesla.
+- **Update 2025-08-07T20:35:00Z**: Grid Charging issue appears to be resolved, we are monitoring it and waiting for confirmation from Tesla.
 
-- **Update 2025-08-07T07:20:00Z**: Tesla informed us the change was not intentional, and they are investigating the cause.
+- **Update 2025-08-07T07:20:00Z**: Tesla informed us the Grid Charging change was not intentional, and they are investigating the cause.
 
 # Grid Charging Issue
 
