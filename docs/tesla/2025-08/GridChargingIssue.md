@@ -2,6 +2,12 @@
 layout: default
 ---
 
+# Updates
+
+- **Update 2025-08-07T20:35:00Z**: Issues appears to be resolved, we are monitoring it and waiting for confirmation from Tesla.
+
+- **Update 2025-08-07T07:20:00Z**: Tesla informed us the change was not intentional, and they are investigating the cause.
+
 # Grid Charging Issue
 
 As of August 6, 2025, there is an ongoing issue on Tesla's side with **Grid Charging** configuration.
@@ -12,8 +18,6 @@ Note: You may need to stop and restart the Tesla app to see the Grid Charging va
 
 We have notified Tesla of this issue and will share updates as we receive them.
 
-**Update on August 7, 2025**: Tesla informed us the change was not intentional, and they are
-investigating the cause.
 
 
 ## How This Affects Netzero
