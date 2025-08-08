@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Tesla Powerwall Backup Reserve Update
+# Powerwall Backup Reserve Update
 
 ## Backup Reserve Changes
 

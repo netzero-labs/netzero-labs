@@ -1,7 +1,7 @@
 # Netzero Documentation
 
 ### Updates
- - Aug 6, 2025: [Grid Charging Issue](https://docs.netzero.energy/docs/tesla/2025-08/GridChargingIssue)
+ - Aug 6, 2025: [Tesla's Grid Charging Issue](https://docs.netzero.energy/docs/tesla/2025-08/GridChargingIssue)
  - Jun 19, 2025: [Tesla's Backup Reserve Update](https://www.netzero.energy/docs/backup_reserve_update)
  - Jun 6, 2025: [Funding Netzero with Subscriptions](https://www.netzero.energy/docs/subscription)
 
