@@ -6,7 +6,7 @@ layout: with_footer
 
 ## Backup Mode Operation
 
-[Netzero](https://www.netzero.energy) supports **Backup Mode**, an experimental Powerwall operational
+[Netzero](https://www.netzero.energy) supports **Backup Mode**, a Powerwall operational
 mode that charges the battery from the grid at a faster rate—around **3.3 kW per battery** (see below for
 details on charging rates).
 
@@ -15,9 +15,6 @@ details on charging rates).
 * **Backup Mode is not supported by the Tesla app.** When enabled via Netzero, the Tesla app will
 show no operational mode selected. You can, however, use the Tesla app to switch back to
 Self-Powered or Time-Based Control. In Netzero, all modes are supported and correctly displayed.
-
-* **Backup Mode is experimental** while we assess reliability and compatibility. We'll update its
-status based on user feedback.
 
 * **Backup reserve is always set to 100% in Backup Mode.** Changing the reserve has no effect. In
 this mode, the Powerwall will not discharge and will reserve 100% of its capacity for outages.
@@ -51,7 +48,7 @@ Powerwalls charge from the grid at different rates, depending on the method:
 
 * **Time-Based Control mode:**
 
-  * May charge from the grid during off-peak hours (not guaranteed—Tesla controls this).
+  * May charge from the grid during off-peak hours (not guaranteed, Tesla controls this).
   * Charging rate: **\~5 kW per battery** (fastest).
   * Requires Grid Charging to be enabled.
 
@@ -73,4 +70,4 @@ Charging rates scale with the number of Powerwalls (e.g. 6.6 kW for two batterie
   [Powerwall 3 Datasheet](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf) for details.
 
 There are other ways of charging Powerwall from the grid, such as manual Storm Watch events or
-VPP events. Since those cannot be automated, they are not relevant here.
+VPP events. Since those cannot be automated with Netzero, they are not relevant here.

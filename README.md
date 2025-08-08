@@ -2,6 +2,7 @@
 
 ### Updates
  - Aug 6, 2025: [Grid Charging Issue](https://docs.netzero.energy/docs/tesla/2025-08/GridChargingIssue)
+ - Jun 19, 2025: [Tesla's Backup Reserve Update](https://www.netzero.energy/docs/backup_reserve_update)
  - Jun 6, 2025: [Funding Netzero with Subscriptions](https://www.netzero.energy/docs/subscription)
 
 ### Automation
@@ -11,7 +12,6 @@
 - [Tesla Charge on Solar with Powerwall Priority](https://www.netzero.energy/docs/charge_on_solar_tesla)
 - [Charge on Solar with OCPP EV Chargers](https://www.netzero.energy/docs/charge_on_solar)
 - [EV Charging Automation](https://www.netzero.energy/docs/ev_charger_start_stop)
-- [Tesla's Backup Reserve Update](https://www.netzero.energy/docs/backup_reserve_update)
 - [Backup Mode](https://www.netzero.energy/docs/backup_mode)
 
 ### Utility Rate Plans

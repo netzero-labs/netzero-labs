@@ -19,7 +19,6 @@ Note: You may need to stop and restart the Tesla app to see the Grid Charging va
 We have notified Tesla of this issue and will share updates as we receive them.
 
 
-
 ## How This Affects Netzero
 
 Automations that include a Grid Charging action will fail with a
