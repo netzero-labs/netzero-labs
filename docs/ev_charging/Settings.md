@@ -67,15 +67,10 @@ start reporting its charging status.
 
 ## Pre-2021 Model S/X Tesla Vehicles
 
-If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is supported if:
-
-- Your vehicle has an Intel Atom computer. Older models may require an
-  [Infotainment Upgrade](https://www.tesla.com/support/infotainment).
-- Your vehicle firmware is version 2025.20 or later.
-- **Allow Third-Party App Data Streaming** is enabled in the **Safety** screen of your vehicle.
-
-Once these conditions are met, a **Pair Vehicle** button will appear in **Settings > Vehicle Charging**.
-No Virtual Key is required; the button will directly enable Fleet Telemetry.
+If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is supported if your vehicle has an
+Intel Atom computer. See
+[Fleet Telemetry for Pre-2021 Model S/X](https://docs.netzero.energy/docs/ev_charging/FleetTelemetryModelSX)
+for details.
 
 ## OCPP-compatible EV Chargers
 
