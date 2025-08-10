@@ -6,7 +6,7 @@ layout: default
 
 ## Backup Reserve Changes
 
-On July 19 2025, Tesla changed the [Powerwall backup reserve](https://www.tesla.com/support/energy/powerwall/mobile-app/backup-reserve)
+On July 19, 2025, Tesla changed the [Powerwall backup reserve](https://www.tesla.com/support/energy/powerwall/mobile-app/backup-reserve)
 settings. Values between 81% and 99% are no longer supported. Only reserves set at 80% or below,
 or exactly 100%, remain valid.
 

@@ -16,7 +16,7 @@ manage charging. There are integrations for **Tesla Wall Connectors**, **Tesla v
 **OCPP-compatible EV chargers** (e.g. **Wallbox** or **myenergi zappi**).
 
 To configure your EV charger, navigate to `Settings > Vehicle Charging`. Once the charger is configured,
-you use the `EV Charging` tab on top of the `New Automation` screen to configure automations based
+you can use the `EV Charging` tab on top of the `New Automation` screen to configure automations based
 on the start or stop of EV charging.
 
 ## Tesla Wall Connector
@@ -34,8 +34,8 @@ on the `Settings > Vehicle Charging` screen.
 
 ### Notes
 
-- If your Wall Connector is not added to your energy system, but listed as a separate product the
-  in the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
+- If your Wall Connector is not added to your energy system, but listed as a separate product in
+  the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
   combine the two systems into one.
 
 ## Tesla Vehicles
@@ -58,8 +58,8 @@ the state. If you had already added permissions when first logging in with Netze
 
 2. Set up a [Virtual Key](https://www.tesla.com/_ak/api.netzeroapp.io) for Netzero, a secure connection
 to your vehicle. The key can be revoked if required. Netzero does not have permission to unlock or
-start your vehicle. Note: if you are not the owner of the vehicle, you will to be in the vehicle with
-a Tesla key card when completing this process. Older Tesla Model S and X vehicle do not support
+start your vehicle. Note: if you are not the owner of the vehicle, you will need to be in the vehicle with
+a Tesla key card when completing this process. Older Tesla Model S and X vehicles do not support
 Fleet Telemetry.
 
 3. Once the key is set up, Fleet Telemetry will be automatically configured and the vehicle will
@@ -80,7 +80,7 @@ you can configure Netzero as the provider. This integration will share the EV ch
 allow remote control.
 
 Examples of compatible chargers include **Wallbox** and **myenergi zappi**. If your EV charger is compatible,
-you will see an OCPP configuration option the EV charger's app. Configure it using the following settings:
+you will see an OCPP configuration option in the EV charger's app. Configure it using the following settings:
 
 ```
 Provider: wss://ocpp.netzero.energy/
