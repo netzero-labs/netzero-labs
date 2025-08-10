@@ -9,7 +9,7 @@ layout: with_footer
 configuration changes using the app (backup reserve, operational mode, energy exports, and grid
 charging).
 
-For more advanced use, the app also offers an API that allows to manage these configuration changes.
+For more advanced use, the app also offers an API that allows you to manage these configuration changes.
 
 
 ## API Token

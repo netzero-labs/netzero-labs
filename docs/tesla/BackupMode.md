@@ -22,7 +22,7 @@ this mode, the Powerwall will not discharge and will reserve 100% of its capacit
 * **Backup Mode is intended for charging only.** If your goal is simply to reserve 100% of battery
 capacity for outages, set the backup reserve to 100% in another mode instead.
 
-* The mode can be selected as an automations action (under **Set operational mode**) or from the
+* The mode can be selected as an automation action (under **Set operational mode**) or from the
   **Automation > Configuration** screen (for testing).
 
 ## How to Use Backup Mode

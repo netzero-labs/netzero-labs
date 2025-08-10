@@ -87,7 +87,7 @@ will receive an in-app reminder. To avoid interruption of automations, subscribe
 New users get a **30-day free trial** and will need to subscribe to maintain access to advanced
 features.
 
-Note: the subscription is activated the moment your purchase it, and will renew after a month (or
+Note: the subscription is activated the moment you purchase it, and will renew after a month (or
 after a year for annual subscriptions).
 
 Subscriptions are available in Netzero app version 2.1.0 and above. To subscribe, go to
@@ -107,8 +107,8 @@ use the web app, you will need to log in on a mobile device once to activate the
 
 **Where are subscriptions available?**
 
-Subscriptions are currently available in United States, United Kingdom, Australia, Germany,
-New Zealand, Italy, Canada, Portugal, Netherlands, and Spain. Users in unsupported countries can
+Subscriptions are currently available in the United States, the United Kingdom, Australia, Germany,
+New Zealand, Italy, Canada, Portugal, the Netherlands, and Spain. Users in unsupported countries can
 continue using advanced features for free until support is added.
 
 Note: availability is based on your App Store / Google Play account region, which cannot be
@@ -144,7 +144,7 @@ typically due to VAT and Apple's use of fixed pricing tiers rather than current 
 **Why not offer a one-time purchase instead of a subscription?**
 
 Netzero incurs ongoing costs: cloud infrastructure costs, Tesla API charges, and development and
-support cost. For now, a subscription model better reflects these continuing expenses.
+support costs. For now, a subscription model better reflects these continuing expenses.
 
 To reduce payment frequency, consider the annual plan (16% cheaper). We may consider one-time
 purchases in the future when we get more data on subscription use.
@@ -157,7 +157,7 @@ We're big supporters of open-source development, and have contributed to the com
 unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
 free -- it requires time to set up and configure, some services for accessing the Tesla Fleet API
 are paid as well, it runs on a computer that needs to be powered 24/7 for automations to run, and
-cloud access to Home Assistant in an additional charge.
+cloud access to Home Assistant is an additional charge.
 
 ---
 
