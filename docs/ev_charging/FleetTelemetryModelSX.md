@@ -23,7 +23,7 @@ MCU1 does not support Fleet Telemetry unless upgraded to Tesla’s newer infotai
 
 ## How to Enable Fleet Telemetry
 
-1. Ensure your Tesla is updated to firmware version **2025.20 or later**.
+1. Ensure your Tesla is updated to firmware version 2025.20 or later.
 2. In the vehicle’s **Safety** screen, enable:
    **Allow Third-Party App Data Streaming**.
 3. In Netzero, go to **Settings > Vehicle Charging**.
