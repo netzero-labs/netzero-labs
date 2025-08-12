@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Fleet Telemetry for Pre-2021 Model S/X
+# Fleet Telemetry for Pre-2021 Tesla Model S/X
 
 ## Fleet Telemetry
 
