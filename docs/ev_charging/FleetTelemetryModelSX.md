@@ -4,10 +4,10 @@ layout: with_footer
 
 # Fleet Telemetry for Pre-2021 Model S/X
 
-## Overview
+## Fleet Telemetry
 
-[Netzero](https://www.netzero.energy) uses EV charging data from Tesla’s Fleet Telemetry to run
-vehicle charging automations and retrieve charging data. With vehicle firmware version 2025.20,
+[Netzero](https://www.netzero.energy) uses Tesla’s Fleet Telemetry to run vehicle charging
+automations and retrieve charging data. With vehicle firmware version 2025.20,
 Tesla has added Fleet Telemetry support for Model S and Model X vehicles built before 2021 that
 have the Intel Atom computer (also known as MCU2).
 
