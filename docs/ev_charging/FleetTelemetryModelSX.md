@@ -6,8 +6,10 @@ layout: with_footer
 
 ## Overview
 
-With firmware version 2025.20, Tesla has added Fleet Telemetry support for Model S and
-Model X vehicles built before 2021 that have the Intel Atom computer (also known as MCU2).
+[Netzero](https://www.netzero.energy) uses EV charging data from Tesla’s Fleet Telemetry to run
+vehicle charging automations and retrieve charging data. With vehicle firmware version 2025.20,
+Tesla has added Fleet Telemetry support for Model S and Model X vehicles built before 2021 that
+have the Intel Atom computer (also known as MCU2).
 
 Fleet Telemetry provides access to Tesla’s updated data stream for EV charging. This enables:
 
@@ -15,9 +17,9 @@ Fleet Telemetry provides access to Tesla’s updated data stream for EV charging
 - Faster and more reliable execution of charging automations.
 - Charging data included in Netzero’s energy charts.
 
-**Note:** MCU2 is standard in most Model S/X vehicles built after March 2018. Vehicles built on or
-before March 2018 typically have the older MCU1 system. MCU1 does not support Fleet Telemetry unless
-upgraded to Tesla’s newer infotainment hardware.
+**Note:** MCU2 is standard in most Model S/X vehicles built after March 2018.
+Vehicles built on or before March 2018 typically have the older MCU1 system.
+MCU1 does not support Fleet Telemetry unless upgraded to Tesla’s newer infotainment hardware.
 
 ## How to Enable
 
