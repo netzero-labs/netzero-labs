@@ -13,15 +13,15 @@ have the Intel Atom computer (also known as MCU2).
 
 Fleet Telemetry provides access to Tesla’s updated data stream for EV charging. This enables:
 
-- Fewer vehicle wake-ups when retrieving data.
 - Faster and more reliable execution of charging automations.
 - Charging data included in Netzero’s energy charts.
+- No vehicle wake-ups when retrieving data.
 
 **Note:** MCU2 is standard in most Model S/X vehicles built after March 2018.
-Vehicles built on or before March 2018 typically have the older MCU1 system.
+Vehicles built before March 2018 typically have the older MCU1 system.
 MCU1 does not support Fleet Telemetry unless upgraded to Tesla’s newer infotainment hardware.
 
-## How to Enable
+## How to Enable Fleet Telemetry
 
 1. Ensure your Tesla is updated to firmware version **2025.20 or later**.
 2. In the vehicle’s **Safety** screen, enable:
@@ -30,7 +30,7 @@ MCU1 does not support Fleet Telemetry unless upgraded to Tesla’s newer infotai
 4. If you have not granted Netzero permissions for **Vehicle Information** and **Charging
    Management**, follow the prompts to do so.
 5. Once permissions are granted, select **Pair Vehicle**.
-6. You may need to wait for the vehicle to come online before the status updates.
+6. You may need to wait for the vehicle to come online before the status in Netzero updates.
 
 After the in-car option is enabled and the vehicle is paired, Fleet Telemetry data will begin
 streaming automatically.
