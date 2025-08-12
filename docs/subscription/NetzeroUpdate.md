@@ -174,3 +174,4 @@ automations will resume automatically and your settings will remain intact.
 ## Questions or Issues
 
 If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
+
