@@ -47,7 +47,7 @@ See [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnos
 ## Configuring a Password for Tesla Gateway 1
 
 To access diagnostics with a [Tesla Gateway 1](https://service.tesla.com/docs/Public/Energy/Powerwall/Powerwall-2-Owners-Manual-NA-EN/GUID-9ACA2015-05B4-41A0-B8BC-1D9AD658B307.html),
-a password must be configured first. This requires installing the Tesla One app ([iOS](https://apps.apple.com/us/app/tesla-one/id1625770308), [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros).
+a password must be configured first. This requires installing the Tesla One app ([iOS](https://apps.apple.com/us/app/tesla-one/id1625770308), [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros)).
 Download the Tesla One app and sign in as an **External Partner** using your Tesla credentials. Then tap on **More** in the bottom right and **Tesla Device Setup**.
 Tap **Manually Enter** and provide the details:
 - **Network name (SSID)**: This is the WiFi network name for the Gateway 1. If it is not listed on a label on the gateway, you can find it in your phone WiFi settings. Look for a network name starting with **TEG**.
@@ -89,4 +89,3 @@ If you've confirmed all the steps above and are still having connection issues, 
 Authentication issues mean the Gateway is accessible, but the password is incorrect. Confirm you have the correct password:
 - For Gateway 2, the default password is **the last 5 characters** of the **password** shown on the label behind the Gateway door. The label will show a QR code, part number, serial number, and a password.
 - If you ever changed the password in the past, you will need to use it instead of the default password.
-- If all else fails, try resetting the password. See the sections below.
