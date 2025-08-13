@@ -25,7 +25,7 @@ Once you have the IP address and password, enter them in Netzero (`Monitoring > 
 
 **Note:** on iOS, Netzero will ask for permission to connect to the Local Network. The permission needs to be granted for the connection to succeed. If you rejected the permission, you can re-enable it from your device's Settings menu: **Settings > Apps > Netzero > Local Network**.
 
-Optionally, you may also scan the QR code behind the Gateway door. This will automatically retrieve the correct IP address and password, and can additionally get string diagnostics for all Powerwall+ inverters. However, it requires connecting to the built-in WiFi network,
+Optionally, you may also scan the QR code behind the Gateway door. This will automatically retrieve the correct IP address and password, and can additionally get string diagnostics for all Powerwall+ inverters. However, it requires connecting to the built-in Wi-Fi network,
 which means standing next to the gateway and is less reliable.
 
 **Note:** Diagnostics access is only available from a mobile device (iPhone or Android). Due to web browser security restrictions, it is not available from the web app.
@@ -50,7 +50,7 @@ To access diagnostics with a [Tesla Gateway 1](https://service.tesla.com/docs/Pu
 a password must be configured first. This requires installing the Tesla One app ([iOS](https://apps.apple.com/us/app/tesla-one/id1625770308), [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros)).
 Download the Tesla One app and sign in as an **External Partner** using your Tesla credentials. Then tap on **More** in the bottom right and **Tesla Device Setup**.
 Tap **Manually Enter** and provide the details:
-- **Network name (SSID)**: This is the WiFi network name for the Gateway 1. If it is not listed on a label on the gateway, you can find it in your phone WiFi settings. Look for a network name starting with **TEG**.
+- **Network name (SSID)**: This is the Wi-Fi network name for the Gateway 1. If it is not listed on a label on the gateway, you can find it in your phone Wi-Fi settings. Look for a network name starting with **TEG**.
 - **Password**:
   - This is the full serial number of the Gateway 1. Important note: in some cases you must prepend *S* to the
   password. Try both with and without the *S*.
