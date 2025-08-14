@@ -5,46 +5,27 @@ layout: with_footer
 # Netzero - Intelligent Octopus Go Integration
 
 ## Introduction
-[Netzero](https://www.netzero.energy) works with the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) EV tariff from
-Octopus Energy. By providing your Octopus Energy API Key and Account Number, you can configure your Powerwall to automatically charge while smart
-charging is scheduled outside of the off-peak window.
+[Netzero](https://www.netzero.energy) integrates with the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) EV tariff from Octopus Energy. By providing your Octopus API key and account number, you can configure your Powerwall to charge during smart charging slots outside the off-peak window.
 
-This prevents discharging your Powerwall while your EV is charging. It also maximizes your use of cheaper
-electricity (7p / kWh), even outside of the night rate between 23:30 - 05:30.
+This prevents discharging your Powerwall while your EV charges and maximizes use of cheaper electricity (7p / kWh), even outside the 23:30–05:30 night rate.
 
 ## Setup
 
-- Make sure you are on an Intelligent Octopus Go tariff, and have a compatible EV or charger linked with the account. Note that **Ohme chargers** are not currently supported (see note below).
+- Ensure you are on an Intelligent Octopus Go tariff and have a compatible EV or charger. **Ohme chargers** are not currently supported (see note below).
 - In Netzero, go to **Settings > Utility Rate Plan**.
-- Enter your Octopus API Key. You can copy the API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access). The key will start with **sk_live**.
-- Enter your Octopus Energy Account Number. This will be shown on your bills, emails, and Octopus app. It will look like: **A-12A34A99**.
+- Enter your Octopus API key from your [Octopus account](https://octopus.energy/dashboard/new/accounts/personal-details/api-access); it starts with **sk_live**.
+- Enter your Octopus Energy account number from bills, emails, or the Octopus app, e.g. **A-12A34A99**.
 - Switch on **Automate Intelligent Octopus Go**.
-- You can optionally enable the **Preserve charge instead of charging up** option. This will preserve Powerwall charge whenever a charging slot is
-  scheduled, but it will not charge it up.
+- Optionally enable **Preserve charge instead of charging up** to keep the Powerwall's charge during a scheduled slot without charging it.
 
 ## How it works
 
-Netzero will periodically check for scheduled charging slots. Whenever a slot is scheduled outside
-of the off-peak window (23:30 - 5:30), Powerwall will be configured with a 100% backup reserve, causing
-it to charge. Netzero will store the previously configured backup reserve, and
-restore the backup reserve once the scheduled slot is complete.
+Netzero periodically checks for scheduled charging slots. When a slot falls outside the off-peak window (23:30–05:30), it sets the Powerwall backup reserve to 100% so the battery charges. Netzero stores and restores the previous backup reserve after the slot ends.
 
 ## Notes
 
-- If you have previously configured automations for smart charging slots
-  (e.g. "When vehicle charging starts: Set backup reserve to 100%"), pause or remove those automations
-  so they don't interfere with this integration. The integration based on Octopus API Keys will be
-  more reliable.
-- If a scheduled charging slot ends during the off-peak window (23:30 - 5:30), the Powerwall backup
-  reserve will remain at 100% (since the lower prices persist throughout this period). The backup
-  reserve will reset at 5:30, assuming there are no additional charging slots during that time.
-- If the 100% backup reserve is overridden with a different value while the EV is charging
-  (either manually or with another automation), Netzero will **not** restore the backup reserve to
-  the previously configured value. This is to avoid overriding any manual changes.
-- **Ohme chargers** are not currently supported, since the smart charging schedule is not available in the
-  Octopus API. This is unfortunately out of our control and will need to be resolved by Octopus
-  Energy or Ohme. Consider using
-  [home usage automations](https://docs.netzero.energy/docs/tesla/Automation#charging-the-powerwall-while-ev-charging-intelligent-octopus-go) instead.
-- The charging rate of the Powerwall may vary: in Time-Based Control it will commonly be around
-  5kW per Powerwall, and in Self-Powered mode it will be around 1.8kW per Powerwall. Utility limits
-  will also affect the charge rate.
+- If you have existing automations for smart charging slots (e.g., "When vehicle charging starts: Set backup reserve to 100%"), pause or remove them to avoid conflicts. API-based integration is more reliable.
+- If a charging slot ends during the off-peak window (23:30–05:30), the backup reserve remains at 100% through the window and resets at 05:30 unless another slot is scheduled.
+- If you override the 100% backup reserve while the EV charges, Netzero **will not** restore the previous reserve to avoid overriding manual changes.
+- **Ohme chargers** are unsupported because the Octopus API lacks their smart charging schedule. This limitation is outside our control. Consider using [home usage automations](https://docs.netzero.energy/docs/tesla/Automation#charging-the-powerwall-while-ev-charging-intelligent-octopus-go) instead.
+- The Powerwall's charging rate varies: about 5 kW per Powerwall in Time-Based Control and 1.8 kW in Self-Powered mode. Utility limits may also affect the rate.
