@@ -73,7 +73,9 @@ To be able to connect to the Gateway, you must:
 
 - Be on the same home network as the Gateway. This generally means being on the same Wi-Fi network as the Gateway. You can confirm the name of the Gateway Wi-Fi network on the `Monitoring > Powerwall` screen (scroll down to the Network section). For your phone or tablet, confirm the Wi-Fi network in `Settings > Wi-Fi.` **Note:** if your Gateway is hardwired with Ethernet, it will need to be accessible from your Wi-Fi network.
 
-- Enable the **Local Network** permission (**device Settings > Apps > Netzero > Local Network**).
+- Check permissions on your phone: **device Settings > Apps > Netzero**. Permissions will vary between
+  iOS and Android, but the required ones are: **Location** (location is not used by Netzero, but
+  Wi-Fi access requires this permission), **Local Network** / **Nearby devices**, and **Camera** (when using QR codes).
 
 - Have the correct IP address of the Gateway. Netzero usually prefills the IP address with the correct value. You can confirm the IP address using your home network router: look for device names like `Tesla Powerwall`, `LG Innotek`, or a serial number such as `1232100-10-E--CN32132...`.
 
