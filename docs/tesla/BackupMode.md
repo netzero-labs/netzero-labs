@@ -2,72 +2,61 @@
 layout: with_footer
 ---
 
-# Netzero - Backup Mode
+# Netzero – Backup Mode
 
-## Backup Mode Operation
+## Overview
 
-[Netzero](https://www.netzero.energy) supports **Backup Mode**, a Powerwall operational
-mode that charges the battery from the grid at a faster rate—around **3.3 kW per battery** (see below for
-details on charging rates).
+[Netzero](https://www.netzero.energy) supports **Backup Mode**, a Powerwall operational mode that charges the battery from the grid at a faster rate — around **3.3 kW per battery** (see *Charging Rates* below). Backup Mode can also be used to preserve Powerwall charge.
 
 **Important notes:**
 
-* **Backup Mode is not supported by the Tesla app.** When enabled via Netzero, the Tesla app will
-show no operational mode selected. You can, however, use the Tesla app to switch back to
-Self-Powered or Time-Based Control. In Netzero, all modes are supported and correctly displayed.
+* **Not supported in the Tesla app.** When enabled via Netzero, the Tesla app will show no operational mode selected. You can still use the Tesla app to switch back to Self-Powered or Time-Based Control. In Netzero, all modes are supported and displayed correctly.
+* Backup Mode can be set as an automation action (**Set operational mode**) or manually from **Automation > Configuration** (useful for testing).
 
-* **Backup reserve is always set to 100% in Backup Mode.** Changing the reserve has no effect. In
-this mode, the Powerwall will not discharge and will reserve 100% of its capacity for outages.
 
-* **Backup Mode is intended for charging only.** If your goal is simply to reserve 100% of battery
-capacity for outages, set the backup reserve to 100% in another mode instead.
+## Using Backup Mode
 
-* The mode can be selected as an automation action (under **Set operational mode**) or from the
-  **Automation > Configuration** screen (for testing).
+### 1. Faster Charging from the Grid
 
-## How to Use Backup Mode
+Previously, grid charging required setting the backup reserve to 100% and resetting it later via automations, charging at about **1.8 kW per battery**.
 
-Previously, charging the Powerwall from the grid involved setting the backup reserve to 100% and
-resetting it later using automations. This method charged the Powerwall at about **1.8 kW per battery**.
-
-To charge faster—around **3.3 kW per battery**—use Backup Mode:
+To charge faster — about **3.3 kW per battery** — use Backup Mode. **Grid Charging** must be enabled.
+Example automation:
 
 ```
-Every day at 12:00 AM: Set operational mode to Backup.
-Every day at 6:00 AM: Set backup reserve to 20%; Set operational mode to Self-Powered.
+Every day at 12:00 AM: Set operational mode to Backup; Set grid charging to Enabled.
+Every day at 6:00 AM: Set operational mode to Self-Powered.
 ```
 
-**Important:**
+**Tip:** To stop charging, switch the mode back to your normal setting (Self-Powered or Time-Based Control). You may also disable Grid Charging if desired.
 
-* After charging, reset the backup reserve (since Backup Mode locks it at 100%).
-* Reset the operational mode to Self-Powered or Time-Based Control after charging completes.
 
-## Powerwall Charging Rates Overview
+### 2. Preserving Powerwall Charge
 
-Powerwalls charge from the grid at different rates, depending on the method:
+Backup Mode can also prevent discharge. This is similar to the *Preserve Powerwall charge* automation (which sets the backup reserve to the current state of charge), but Tesla’s recent changes prevent that method from working between 81–99% state of charge.
 
-* **Time-Based Control mode:**
+Backup Mode has no such limitation. To preserve charge, enable Backup Mode with Grid Charging **disabled**.
+Example automation:
 
-  * May charge from the grid during off-peak hours (not guaranteed, Tesla controls this).
-  * Charging rate: **\~5 kW per battery** (fastest).
-  * Requires Grid Charging to be enabled.
+```
+When vehicle charging starts: Set operational mode to Backup; Set grid charging to Disabled.
+When vehicle charging stops: Set operational mode to Self-Powered.
+```
 
-* **Self-Powered mode:**
+**Tip:** Remember to reset the operational mode to your normal setting, and Grid Charging if needed.
 
-  * Setting backup reserve to 100% will force charging from solar (if available) and grid.
-  * Charging rate: **\~1.8 kW per battery**.
 
-* **Backup Mode (Netzero only):**
+## Charging Rates by Mode
 
-  * Charges from solar (if available) and grid to 100%.
-  * Charging rate: **\~3.3 kW per battery**.
+| Mode                        | Grid Charging? | Typical Rate per Battery | Notes |
+|-----------------------------|----------------|--------------------------|-------|
+| **Time-Based Control**      | Required       | ~5 kW                    | Fastest charging; Tesla controls when charging occurs during off-peak hours. |
+| **Backup Mode (Netzero)**   | Required       | ~3.3 kW                  | Charges from solar (if available) and grid to 100%. |
+| **Self-Powered**            | Optional       | ~1.8 kW                  | Setting reserve to 100% forces charging from solar (if available) and grid. |
 
-**Multiple Batteries:**
-Charging rates scale with the number of Powerwalls (e.g. 6.6 kW for two batteries in Backup Mode), but:
+**Multiple Batteries:** Charging rates scale with the number of Powerwalls (e.g., ~6.6 kW for two in Backup Mode), but:
 
 * Utility import limits may reduce the rate.
-* Powerwall 3 expansion packs charge slower than full Powerwall 3 systems. Refer to the
-  [Powerwall 3 Datasheet](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf) for details.
+* Powerwall 3 expansion packs charge slower than full Powerwall 3 units — see the [Powerwall 3 Datasheet](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/Datasheet/en-us/Powerwall-3-Datasheet.pdf).
 
-There are other ways of charging Powerwall from the grid, such as manual Storm Watch events or
-VPP events. Since those cannot be automated with Netzero, they are not relevant here.
+Other grid-charging methods exist (e.g., manual Storm Watch or VPP events), but these cannot be automated in Netzero.
