@@ -33,7 +33,7 @@ Every day at 6:00 AM: Set operational mode to Self-Powered.
 
 ### 2. Preserving Powerwall Charge
 
-Backup Mode can also prevent discharge. This is similar to the *Preserve Powerwall charge* automation (which sets the backup reserve to the current state of charge), but Tesla’s recent changes prevent that method from working between 81–99% state of charge.
+Backup Mode can also prevent discharge. This is similar to the *Preserve Powerwall charge* automation (which sets the backup reserve to the current state of charge), but [Tesla’s recent changes](https://docs.netzero.energy/docs/tesla/BackupReserveUpdate) prevent that method from working between 81–99% state of charge.
 
 Backup Mode has no such limitation. To preserve charge, enable Backup Mode with Grid Charging **disabled**.
 Example automation:
