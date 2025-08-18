@@ -4,6 +4,10 @@ layout: with_footer
 
 # Netzero – Backup Mode
 
+**Update Aug 14, 2025** - New guidelines for using Backup mode. Earlier versions suggested setting backup reserve to 100% when using backup mode.
+This is no longer required, and configuring Grid Charging is now the preferred way to use the new mode. You may want to update your
+existing automations.
+
 ## Overview
 
 [Netzero](https://www.netzero.energy) supports **Backup Mode**, a Powerwall operational mode that charges the battery from the grid at a faster rate — around **3.3 kW per battery** (see *Charging Rates* below). Backup Mode can also be used to preserve Powerwall charge.
