@@ -28,12 +28,12 @@ Every day at 12:00 AM: Set operational mode to Backup; Set grid charging to Enab
 Every day at 6:00 AM: Set operational mode to Self-Powered.
 ```
 
-**Tip:** To stop charging, switch the mode back to your normal setting (Self-Powered or Time-Based Control). You may also disable Grid Charging if desired.
+**Note:** To stop charging, switch the mode back to your normal setting (Self-Powered or Time-Based Control). You may also disable Grid Charging if desired.
 
 
 ### 2. Preserving Powerwall Charge
 
-Backup Mode can also prevent discharge. This is similar to the *Preserve Powerwall charge* automation (which sets the backup reserve to the current state of charge), but [Tesla’s recent changes](https://docs.netzero.energy/docs/tesla/BackupReserveUpdate) prevent that method from working between 81–99% state of charge.
+Backup Mode can also prevent discharge. This is similar to the **Preserve Battery Charge** automation (which sets the backup reserve to the current state of charge), but [Tesla’s recent changes](https://docs.netzero.energy/docs/tesla/BackupReserveUpdate) prevent that method from working between 81–99% state of charge.
 
 Backup Mode has no such limitation. To preserve charge, enable Backup Mode with Grid Charging **disabled**.
 Example automation:
@@ -43,7 +43,7 @@ When vehicle charging starts: Set operational mode to Backup; Set grid charging 
 When vehicle charging stops: Set operational mode to Self-Powered.
 ```
 
-**Tip:** Remember to reset the operational mode to your normal setting, and Grid Charging if needed.
+**Note:** Remember to reset the operational mode to your normal setting, and Grid Charging if needed.
 
 
 ## Charging Rates by Mode
@@ -52,7 +52,7 @@ When vehicle charging stops: Set operational mode to Self-Powered.
 |-----------------------------|----------------|--------------------------|-------|
 | **Time-Based Control**      | Required       | ~5 kW                    | Fastest charging; Tesla controls when charging occurs during off-peak hours. |
 | **Backup Mode (Netzero)**   | Required       | ~3.3 kW                  | Charges from solar (if available) and grid to 100%. |
-| **Self-Powered**            | Optional       | ~1.8 kW                  | Setting reserve to 100% forces charging from solar (if available) and grid. |
+| **Self-Powered**            | Optional       | ~1.8 kW                  | Setting backup reserve to 100% (or any value above the current state of charge) forces charging from solar and grid. |
 
 **Multiple Batteries:** Charging rates scale with the number of Powerwalls (e.g., ~6.6 kW for two in Backup Mode), but:
 
