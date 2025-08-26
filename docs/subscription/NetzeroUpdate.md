@@ -6,7 +6,7 @@ layout: default
 
 ## Quick Summary
 
-Starting **August 1, 2025**, a subscription will be required to access advanced
+Starting **August 1, 2025**, a subscription is required to access advanced
 [Netzero](https://www.netzero.energy) features such as automations, dynamic tariffs, utility
 integrations, and diagnostics. USD pricing is **$6.99/month** or **$69.99/year** (a 16% discount).
 Local pricing will vary by currency and VAT: [Pricing details](https://www.netzero.energy/pricing).
