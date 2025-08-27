@@ -4,7 +4,7 @@ layout: default
 
 # Pilot Program: Energy Device Integration
 
-The [Netzero app](https://www.netzero.energy) is launching a pilot program to provide access to a wide range of energy devices. If you already use Netzero automations and would like to integrate one of the devices listed below, you’re invited to participate. To join, send an email to feedback@netzero.energy and mention which device(s) you have.
+The [Netzero app](https://www.netzero.energy) is launching a pilot program to provide access to a wide range of energy devices. If you already use Netzero automations and would like to integrate one of the devices listed below, you’re invited to participate. To join, send an email to [feedback@netzero.energy](mailto:feedback@netzero.energy) and mention which device(s) you have.
 
 Supported devices in this pilot:
 - **EVs**: Audi, BMW, Cupra, Fiat, Ford, Jaguar, Land Rover, Lexus, Mercedes, MINI, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG
