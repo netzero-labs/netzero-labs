@@ -75,7 +75,7 @@ for details.
 ## OCPP-compatible EV Chargers
 
 Some EV chargers support OCPP (Open Charge Point Protocol), an application protocol for communication
-between EV chargers and central management systems (providers).  If your EV charger is compatible,
+between EV chargers and central management systems (providers). If your EV charger is compatible,
 you can configure Netzero as the provider. This integration will share the EV charger’s status and
 allow remote control.
 
