@@ -26,7 +26,7 @@ For instance, to establish a specific backup reserve percentage daily at a desig
 1. Visit https://ifttt.com/create or use the IFTTT app.
 2. **If This**: "Choose Date & Time", then select "Every day at", specify the desired time, and create the trigger.
 3. **Then That**: Search for the "Webhooks" service, and select "Make a web request". Configure the web request as illustrated below.
-Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above.  Replace `60` with your desired
+Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above. Replace `60` with your desired
 backup reserve percentage.
 
 <img src="ifttt.png" width="300" alt="IFTTT" />
@@ -75,7 +75,7 @@ curl -s -H "Authorization: Bearer $API_TOKEN" https://api.netzero.energy/api/v1/
 }
 ```
 
-This response includes both configuration values and the current power draw.  If you have a Wall Connector connected to your account, you'll also
+This response includes both configuration values and the current power draw. If you have a Wall Connector connected to your account, you'll also
 see car charging status.
 
 To modify the configuration, send a POST request with new values. You can adjust one or more of the following parameters in the same request:
