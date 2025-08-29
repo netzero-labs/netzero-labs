@@ -12,6 +12,9 @@ Supported devices in this pilot:
 - **HVAC units**: ADAX, Bosch, Daikin, Ecobee, Fujitsu, Function, Honeywell TCC, Mill, Mitsubishi, Netatmo, NIBE, Panasonic, Resideo, Sensibo, Tado, Toshiba
 
 
+**Note**: This pilot is limited in size, so we are rolling it out slowly. Once the pilot successfully completes, we plan on releasing the energy device integration to
+all Netzero Pro subscribers.
+
 ## Questions or Issues
 
 If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
