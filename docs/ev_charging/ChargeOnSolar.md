@@ -17,10 +17,10 @@ with Tesla vehicles).
 1. See [EV Charger Settings](https://www.netzero.energy/docs/ev_charger_settings) for how to configure
    your OCPP-compatible charger.
 
-2. Once your EV charger is configured, you will see a new **Enable charge on solar** switch in the
+2. Once your EV charger is configured, you will see a new **Enable Charge on Solar** switch in the
    **Vehicle Charging** screen.
 
-3. You can configure the minimum Powerwall state of charge before **Charge on solar** is enabled.
+3. You can configure the minimum Powerwall state of charge before **Charge on Solar** is enabled.
    If you set this to 100%, charging will only start once the Powerwall is full. If you set
    it to 0%, charging will start the moment there is sufficient excess solar energy available.
 
@@ -30,17 +30,19 @@ with Tesla vehicles).
 
 ## Notes
 
-- Your system has to be in Self-Powered mode for **Charge on solar** to be activated. This is to
-  avoid interfering with Time-Based Control mode, where Powerwall might prioritize exporting solar
-  energy.
+- For **Charge on Solar** to be activated, your system has to be in Self-Powered mode, or in
+  Time-Based Control mode with Powerwall at 100% state of charge. This is to avoid interfering
+  with Time-Based Control prioritization.
 
-- There needs to be at least 1440W (6A at 240V) of excess solar power available for charging to start.
+- There needs to be at least 1680W (7A at 240V) of excess solar power available for charging to start.
   If there isn't sufficient solar power available, charging will pause and resume once there is
-  more power available.
+  more power available. For some vehicles this can cause the charging session to stop and fail to
+  resume, so there is also an option to continue charging at the lowest rate when there is not enough
+  solar power.
 
-- **Charge on solar** will only activate during daylight hours. If you plug in your vehicle outside
+- **Charge on Solar** will only activate during daylight hours. If you plug in your vehicle outside
   of daylight hours, it will proceed to charge at your configured rate. If you prefer to
-  only charge with **Charge on solar**, manually stop charging after plugging in the vehicle (using the
+  only charge with **Charge on Solar**, manually stop charging after plugging in the vehicle (using the
   Netzero app). We may add an option to make this automatic, while allowing scheduled charging from
   the grid.
 
