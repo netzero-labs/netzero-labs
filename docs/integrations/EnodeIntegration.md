@@ -29,7 +29,7 @@ Supported devices:
 - Netzero also supports Tesla vehicles, Tesla Wall Connectors, and OCPP-compatible EV chargers. See [EV Charger Settings](https://docs.netzero.energy/docs/ev_charging/Settings) for details.
 - A Pro subscription or active trial is required to connect and automate energy devices.
 
-# Connecting Devices
+## Connecting Devices
 
 To connect your EV or EV charger, go to **Settings > EV Charging**.
 For heating/cooling devices, go to **Settings > Heating and Cooling**.
