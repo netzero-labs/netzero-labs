@@ -26,8 +26,8 @@ Supported devices:
    - Full details: [HVAC capabilities](https://developers.enode.com/api/capabilities/hvac).
 
 **Notes:**
-- Netzero also supports Tesla vehicles, Tesla Wall Connectors, and OCPP-compatible EV chargers. See [EV Charger Settings](https://docs.netzero.energy/docs/ev_charging/Settings) for details.
 - A Pro subscription or active trial is required to connect and automate energy devices.
+- Netzero also supports Tesla vehicles, Tesla Wall Connectors, and OCPP-compatible EV chargers. See [EV Charger Settings](https://docs.netzero.energy/docs/ev_charging/Settings) for details.
 
 ## Connecting Devices
 

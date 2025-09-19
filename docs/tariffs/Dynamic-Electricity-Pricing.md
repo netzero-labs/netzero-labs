@@ -23,6 +23,7 @@ a great way to achieve that goal!
 Netzero currently supports the following plans:
 - [Agile Octopus](https://octopus.energy/smart/agile/) (Octopus Energy, UK)
 - [Tibber](https://tibber.com/en) (Sweden, Norway, Germany & the Netherlands)
+- [ENTSO-E](https://newtransparency.entsoe.eu/market/energyPrices) (European network covering wholesale pricing for most countries in Europe)
 - [Amber Electric](https://www.amber.com.au/) (Australia)
 - [ComEd Hourly Pricing](https://hourlypricing.comed.com/) (ComEd, Illinois, US)
 
@@ -41,18 +42,14 @@ tariff, and check the "Automatically update rate plan" checkbox. This will resul
 - As new tariffs are announced (usually around 4pm), the tariff configuration will be
   automatically updated. You do not need to keep the app open for that.
 
-Note that the Tesla app's Utility Rate Plan section doesn't display dynamic tariffs properly:
-
-<img src="utility-rate-plan.png" width="300" alt="Utility Rate Plan" />
-
-We will work with the Tesla team to make sure this gets corrected. For now, you can instead use the
-Buy and Sell charts (shown by scrolling down under the Grid chart) to display the dynamic prices:
-
-<img src="buy-sell-prices.png" width="300" alt="Buy and Sell Prices" />
+Note that the Tesla app's Utility Rate Plan section doesn't display dynamic tariffs properly. It might
+show some incorrect dips in pricing during the day. This is just a display issue -- you can instead
+look at the Buy and Sell charts, shown by scrolling down under the Grid chart. These charts are
+available both in the Tesla app and Netzero, and will display correct pricing.
 
 Note: for plans with fixed outgoing (sell) prices, the sell prices are adjusted to never exceed buy
-prices. This results in better Powerwall behavior (more cycling when required), due to a limitation
-in Tesla's Time-Based Control algorithm.
+prices. This results in better Powerwall behavior (more charging and discharging when required),
+due to a limitation in Tesla's Time-Based Control algorithm.
 
 ## Tibber and Amber Electric Configuration
 
@@ -78,4 +75,4 @@ will be used to update the real-time price for the current hour.
 
 If you wish to stop updating your dynamic tariffs, uncheck the "Automatically update rate plan"
 checkbox under "Utility Rate Plan". Make sure to also configure a new fixed rate plan with the
-Tesla app, using the Start Over button.
+Tesla app: **Settings > Utility Rate Plan > Change Rate Plan** (at the bottom).
