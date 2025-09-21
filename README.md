@@ -7,6 +7,7 @@
 ### Automation
 
 - [Powerwall Automation](https://www.netzero.energy/docs/automation)
+- [Energy Device Integration](https://www.netzero.energy/docs/enode)
 - [EV Charger Settings](https://www.netzero.energy/docs/ev_charger_settings)
 - [Tesla Charge on Solar with Powerwall Priority](https://www.netzero.energy/docs/charge_on_solar_tesla)
 - [Charge on Solar with OCPP EV Chargers](https://www.netzero.energy/docs/charge_on_solar)
