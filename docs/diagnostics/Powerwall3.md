@@ -53,17 +53,19 @@ If the connection fails or no diagnostic data appears:
    iOS and Android, but the required ones are: **Location** (location is not used by Netzero, but
    Wi-Fi access requires this permission), **Local Network** / **Nearby devices**, and **Camera** (when using QR codes).
 
-2. Make sure you are on your home Wi-Fi network before connecting to the TeslaPW Wi-Fi network.
+2. If you have a VPN network configured on your device, it might be interfering with the connection. Try disabling the VPN network temporarily.
+
+3. Make sure you are on your home Wi-Fi network before connecting to the TeslaPW Wi-Fi network.
    The TeslaPW network does not have internet access, so phones will sometimes switch to cellular data
    and interfere with the connection. You can temporarily turn on **Airplane Mode** to avoid that problem.
 
-3. **Verify Wi-Fi credentials**
+4. **Verify Wi-Fi credentials**
    - Try connecting to the TeslaPW network directly through your phone’s Wi-Fi settings.
    - If successful, return to Netzero and attempt the connection again.
    - If unsuccessful, try [turning the system off and on again](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/en-us/GUID-D239D3CE-AED7-41EA-88C0-13566FDF966C.html).
    - If the problem persists, contact Tesla Support to confirm the correct credentials.
 
-4. **Test with the Tesla One app**
+5. **Test with the Tesla One app**
    - In some cases we've seen that a connection with the Tesla One app has to be established first (only once). You can find the Tesla One app here:
        [iOS](https://apps.apple.com/us/app/tesla-one/id1625770308) | [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros).
    - Sign in as an **External Partner** using your Tesla credentials.
