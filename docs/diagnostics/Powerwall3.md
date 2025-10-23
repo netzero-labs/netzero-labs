@@ -65,7 +65,7 @@ If the connection fails or no diagnostic data appears:
 
 4. **Test with the Tesla One app**
    - In some cases we've seen that a connection with the Tesla One app has to be established first (only once). You can find the Tesla One app here:
-       [iOS](https://apps.apple.com/us/app/tesla-one/id1625770308) | [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros)
+       [iOS](https://apps.apple.com/us/app/tesla-one/id1625770308) | [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros).
    - Sign in as an **External Partner** using your Tesla credentials.
    - Go to **More > Tesla Device Setup**, select **Manually Enter**, and provide the Wi-Fi network details.
    - If this also fails, try [turning the system off and on again](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/en-us/GUID-D239D3CE-AED7-41EA-88C0-13566FDF966C.html) before retrying.
