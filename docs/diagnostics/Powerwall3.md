@@ -54,8 +54,8 @@ If the connection fails or no diagnostic data appears:
    Wi-Fi access requires this permission), **Local Network** / **Nearby devices**, and **Camera** (when using QR codes).
 
 2. Make sure you are on your home Wi-Fi network before connecting to the TeslaPW Wi-Fi network.
-   The TeslaPW network does not have internet access, so phones will sometimes switch cellular data
-   and interfere with the connection.
+   The TeslaPW network does not have internet access, so phones will sometimes switch to cellular data
+   and interfere with the connection. You can temporarily turn on **Airplane Mode** to avoid that problem.
 
 3. **Verify Wi-Fi credentials**
    - Try connecting to the TeslaPW network directly through your phone’s Wi-Fi settings.
@@ -64,7 +64,8 @@ If the connection fails or no diagnostic data appears:
    - If the problem persists, contact Tesla Support to confirm the correct credentials.
 
 4. **Test with the Tesla One app**
-   - [iOS](https://apps.apple.com/us/app/tesla-one/id1625770308) | [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros)
+   - In some cases we've seen that a connection with the Tesla One app has to be established first (only once). You can find the Tesla One app here:
+       [iOS](https://apps.apple.com/us/app/tesla-one/id1625770308) | [Android](https://play.google.com/store/apps/details?id=com.tesla.teslapros)
    - Sign in as an **External Partner** using your Tesla credentials.
    - Go to **More > Tesla Device Setup**, select **Manually Enter**, and provide the Wi-Fi network details.
    - If this also fails, try [turning the system off and on again](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/en-us/GUID-D239D3CE-AED7-41EA-88C0-13566FDF966C.html) before retrying.
