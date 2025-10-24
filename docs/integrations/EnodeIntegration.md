@@ -16,7 +16,7 @@ Supported devices:
    - Full details: [Charger capabilities](https://developers.enode.com/api/capabilities/charger).
 
 2. **EVs**
-   - Vendors: Audi, BMW, Cupra, Fiat, Jaguar, Land Rover, Lexus, Mercedes, MINI, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG.
+   - Vendors: Audi, Cupra, Fiat, Jaguar, Land Rover, Lexus, Mercedes, MINI, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG.
    - Common capabilities: charging state, charging management (Start/Stop), and charging data in Home charts.
    - Full details: [Vehicle capabilities](https://developers.enode.com/api/capabilities/vehicle).
 
