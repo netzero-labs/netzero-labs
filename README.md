@@ -27,12 +27,16 @@
 - [Powerwall 3 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall3)
 - [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnostics/solar_production)
 - [Powerwall Capacity Estimate](https://www.netzero.energy/docs/capacity_estimate)
-- [Analysis of Powerwall Battery Retention](https://www.netzero.energy/content/2025-02/powerwall-analysis)
 - [Powerwall Firmware Versions](https://www.netzero.energy/firmware_versions)
 
 ### API
 
 - [Developer API](https://www.netzero.energy/docs/api)
+
+### Analysis
+
+- [Analysis of Powerwall Battery Retention](https://www.netzero.energy/content/2025-02/powerwall-analysis)
+- [Analysis of Powerwall Battery Retention - Part 2](https://www.netzero.energy/content/2025-10/powerwall-analysis-2)
 
 ---
 
