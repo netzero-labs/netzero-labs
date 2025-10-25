@@ -111,8 +111,7 @@ Subscriptions are currently available in the United States, the United Kingdom, 
 New Zealand, Italy, Canada, Portugal, the Netherlands, and Spain. Users in unsupported countries can
 continue using advanced features for free until support is added.
 
-Note: availability is based on your App Store / Google Play account region, which cannot be
-changed manually.
+Note: availability is based on your account region, which cannot be changed manually.
 
 ---
 
