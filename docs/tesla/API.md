@@ -5,6 +5,7 @@ layout: with_footer
 # Developer API and Automation
 
 ## Introduction
+
 [Netzero](https://www.netzero.energy) allows you to schedule Powerwall
 configuration changes using the app (backup reserve, operational mode, energy exports, and grid
 charging).
@@ -13,32 +14,16 @@ For more advanced use, the app also offers an API that allows you to manage thes
 
 
 ## API Token
+
 Begin by logging into your Tesla account using the [Netzero app](https://www.netzero.energy). Access your
 API token and energy site ID by navigating to the Account menu (last menu) and selecting
 **Settings > Developer API**. It's important to keep your API token secure, as while it provides access only
 to the data displayed here, it does grant the ability to manage Powerwall configuration.
 
 
-## Automation with IFTTT
-You can utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
-For instance, to establish a specific backup reserve percentage daily at a designated time:
-
-1. Visit https://ifttt.com/create or use the IFTTT app.
-2. **If This**: "Choose Date & Time", then select "Every day at", specify the desired time, and create the trigger.
-3. **Then That**: Search for the "Webhooks" service, and select "Make a web request". Configure the web request as illustrated below.
-Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above. Replace `60` with your desired
-backup reserve percentage.
-
-<img src="ifttt.png" width="300" alt="IFTTT" />
-
-Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
-schedule configuration instead. IFTTT is useful for more complex rules (e.g. incorporating weather or other conditions).
-
-You can modify other parameters in addition to backup reserve percentage, see next section for details.
-
-
 ## Automation with API requests
-If you're familiar with running web requests using `curl` or similar tools, you can also manage the
+
+If you're familiar with running web requests using `curl` or similar tools, you can manage the
 configuration with scripts.
 
 To retrieve the current configuration and live status of the system, insert `$API_TOKEN` and `$SITE_ID` values obtained above and run:
@@ -84,6 +69,7 @@ To modify the configuration, send a POST request with new values. You can adjust
 - `operational_mode`: Select one of:
   - `autonomous` (Time-Based Control, using stored energy to maximize savings based on your utility rate plan),
   - `self_consumption` (Self-Powered, using stored energy to power your home after the sun goes down).
+  - `backup` (Backup Mode, [see documentation](https://docs.netzero.energy/docs/tesla/BackupMode) for details).
 - `energy_exports`: Select one of:
   - `pv_only` (export solar energy only),
   - `battery_ok` (export both solar energy and stored Powerwall energy),
@@ -127,3 +113,22 @@ response = requests.post(
 )
 print(response.json())
 ```
+
+
+## Automation with IFTTT
+
+You can also utilize the API token to automate Powerwall configuration changes through [IFTTT](https://ifttt.com/) (If This, Then That).
+For instance, to establish a specific backup reserve percentage daily at a designated time:
+
+1. Visit https://ifttt.com/create or use the IFTTT app.
+2. **If This**: "Choose Date & Time", then select "Every day at", specify the desired time, and create the trigger.
+3. **Then That**: Search for the "Webhooks" service, and select "Make a web request". Configure the web request as illustrated below.
+Substitute `123456` with your energy site ID and `AbCdEf` with your API token, both obtained above. Replace `60` with your desired
+backup reserve percentage.
+
+<img src="ifttt.png" width="300" alt="IFTTT" />
+
+Note: Utilizing Webhooks requires a PRO IFTTT plan (currently $3.49/month). For simpler automation, use the in-app
+schedule configuration instead. IFTTT is useful for more complex rules (e.g. incorporating weather or other conditions).
+
+You can modify other parameters in addition to backup reserve percentage, see next section for details.
