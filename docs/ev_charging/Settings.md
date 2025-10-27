@@ -12,31 +12,15 @@ starts and avoid discharging the Powerwall into the (much larger) EV battery. Yo
 start or stop EV charging, for example based on electricity pricing or Powerwall state of charge.
 
 Depending on your EV charging setup, there are different ways for Netzero to determine charging status and
-manage charging. There are integrations for **Tesla Wall Connectors**, **Tesla vehicles**, and
-**OCPP-compatible EV chargers** (e.g. **Wallbox** or **myenergi zappi**).
+manage charging. There are integrations for **Tesla vehicles**, **Tesla Wall Connectors**, a wide array
+of **[other EV chargers and EVs](https://docs.netzero.energy/docs/integrations/EnodeIntegration)**,
+and **OCPP-compatible EV chargers**.
 
-To configure your EV charger, navigate to `Settings > Vehicle Charging`. Once the charger is configured,
-you can use the `EV Charging` tab on top of the `New Automation` screen to configure automations based
-on the start or stop of EV charging.
-
-## Tesla Wall Connector
-
-If you have a Gen 3 Tesla Wall Connector (Wi-Fi enabled Wall Connector), that's a simple and
-reliable way for Netzero to determine charging status and manage charging.
-
-If necessary, add the Wall Connector to your energy system in the Tesla app by selecting the product
-drop-down in the top left and selecting `Add Product`. Once the Wall Connector is successfully added
-to your energy system, the Tesla app should show a car garage with the Wall Connector next to the
-Powerwall.
-
-No further setup is required in Netzero to access the Wall Connector data. You can confirm the status
-on the `Settings > Vehicle Charging` screen.
-
-### Notes
-
-- If your Wall Connector is not added to your energy system, but listed as a separate product in
-  the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
-  combine the two systems into one.
+To configure your EV charger, navigate to `Settings > Tesla EV Charging` (for Tesla EVs and chargers)
+or `Settings > EV Charging` (for other EVs and chargers). Once the EV or charger is configured,
+you can use the `EV` tab on top of the `New Automation` screen to configure automations based
+on the start or stop of EV charging. You will alse see a new `Control vehicle charging` automation
+action.
 
 ## Tesla Vehicles
 
@@ -51,7 +35,7 @@ Charging status is tracked using [Tesla Fleet Telemetry](https://developer.tesla
 a secure way for Tesla vehicles to report specific data to third-party services such as Netzero. The
 initial setup requires a few more steps:
 
-1. If necessary, add permissions so Netzero can access vehicle data. Navigate to the `Settings > Vehicle Charging`
+1. If necessary, add permissions so Netzero can access vehicle data. Navigate to the `Settings > Tesla EV Vehicle`
 screen and follow the app instructions to enable the **Vehicle Information** and
 **Vehicle Charging Management** permissions. Once permissions are added, return to the app and refresh
 the state. If you had already added permissions when first logging in with Netzero, you will skip this step.
@@ -62,8 +46,27 @@ start your vehicle. Note: if you are not the owner of the vehicle, you will need
 a Tesla key card when completing this process. Older Tesla Model S and X vehicles do not support
 Fleet Telemetry.
 
-3. Once the key is set up, Fleet Telemetry will be automatically configured and the vehicle will
+3. Once the key is set up, Fleet Telemetry will be configured automatically, and the vehicle will
 start reporting its charging status.
+
+## Tesla Wall Connector
+
+If you have a Gen 3 Tesla Wall Connector (Wi-Fi enabled Wall Connector), that's another way for
+Netzero to determine charging status and manage charging.
+
+If necessary, add the Wall Connector to your energy system in the Tesla app by selecting the product
+drop-down in the top left and choosing `Add Product`. Once the Wall Connector is successfully added
+to your energy system, the Tesla app should show a car garage with the Wall Connector next to the
+Powerwall.
+
+No further setup is required in Netzero to access Wall Connector data. You can confirm the status
+on the `Settings > Tesla EV Charging` screen.
+
+### Notes
+
+- If your Wall Connector is not added to your energy system, but listed as a separate product in
+  the Tesla app (when using the top-left dropdown), you will have to contact Tesla Support to
+  combine the two systems into one.
 
 ## Pre-2021 Model S/X Tesla Vehicles
 
@@ -71,6 +74,11 @@ If you have a pre-2021 Tesla Model S or X, Fleet Telemetry is supported if your 
 Intel Atom computer. See
 [Fleet Telemetry for Pre-2021 Model S/X](https://docs.netzero.energy/docs/ev_charging/FleetTelemetryModelSX)
 for details.
+
+## Other EV chargers or EV
+
+See [Energy Device Integration](https://docs.netzero.energy/docs/integrations/EnodeIntegration) for
+documentation on configuring your non-Tesla EV charger or EV.
 
 ## OCPP-compatible EV Chargers
 
@@ -102,9 +110,9 @@ Here are example configuration screens for **Wallbox** and **myenergi zappi** (r
 
 ### Notes
 
-- If your EV charger only has a provider address field and no Charge Point ID field (e.g. Fronius Wattpilot),
+- If your EV charger has only a provider address field and no Charge Point ID field (e.g. Fronius Wattpilot),
   append the ID to the end of the provider address, for example:
   `wss://ocpp.netzero.energy/ABCD-1234` (replace with the "Charge point ID" shown in Netzero).
 
 - Some EV chargers (e.g. Project EV, Autel) might not support the secure `wss:` connection. If your EV charger
-  is not connecting, try the alternate provider: `ws://ocpp.netzero.energy/` (note the `ws:` instead of `wss:`).
+  is not connecting, try the alternate provider `ws://ocpp.netzero.energy/` (note the `ws:` instead of `wss:`).
