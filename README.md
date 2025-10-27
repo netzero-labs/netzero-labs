@@ -1,9 +1,5 @@
 # Netzero Documentation
 
-### Updates
- - Jun 19, 2025: [Tesla's Backup Reserve Update](https://www.netzero.energy/docs/backup_reserve_update)
- - Jun 6, 2025: [Funding Netzero with Subscriptions](https://www.netzero.energy/docs/subscription)
-
 ### Automation
 
 - [Powerwall Automation](https://www.netzero.energy/docs/automation)
@@ -36,6 +32,10 @@
 
 - [Analysis of Powerwall Battery Retention](https://www.netzero.energy/content/2025-02/powerwall-analysis)
 - [Analysis of Powerwall Battery Retention - Part 2](https://www.netzero.energy/content/2025-10/powerwall-analysis-2)
+
+### Updates
+ - Jun 19, 2025: [Tesla's Backup Reserve Update](https://www.netzero.energy/docs/backup_reserve_update)
+ - Jun 6, 2025: [Funding Netzero with Subscriptions](https://www.netzero.energy/docs/subscription)
 
 ---
 
