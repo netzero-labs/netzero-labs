@@ -10,9 +10,8 @@
 - [Energy Device Integration](https://www.netzero.energy/docs/enode)
 - [EV Charger Settings](https://www.netzero.energy/docs/ev_charger_settings)
 - [Tesla Charge on Solar with Powerwall Priority](https://www.netzero.energy/docs/charge_on_solar_tesla)
-- [Charge on Solar with OCPP EV Chargers](https://www.netzero.energy/docs/charge_on_solar)
-- [EV Charging Automation](https://www.netzero.energy/docs/ev_charger_start_stop)
 - [Fleet Telemetry for Pre-2021 Tesla Model S/X](https://docs.netzero.energy/docs/ev_charging/FleetTelemetryModelSX)
+- [Charge on Solar with OCPP EV Chargers](https://www.netzero.energy/docs/charge_on_solar)
 - [Backup Mode](https://www.netzero.energy/docs/backup_mode)
 
 ### Utility Rate Plans
