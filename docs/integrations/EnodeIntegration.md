@@ -33,7 +33,7 @@ Supported devices:
      1. `When the system goes off-grid: Set heating/cooling to OFF.`
      2. `When the system is back on grid: Follow heating/cooling unit schedule.`
      3. `When electricity price drops below $0.10: Set permanent hold (heat setpoint at 72F/22C).`
-     4. `When electricity price rises to or above $0.10: Follow HVAC device schedule.`
+     4. `When electricity price rises to or above $0.10: Follow heating/cooling unit schedule.`
    - Full details: [HVAC capabilities](https://developers.enode.com/api/capabilities/hvac).
 
 **Notes:**
