@@ -12,17 +12,28 @@ Supported devices:
 
 1. **EV chargers**
    - Vendors: Charge Amps, ChargePoint, Easee, EO, EVBox, Garo, go-e, Heidelberg, Hypervolt, KEBA, myenergi, Ohme, Pod Point, Schneider Electric, Wallbox, Zaptec.
-   - Common capabilities: charging state, charging management (Start/Stop), Charge on Solar, and charging data in Home charts.
+   - Common capabilities: charging state, charging management (Start/Stop), Charge on Solar (for supported EV chargers), and charging data in Home charts.
+   - Example automations:
+     1. `When vehicle charging starts: Set backup reserve to the current state of charge (preserve Powerwall charge).`
+     2. `When vehicle charging stops: Set backup reserve to 20%.`
+     3. `When electricity price drops below $0.10: Start vehicle charging.`
+     4. `When electricity price rises to or above $0.10: Stop vehicle charging.`
    - Full details: [Charger capabilities](https://developers.enode.com/api/capabilities/charger).
 
 2. **EVs**
    - Vendors: Audi, Cupra, Fiat, Jaguar, Land Rover, Lexus, Mercedes, MINI, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG.
    - Common capabilities: charging state, charging management (Start/Stop), and charging data in Home charts.
+   - Example automations: similar as the automations listed above for EV chargers.
    - Full details: [Vehicle capabilities](https://developers.enode.com/api/capabilities/vehicle).
 
 3. **Heating/cooling devices**
    - Vendors: ADAX, Bosch, Daikin, Ecobee, Fujitsu, Function, Honeywell TCC, Mill, Mitsubishi, Netatmo, NIBE, Panasonic, Resideo, Sensibo, Tado, Toshiba.
    - Common capabilities: set permanent hold (e.g., pre-heat or pre-cool the home) and resume schedule.
+   - Example automations:
+     1. `When the system goes off-grid: Set heating/cooling to OFF.`
+     2. `When the system is back on grid: Follow heating/cooling unit schedule.`
+     3. `When electricity price drops below $0.10: Set permanent hold (heat setpoint at 72F/22C).`
+     4. `When electricity price rises to or above $0.10: Follow HVAC device schedule.`
    - Full details: [HVAC capabilities](https://developers.enode.com/api/capabilities/hvac).
 
 **Notes:**
