@@ -28,7 +28,7 @@ Supported devices:
 
 3. **Heating/cooling devices**
    - Vendors: ADAX, Bosch, Daikin, Ecobee, Fujitsu, Function, Honeywell TCC, Mill, Mitsubishi, Netatmo, NIBE, Panasonic, Resideo, Sensibo, Tado, Toshiba.
-   - Common capabilities: set permanent hold (e.g., pre-heat or pre-cool the home) and resume schedule.
+   - Common capabilities: set permanent hold (e.g., pre-heat or pre-cool the home), adjust mode (auto/cool/heat/off), and resume schedule.
    - Example automations:
      1. `When the system goes off-grid: Set heating/cooling to OFF.`
      2. `When the system is back on grid: Follow heating/cooling unit schedule.`
