@@ -40,8 +40,8 @@ with Tesla vehicles).
   resume, so there is also an option to continue charging at the lowest rate when there is not enough
   solar power.
 
-- **Charge on Solar** will only activate during daylight hours. If you plug in your vehicle outside
-  of daylight hours, it will proceed to charge at your configured rate. If you prefer to
+- **Charge on Solar** will only activate during daylight hours (between sunrise and sunset). If
+  you plug in your vehicle outside of daylight hours, it will proceed to charge at your configured rate. If you prefer to
   only charge with **Charge on Solar**, manually stop charging after plugging in the vehicle (using the
   Netzero app). We may add an option to make this automatic, while allowing scheduled charging from
   the grid.
