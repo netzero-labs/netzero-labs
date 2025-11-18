@@ -121,6 +121,6 @@ Automation choices depend on your goals and utility rate structure. See the docu
 ## 12. My question is not answered here.
 
 Contact us at
-[feedback@netzero.energy](mailto:feedback@netzero.energy?subject=Netzero+Feedback).
+[feedback@netzero.energy](mailto:feedback@netzero.energy?subject=Netzero%20Feedback).
 
 **[Netzero Documentation](https://docs.netzero.energy)**
