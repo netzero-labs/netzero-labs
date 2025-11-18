@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Frequently Asked Questions
@@ -91,7 +91,7 @@ Netzero uses an API partner to integrate energy devices. Supported manufacturer 
 
 The list of supported devices is regularly updated:
 
-* [https://docs.netzero.energy/docs/integrations/EnodeIntegration](https://docs.netzero.energy/docs/integrations/EnodeIntegration)
+* [Energy Device Integration](https://docs.netzero.energy/docs/integrations/EnodeIntegration)
 
 ## 9. Why does my Netzero app not work or allow me to sign in?
 

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Updates
@@ -35,9 +35,3 @@ you can keep the automation as-is. Hopefully, Tesla will resolve the issue soon.
 
 You may also consider the experimental [Backup Mode](https://www.netzero.energy/docs/backup_mode),
 which charges Powerwall at a faster rate than Self-Powered mode.
-
-## Questions or Issues
-
-If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
-
-**[Netzero Documentation](https://docs.netzero.energy)**

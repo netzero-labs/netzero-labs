@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Powerwall Backup Reserve Update
@@ -42,10 +42,3 @@ Automations triggered at or below 80%, or at 100%, continue to function normally
 
 * From July 19-22, automations set between 81-99% were marked as failed. Understanding this
 change, we no longer flag these automations as failed, although their behavior has changed.
-
-
-## Questions or Issues
-
-If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
-
-**[Netzero Documentation](https://docs.netzero.energy)**

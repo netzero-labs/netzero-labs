@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: with_footer
 ---
 
 # Fleet Telemetry for Pre-2021 Tesla Model S/X
@@ -34,9 +34,3 @@ MCU1 does not support Fleet Telemetry unless upgraded to Tesla’s newer infotai
 
 After the in-car option is enabled and the vehicle is paired, Fleet Telemetry data will begin
 streaming automatically.
-
-## Questions or Issues
-
-If you have questions, comments, or issues, please contact us at [feedback@netzero.energy](mailto:feedback@netzero.energy).
-
-**[Netzero Documentation](https://docs.netzero.energy)**
