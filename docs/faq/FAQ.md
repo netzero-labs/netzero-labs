@@ -1,5 +1,5 @@
 ---
-layout: with_footer
+layout: default
 ---
 
 # Frequently Asked Questions
