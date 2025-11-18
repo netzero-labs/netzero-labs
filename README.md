@@ -1,5 +1,7 @@
 # Netzero Documentation
 
+[Frequently Asked Questions](https://docs.netzero.energy/docs/faq/FAQ)
+
 ### Automation
 
 - [Powerwall Automation](https://www.netzero.energy/docs/automation)
