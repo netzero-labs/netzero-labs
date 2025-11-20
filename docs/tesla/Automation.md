@@ -15,12 +15,13 @@ state of charge, energy flow, EV charging status, weather forecast, grid status,
 Automations can trigger based on time or events. The following triggers are available:
 
 1. Time of day (optionally restricted to specific days of the week).
-2. Powerwall state of charge: charged up to, or discharged down to a user-defined threshold.
-3. Vehicle charging starts or stops.
-4. Energy flow-based automations: when home usage, solar generation, grid import, or grid export rise above or drop below a threshold.
-5. Electricity price-based automations: when import or export price is above or below a threshold.
-6. Grid status-based automations: when the system goes off-grid or is back on grid.
-7. Weather forecast-based automations: when the weather forecast is sunny, partly sunny, or cloudy.
+2. At sunrise or sunset, with an optional time offset of up to 4 hours before or after the event. Note: this feature requires your city location to be set in **Settings > Account**.
+3. Powerwall state of charge: charged up to, or discharged down to a user-defined threshold.
+4. Vehicle charging starts or stops.
+5. Energy flow-based automations: when home usage, solar generation, grid import, or grid export rise above or drop below a threshold.
+6. Electricity price-based automations: when import or export price is above or below a threshold.
+7. Grid status-based automations: when the system goes off-grid or is back on grid.
+8. Weather forecast-based automations: when the weather forecast is sunny, partly sunny, or cloudy.
 
 Event triggers can optionally include a time restriction, to only run during specific time windows.
 
