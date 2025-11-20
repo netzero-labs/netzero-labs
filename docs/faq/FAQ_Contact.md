@@ -15,7 +15,8 @@ layout: default
 9. [Why does my Netzero app not work or allow me to sign in?](#9-why-does-my-netzero-app-not-work-or-allow-me-to-sign-in)
 10. [How do I subscribe to Netzero for advanced features?](#10-how-do-i-subscribe-to-netzero-for-advanced-features)
 11. [Which automations should I configure for my system?](#11-which-automations-should-i-configure-for-my-system)
-12. [My question is not answered here.](#12-my-question-is-not-answered-here)
+12. [I have a Wall Connector linked to my Tesla account, why is it not showing up in Netzero?](#12-i-have-a-wall-connector-linked-to-my-tesla-account-why-is-it-not-showing-up-in-netzero)
+13. [My question is not answered here.](#13-my-question-is-not-answered-here)
 
 ## 1. How can I configure Powerwall to export to the grid?
 
@@ -118,7 +119,13 @@ Automation choices depend on your goals and utility rate structure. See the docu
 
 * [Powerwall Automation](https://docs.netzero.energy/docs/tesla/Automation)
 
-## 12. My question is not answered here.
+## 12. I have a Wall Connector linked to my Tesla account, why is it not showing up in Netzero?
+
+The Wall Connector needs to be added to your Powerwall system to be shown in Netzero. One way to know that's the case: you only have one system in the top-left dropdown in the Tesla app, and it shows both the solar system and your car garage with Wall Connector on the same screen.
+
+If the Wall Connector is shown as a separate system in the Tesla app, you can ask Tesla Support to merge the two systems for you.
+
+## 13. My question is not answered here.
 
 Contact us at
 [feedback@netzero.energy](mailto:feedback@netzero.energy?subject=Netzero%20Feedback).
