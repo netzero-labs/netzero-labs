@@ -27,7 +27,7 @@ Useful Tesla references:
 Common explanations for unexpected behavior:
 
 * **Misconfigured settings**. Double-check operational mode, backup reserve, and export settings in Netzero and in the Tesla app.
-* **Powerwall 3 Calibration Mode**. Powerwall 3 sometimes enters a calibration cycle that rapidly discharges and recharges the battery, even below the backup reserve. It typically completes within 24 hours. If the behavior persists, contact Tesla Support.
+* **[Powerwall 3 Calibration Mode](https://www.tesla.com/support/energy/powerwall/own/powerwall-3-calibration)**. Powerwall 3 sometimes enters a calibration cycle that rapidly discharges and recharges the battery, even below the backup reserve. It typically completes within 24 hours. If the behavior persists, contact Tesla Support.
 * **System restart needed**. If behavior remains unclear, power-cycle the system:
 
   * [Powerwall 3: Turning the System Off](https://energylibrary.tesla.com/docs/Public/EnergyStorage/Powerwall/3/OwnerManual/en-us/GUID-D239D3CE-AED7-41EA-88C0-13566FDF966C.html)
@@ -44,9 +44,7 @@ Important notes:
 
 ## Where can I suggest features or changes for Netzero?
 
-Use the public GitHub issue tracker to submit feature requests:
-
-* [Netzero Issues](https://github.com/netzero-labs/netzero/issues)
+Use the public GitHub issue tracker to submit feature requests: [Netzero Issues](https://github.com/netzero-labs/netzero/issues).
 
 This allows other users to discuss and upvote ideas, and helps us track them efficiently.
 
@@ -71,9 +69,7 @@ Swipe left on any automation in the schedule to edit, pause, mute, or delete an 
 
 Netzero uses an API partner to integrate energy devices. Supported manufacturer and model availability depends on programmatic access, reliability, and vendor support.
 
-The list of supported devices is regularly updated:
-
-* [Energy Device Integration](https://docs.netzero.energy/docs/integrations/EnodeIntegration)
+The list of supported devices is regularly updated: [Energy Device Integration](https://docs.netzero.energy/docs/integrations/EnodeIntegration).
 
 ## Why does my Netzero app not work or allow me to sign in?
 
