@@ -18,13 +18,13 @@ Supported devices:
      2. `When vehicle charging stops: Set backup reserve to 20%.`
      3. `When electricity price drops below $0.10: Start vehicle charging.`
      4. `When electricity price rises to or above $0.10: Stop vehicle charging.`
-   - Full details: [Charger capabilities](https://developers.enode.com/api/capabilities/charger).
+   - Full details: [Charger capabilities](https://developers.enode.com/brands?q=&asset-type=charger).
 
 2. **EVs**
    - Vendors: Audi, Cupra, Fiat, Jaguar, Land Rover, Lexus, Mercedes, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG.
    - Common capabilities: charging state, charging management (Start/Stop), and charging data in Home charts.
    - Example automations: similar as the automations listed above for EV chargers.
-   - Full details: [Vehicle capabilities](https://developers.enode.com/api/capabilities/vehicle).
+   - Full details: [Vehicle capabilities](https://developers.enode.com/brands?q=&asset-type=vehicle).
 
 3. **Heating/cooling devices**
    - Vendors: ADAX, Bosch, Daikin, Ecobee, Fujitsu, Function, Honeywell TCC, Mill, Mitsubishi, Netatmo, NIBE, Panasonic, Resideo, Sensibo, Tado, Toshiba.
@@ -34,7 +34,7 @@ Supported devices:
      2. `When the system is back on grid: Follow heating/cooling unit schedule.`
      3. `When electricity price drops below $0.10: Set permanent hold (heat setpoint at 72F/22C).`
      4. `When electricity price rises to or above $0.10: Follow heating/cooling unit schedule.`
-   - Full details: [HVAC capabilities](https://developers.enode.com/api/capabilities/hvac).
+   - Full details: [HVAC capabilities](https://developers.enode.com/brands?q=&asset-type=hvac).
 
 **Notes:**
 - A Pro subscription or active trial is required to connect and automate energy devices.
