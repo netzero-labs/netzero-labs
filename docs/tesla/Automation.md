@@ -160,6 +160,29 @@ When Powerwall is discharged down to backup reserve: Send notification.
 ```
 
 
+### Automation Labels
+
+Automations can optionally have **labels** and **group labels** to improve organization and control.
+
+Labels are short descriptions attached to individual automations. They appear in the automation list,
+past run history, and notifications.
+
+**Groups** are special labels shared by multiple automations. When multiple automations use the same group label,
+they are displayed together in the automation list. The entire group can be paused or resumed at once.
+This is useful for seasonal or situational automations, such as summer vs winter behavior.
+
+Labels and group labels also determine display order. Groups are ordered alphabetically by their label, and automations within a group are ordered by their own labels. To enforce a specific order, prefix labels with numbers. For example:
+
+```
+Group: 1 Summer automations
+   1 Schedule Time-Based Control mode
+   2 Notify when Powerwall is full
+
+Group: 2 Winter automations
+   1 Adjust backup reserve based on weather
+   2 Stop EV charging during grid outage
+```
+
 ## Frequently Asked Questions
 
 1. **Does the Netzero app have to be running for automations to run?**
