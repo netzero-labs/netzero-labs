@@ -26,6 +26,7 @@ Netzero can configure the relevant settings for exporting, such as:
 * Enabling **Time-Based Control** mode.
 * Setting **Energy Exports** to **Everything (solar and battery)**.
 * Setting a **low backup reserve**.
+* Keeping the utility rate plan up to date (for dynamic pricing plans).
 
 However, these settings alone do not guarantee export. The final decision remains with Tesla.
 
