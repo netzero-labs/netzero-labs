@@ -32,10 +32,13 @@ Charging based on a schedule is also possible, but most EV chargers and EVs alre
 
 ## Notes
 
-- Since Tesla recently started charging for waking up the car or issuing commands, the automations
-  are limited to 5 per user in a 24 hour period. This limit is across all start and stop
+- Since Tesla charges for waking up the car or issuing commands, the automations
+  are limited to 10 per user in a 24 hour period. This limit is across all start and stop
   automations. Once the allotted automations are exceeded, they will fail until enough time has
   passed.
+
+  If the vehicle is not plugged in or is otherwise unable to start or stop charging at the time the
+  automation runs, the command will be skipped and will not count toward the 10-command limit.
 
 - There are no limits for charging with an OCPP-compatible EV charger. Note that Tesla Wall
   Connector is not OCPP-compatible.
