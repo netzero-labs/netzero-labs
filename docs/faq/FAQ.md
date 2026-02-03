@@ -8,7 +8,7 @@ layout: default
 2. [Why is my Powerwall charging or discharging when I don't expect it to?](#2-why-is-my-powerwall-charging-or-discharging-when-i-dont-expect-it-to)
 3. [Intelligent Octopus Go: Why is my Powerwall charging from the grid or discharging to the EV?](#3-intelligent-octopus-go-why-is-my-powerwall-charging-from-the-grid-or-discharging-to-the-ev)
 4. [Where can I suggest features or changes for Netzero?](#4-where-can-i-suggest-features-or-changes-for-netzero)
-5. [Why is my Powerwall 2 or Powerwall 3 diagnostics connection failing?](#5-why-is-my-powerwall-2-or-powerwall-3-diagnostics-connection-failing)
+5. [Why is my Powerwall 2 or Powerwall 3 diagnostic connection failing?](#5-why-is-my-powerwall-2-or-powerwall-3-diagnostic-connection-failing)
 6. [Why is the Utility Rate Plan shown in the Tesla app wrong?](#6-why-is-the-utility-rate-plan-shown-in-the-tesla-app-wrong)
 7. [How do I edit or remove an existing automation?](#7-how-do-i-edit-or-remove-an-existing-automation)
 8. [Can you add support for my EV, EV charger, or heating/cooling unit?](#8-can-you-add-support-for-my-ev-ev-charger-or-heatingcooling-unit)
@@ -68,7 +68,7 @@ Use the public GitHub issue tracker to submit feature requests: [Netzero Issues]
 
 This allows other users to discuss and upvote ideas, and helps us track them efficiently.
 
-## 5. Why is my Powerwall 2 or Powerwall 3 diagnostics connection failing?
+## 5. Why is my Powerwall 2 or Powerwall 3 diagnostic connection failing?
 
 Troubleshooting guides are available:
 

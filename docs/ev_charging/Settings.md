@@ -19,7 +19,7 @@ and **OCPP-compatible EV chargers**.
 To configure your EV charger, navigate to `Settings > Tesla EV Charging` (for Tesla EVs and chargers)
 or `Settings > EV Charging` (for other EVs and chargers). Once the EV or charger is configured,
 you can use the `EV` tab on top of the `New Automation` screen to configure automations based
-on the start or stop of EV charging. You will alse see a new `Control vehicle charging` automation
+on the start or stop of EV charging. You will also see a new `Control vehicle charging` automation
 action.
 
 ## Tesla Vehicles

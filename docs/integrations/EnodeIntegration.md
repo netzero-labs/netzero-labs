@@ -23,7 +23,7 @@ Supported devices:
 2. **EVs**
    - Vendors: Audi, Cupra, Fiat, Jaguar, Land Rover, Lexus, Lucid, Mercedes, Nissan, Porsche, Renault, Rivian, SEAT, Škoda, Toyota, Volkswagen, Volvo, XPENG.
    - Common capabilities: charging state, charging management (Start/Stop), and charging data in Home charts.
-   - Example automations: similar as the automations listed above for EV chargers.
+   - Example automations: similar to the automations listed above for EV chargers.
    - Full details: [Vehicle capabilities](https://developers.enode.com/brands?q=&asset-type=vehicle).
 
 3. **Heating/cooling devices**

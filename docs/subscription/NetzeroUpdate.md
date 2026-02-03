@@ -62,7 +62,7 @@ unaddressed:
 ## What Subscriptions Will Fund
 
 Subscriptions will help sustain and accelerate Netzero's development. Our long-term
-vision—-Intelligent Home Energy Management—-extends beyond solar and batteries to include:
+vision--Intelligent Home Energy Management--extends beyond solar and batteries to include:
 
 - Electric vehicles
 - Heat pumps

@@ -33,7 +33,7 @@ Charging based on a schedule is also possible, but most EV chargers and EVs alre
 ## Notes
 
 - Since Tesla charges for waking up the car or issuing commands, the automations
-  are limited to 10 per user in a 24 hour period. This limit is across all start and stop
+  are limited to 10 per user in a 24-hour period. This limit is across all start and stop
   automations. Once the allotted automations are exceeded, they will fail until enough time has
   passed.
 

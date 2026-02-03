@@ -32,7 +32,7 @@ Notes:
   that state of charge. This has two important implications:
      - If the Powerwall is always above that threshold (e.g. due to a higher backup reserve setting),
        the automation will never run.
-     - If the event has a time restriction (e.g. between 1-2pm), and Powerwall is charged up to 70%
+     - If the event has a time restriction (e.g. between 1-2 PM), and Powerwall is charged up to 70%
        outside of that time frame, the automation will not run.
   
   The advantage of edge triggers is that it is easy to understand exactly when an automation will run, and how many times it will run. It is also
@@ -102,7 +102,7 @@ When home usage rises above 8 kW: Set backup reserve to 100%.
 When home usage drops below 8 kW: Set backup reserve to: 20%.
 ```
 
-When EV charging starts, the Powerwall backup reserve will be set to 100%, and the Powerwall will start charging from the grid. The charging rate will be around 1.8kW per Powerwall. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
+When EV charging starts, the Powerwall backup reserve will be set to 100%, and the Powerwall will start charging from the grid. The charging rate will be around 1.8 kW per Powerwall. Once EV charging is done, we can reset the backup reserve to its usual value (replace 20% with your desired backup reserve).
 
 
 ### Combining Time-Based Control with Self-Powered mode
@@ -127,7 +127,7 @@ Every day at 12:00 AM: Set backup reserve to: 100%.
 Every day at 6:00 AM: Set backup reserve to: 20%.
 ```
 
-Note: Replace 20% with your desired backup reserve. Because of Tesla's limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8kW per Powerwall instead of 5kW per Powerwall. See [Backup Mode](https://docs.netzero.energy/docs/tesla/BackupMode) for an alternate automation with faster charging.
+Note: Replace 20% with your desired backup reserve. Because of Tesla's limitations, the battery will charge at a lower rate compared to Time-Based Control charging, ~1.8 kW per Powerwall instead of 5 kW per Powerwall. See [Backup Mode](https://docs.netzero.energy/docs/tesla/BackupMode) for an alternate automation with faster charging.
 
 
 ### Taking advantage of low electricity rates
@@ -151,7 +151,7 @@ Note: Replace the price thresholds and backup reserve with your desired settings
 
 ### Notifications
 
-The only action for these automations is a push notification or email, with no change to the system. Sometimes it's useful to get notified about the Powerwall state of charge and act on it (especially if the action cannot currently be automated). For example, plug in the EV in when the Powerwall is full, or reduce home electricity usage when the Powerwall is down to the backup reserve.
+The only action for these automations is a push notification or email, with no change to the system. Sometimes it's useful to get notified about the Powerwall state of charge and act on it (especially if the action cannot currently be automated). For example, plug the EV in when the Powerwall is full, or reduce home electricity usage when the Powerwall is down to the backup reserve.
 
 Examples:
 ```

@@ -4,7 +4,7 @@ layout: with_footer
 
 # Updates
 
-- **Update Aug 7, 2025 8:35 PM UTC**: Grid Charging issue is resolved, we are monitoring it and waiting for confirmation from Tesla.
+- **Update Aug 7, 2025 8:35 PM UTC**: The Grid Charging issue is resolved. We are monitoring it and waiting for confirmation from Tesla.
 
 - **Update Aug 7, 2025 7:20 AM UTC**: Tesla informed us the Grid Charging change was not intentional, and they are investigating the cause.
 
@@ -34,4 +34,4 @@ If your goal is to enable Grid Charging in Time-Based Control (which charges the
 you can keep the automation as-is. Hopefully, Tesla will resolve the issue soon.
 
 You may also consider the experimental [Backup Mode](https://www.netzero.energy/docs/backup_mode),
-which charges Powerwall at a faster rate than Self-Powered mode.
+which charges the Powerwall at a faster rate than Self-Powered mode.

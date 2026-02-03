@@ -64,8 +64,8 @@ Netzero to connect to your gateway: **Monitoring > Connect**.
 Accessing devices directly through your home network is not common and can run into issues. Additionally, Gateway firmware updates sometimes cause access issues.
 
 Two of the most common types of issues when connecting to the Gateway are connectivity issues and authentication issues. Look at the error message displayed in Netzero to determine the type of issue:
-- Connectivity issues shows a `Failed to connect` error.
-- Authentication issues shows a `Failed to authenticate` error.
+- Connectivity issues show a `Failed to connect` error.
+- Authentication issues show a `Failed to authenticate` error.
 
 ### Connectivity Issues
 
