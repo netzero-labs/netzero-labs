@@ -43,7 +43,7 @@ unaddressed:
   bills in the process.
 
 - **Integration with smarter utility rate plans:**
-  Netzero supports dynamic tariffs (e.g. Octopus Energy, Tibber, ComEd, Amber Electric). Users on
+  Netzero supports dynamic tariffs (e.g. Octopus Energy, Tibber, ComEd, Ameren Smart Pricing, Amber Electric). Users on
   Intelligent Octopus Go save up to £80/month by charging their Powerwall during low-cost periods.
 
 - **Smarter EV and battery coordination:**

@@ -26,6 +26,7 @@ Netzero currently supports the following plans:
 - [ENTSO-E](https://newtransparency.entsoe.eu/market/energyPrices) (European network covering wholesale pricing for most countries in Europe)
 - [Amber Electric](https://www.amber.com.au/) (Australia)
 - [ComEd Hourly Pricing](https://hourlypricing.comed.com/) (ComEd, Illinois, US)
+- [Ameren Smart Pricing](https://www.ameren.com/bill/rates/power-smart-pricing/) (Ameren, Illinois, US)
 
 If you are in a region with a supported provider, you will see a **Settings > Utility Rate Plan** option in the
 menu.
@@ -54,9 +55,9 @@ due to a limitation in Tesla's Time-Based Control algorithm.
 
 Tibber and Amber Electric plans can be configured by providing your API token from the provider. Follow the instructions in the app.
 
-## ComEd Hourly Pricing
+## ComEd Hourly Pricing and Ameren Smart Pricing
 
-ComEd Hourly Pricing does not require any configuration, just turning on automatic updates.
+ComEd Hourly Pricing and Ameren Smart Pricing do not require any configuration, just turning on automatic updates.
 [PJM day-ahead prices](https://www.gridstatus.io/graph/lmp?iso=pjm&location=COMED) will be used for
 the forecast, and the [ComEd Current Hour Average](https://hourlypricing.comed.com/hp-api/#section-Current-Hour-Average-API)
 will be used to update the real-time price for the current hour.
