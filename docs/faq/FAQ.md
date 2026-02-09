@@ -19,7 +19,7 @@ layout: default
 
 ## 1. How can I configure Powerwall to export to the grid?
 
-Powerwall export behavior cannot be forced by Netzero. Exporting is determined entirely by Tesla's Time-Based Control algorithm. That algorithm decides whether exporting is beneficial based on your utility rate plan, predicted home usage, and predicted solar production.
+Powerwall export behavior cannot be forced by Netzero. Exporting is determined by Tesla's Time-Based Control algorithm. That algorithm decides whether exporting is beneficial based on your utility rate plan, predicted home usage, and predicted solar production.
 
 Netzero can configure the relevant settings for exporting, such as:
 
