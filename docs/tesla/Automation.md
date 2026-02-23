@@ -191,5 +191,5 @@ Group: 2 Winter automations
 
 2. **Why did my scheduled automation not run?**
 
-   Check the "Past Runs" Automation tab for any failures. In rare cases, a command that Netzero successfully sends to Tesla might get lost on the way from Tesla to your Powerwall (e.g. if the gateway is
+   Check the "Past Runs" Automation tab for any failures. If a Storm Watch event is active, automations will fail to run on purpose to avoid interfering with Storm Watch behavior. In rare cases, a command that Netzero successfully sends to Tesla might get lost on the way from Tesla to your Powerwall (e.g. if the gateway is
    in a bad state or updating firmware at the time). If this happens repeatedly, try resetting your gateway and contact us if the issue persists.
