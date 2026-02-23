@@ -39,7 +39,7 @@ tariff, and check the **Auto update rate plan** checkbox. This will result in a 
   rate plan if you created it manually and might need it in the future.
 - Your new tariff configuration will reflect the current pricing schedule. You can confirm the
   pricing using the [Agile Dashboard](https://agile.octopushome.net/dashboard).
-- As new tariffs are announced (usually around 4pm), the tariff configuration will be
+- As new tariffs are announced (usually around 4 PM), the tariff configuration will be
   automatically updated. You do not need to keep the app open for that.
 
 Note that the Tesla app's Utility Rate Plan section doesn't display dynamic tariffs properly. It might

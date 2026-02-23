@@ -75,7 +75,7 @@ Intel Atom computer. See
 [Fleet Telemetry for Pre-2021 Model S/X](https://docs.netzero.energy/docs/ev_charging/FleetTelemetryModelSX)
 for details.
 
-## Other EV chargers or EV
+## Other EV Chargers or EVs
 
 See [Energy Device Integration](https://docs.netzero.energy/docs/integrations/EnodeIntegration) for
 documentation on configuring your non-Tesla EV charger or EV.

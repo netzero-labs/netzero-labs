@@ -62,7 +62,7 @@ unaddressed:
 ## What Subscriptions Will Fund
 
 Subscriptions will help sustain and accelerate Netzero's development. Our long-term
-vision--Intelligent Home Energy Management--extends beyond solar and batteries to include:
+vision: Intelligent Home Energy Management extends beyond solar and batteries to include:
 
 - Electric vehicles
 - Heat pumps
@@ -153,7 +153,7 @@ purchases in the future when we get more data on subscription use.
 **Why would I pay for Netzero when I can use Home Assistant for free?**
 
 We're big supporters of open-source development, and have contributed to the community by helping
-unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative, however not entirely
+unlock Powerwall 3 diagnostics access. Home Assistant is a great alternative; however, it is not entirely
 free -- it requires time to set up and configure, some services for accessing the Tesla Fleet API
 are paid as well, it runs on a computer that needs to be powered 24/7 for automations to run, and
 cloud access to Home Assistant is an additional charge.
