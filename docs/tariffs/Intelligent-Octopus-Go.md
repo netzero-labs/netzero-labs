@@ -15,6 +15,8 @@ Independently of Charge Cap, Netzero will add its own protection. During smart c
 
 No action is required. This update will be enabled automatically once the Intelligent Octopus Go changes go live.
 
+For questions or comments contact [feedback@netzero.energy](mailto:feedback@netzero.energy).
+
 ## Introduction
 [Netzero](https://www.netzero.energy) integrates with the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) EV tariff from Octopus Energy. By providing your Octopus API key and account number, you can configure your Powerwall to charge during smart charging slots outside the off-peak window.
 
