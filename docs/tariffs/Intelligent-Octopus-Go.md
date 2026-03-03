@@ -9,7 +9,7 @@ layout: with_footer
 In March 2026, Octopus Energy will introduce a 6-hour smart EV charging limit for Intelligent Octopus Go. Details are available here:
 [Upcoming changes to Intelligent Octopus Go](https://octopus.energy/blog/intelligent-octopus-go-charge-limit/).
 
-Octopus is also introducing Charge Cap, a new feature that can limit smart EV charging to 6 hours and help avoid charging at peak prices. We would suggest turning this feature on.
+Octopus will also be introducing Charge Cap, a new feature that can limit smart EV charging to 6 hours and help avoid charging at peak prices. We would suggest turning this feature on once it's available.
 
 Independently of Charge Cap, Netzero will add its own protection. During smart EV charging, Powerwall charging will be limited to 6 hours. If smart EV charging exceeds 6 hours, Netzero will automatically switch to Preserve Charge instead of continuing to charge the Powerwall, avoiding charging the Powerwall at peak rates.
 
