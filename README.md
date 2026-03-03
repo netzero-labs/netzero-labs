@@ -20,6 +20,7 @@
 ### Monitoring and Diagnostics
 
 - [Health Monitoring](https://www.netzero.energy/docs/alerting)
+- [Powerwall Pairing](https://www.netzero.energy/docs/pair_powerwall)
 - [Powerwall 2 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall2)
 - [Powerwall 3 Diagnostics](https://www.netzero.energy/docs/diagnostics/powerwall3)
 - [Diagnosing Solar Production Issues](https://www.netzero.energy/docs/diagnostics/solar_production)
