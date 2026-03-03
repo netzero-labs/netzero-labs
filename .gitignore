@@ -38,3 +38,4 @@ venv/
 *.min.css
 
 _site
+.claude
