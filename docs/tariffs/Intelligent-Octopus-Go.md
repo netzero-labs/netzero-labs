@@ -17,8 +17,6 @@ Note: The 6-hour timer only tracks smart EV charging slots. If your Powerwall ch
 
 No action is required to enable the Netzero 6-hour limit. This update will be enabled automatically once the Intelligent Octopus Go changes go live.
 
-For questions or comments, contact [feedback@netzero.energy](mailto:feedback@netzero.energy).
-
 ## Introduction
 [Netzero](https://www.netzero.energy) integrates with the [Intelligent Octopus Go](https://octopus.energy/smart/intelligent-octopus-go/) EV tariff from Octopus Energy. By providing your Octopus API key and account number, you can configure your Powerwall to charge during smart charging slots outside the off-peak window.
 
