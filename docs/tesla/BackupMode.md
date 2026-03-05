@@ -10,6 +10,7 @@ layout: with_footer
 
 **Important notes:**
 
+* **Not compatible with VPP programs.** When the system is in Backup Mode, it will not discharge during VPP events. When participating in VPP programs, avoid using Backup Mode, or ensure VPP events never overlap with periods when the system is in Backup Mode.
 * **Not supported in the Tesla app.** When enabled via Netzero, the Tesla app will show no operational mode selected. You can still use the Tesla app to switch back to Self-Powered or Time-Based Control. In Netzero, all modes are supported and displayed properly.
 * Backup Mode can be set as an automation action (**Set operational mode**) or manually from **Automation > Configuration** (useful for testing).
 
